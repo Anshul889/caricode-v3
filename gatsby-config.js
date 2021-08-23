@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: `https://www.caricode.co`,
+    description:
+      "We design, build, deploy and manage web applications. Powered by Google Cloud.",
+    url: "https://www.caricode.co", // No trailing slash allowed!
+    image: "/images/image3.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@caricode",
+    date: "2020-01-28",
     title: "Caricode-v3",
   },
   plugins: [
@@ -20,7 +26,20 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+          `gatsby-remark-lazy-load`,
+        ],
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -34,8 +53,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "posts",
+        path: "./src/posts/",
       },
       __key: "pages",
     },
