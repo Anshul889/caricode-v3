@@ -65,23 +65,23 @@ const Navbar = () => {
         </Right>
       </DesktopNavigation>
       <MobileNav>
-        <MItem to="/web-applications/">
+        <MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/web-applications/">
           <MItemImg src={mobilenav}></MItemImg>
           <MText>Apps</MText>
         </MItem>
-				<MItem to="/ui-ux/">
+				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/ui-ux/">
           <MItemImg src={uiux}></MItemImg>
           <MText>UI/UX</MText>
         </MItem>
-				<MItem to="/ecommerce/">
+				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/ecommerce/">
           <MItemImg src={shopping}></MItemImg>
           <MText>Ecommerce</MText>
         </MItem>
-				<MItem  to="/blogs/">
+				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/blogs/">
           <MItemImg src={blog}></MItemImg>
           <MText>Blogs</MText>
         </MItem>
-				<MItem to="/landing-pages/">
+				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/landing-pages/">
           <MItemImg src={landingpage}></MItemImg>
           <MText>Landing</MText>
         </MItem>

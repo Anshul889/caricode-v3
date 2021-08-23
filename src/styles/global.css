@@ -6,6 +6,22 @@ body {
   overflow-x: hidden; /* Hide scrollbars */
 }
 
+h1,
+h2,
+h4,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 30.4px;
+  letter-spacing: 6.08px;
+  line-height: 45.6px;
+}
+
 ul {
   list-style: disc;
   margin: 1.4em 0;
@@ -147,6 +163,11 @@ textarea {
 
 textarea:focus {
   border: 2px solid #7c759a;
+}
+
+.active{
+  filter: 'grayscale(0%)'!important;
+   opacity: 1
 }
 
 @media only screen and (min-width: 830px) {
