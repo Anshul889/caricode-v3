@@ -6,9 +6,9 @@ import {
   TagLine,
   Animation,
   Grid,
+  GetStarted,
 } from "./style";
 import Lottie from "react-lottie";
-import { Button } from "../Button/Button";
 import animationData from "./website-development.json";
 
 const Banner = () => {
@@ -33,6 +33,18 @@ const Banner = () => {
             Take the online presence
             <br /> of your business to the next level
           </TagLine>
+          <GetStarted
+            onClick={() =>
+              window.scrollTo({
+                top: 700,
+                left: 0,
+                behavior: "smooth",
+              })
+            }
+          >
+            {" "}
+            Get Started
+          </GetStarted>
         </BannerText>
       </Grid>
     </Container>

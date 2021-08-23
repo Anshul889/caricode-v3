@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../Button/Button";
 
 export const Container = styled.div`
   width: 100%;
@@ -26,7 +27,7 @@ export const Grid = styled.div`
 `;
 
 export const Animation = styled.div`
-  transform: scale(1);
+  transform: scale(1.2);
   height: 300px;
   padding-top: 10px;
   @media screen and (min-width: 600px) {
@@ -62,8 +63,16 @@ export const Heading = styled.h1`
 `;
 
 export const TagLine = styled.p`
-text-align: center;
+  text-align: center;
   @media screen and (min-width: 600px) {
     font-size: 26px;
+  }
+`;
+
+export const GetStarted = styled(Button)`
+  display: block;
+  margin: 0 auto;
+  @media screen and (min-width: 600px) {
+    display: none;
   }
 `;
