@@ -1,8 +1,15 @@
-import React from 'react'
-import Lottie from 'react-lottie'
-import { Button } from '../Button/Button'
-import { Container ,BannerText, Heading, TagLine, Animation } from './style'
-import animationData from './website-development.json'
+import React from "react";
+import {
+  Container,
+  BannerText,
+  Heading,
+  TagLine,
+  Animation,
+  Grid,
+} from "./style";
+import Lottie from "react-lottie";
+import { Button } from "../Button/Button";
+import animationData from "./website-development.json";
 
 const Banner = () => {
   const defaultOptions = {
@@ -10,13 +17,13 @@ const Banner = () => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
+      preserveAspectRatio: "xMidYMid slice",
     },
-  }
+  };
 
   return (
     <Container>
-      <Banner>
+      <Grid>
         <Animation>
           <Lottie options={defaultOptions} isStopped={false} />
         </Animation>
@@ -26,21 +33,9 @@ const Banner = () => {
             Take the online presence
             <br /> of your business to the next level
           </TagLine>
-          <Button
-            onClick={() =>
-              window.scrollTo({
-                top: 700,
-                left: 0,
-                behavior: 'smooth',
-              })
-            }
-          >
-            {' '}
-            Get Started
-          </Button>
         </BannerText>
-      </Banner>
+      </Grid>
     </Container>
-  )
-}
-export default Banner
+  );
+};
+export default Banner;
