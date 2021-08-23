@@ -47,7 +47,6 @@ export const MobileContact = styled(GatsbyLink)`
   }
 `;
 
-
 export const Left = styled.ul`
   align-items: center;
   display: grid;
@@ -80,4 +79,46 @@ export const DItem = styled.li`
   font-size: 14.75px;
   letter-spacing: 1.9175px;
   line-height: 28px;
+`;
+
+/*Bottom Nav */
+
+export const MobileNav = styled.div`
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(144, 144, 144, 0.15);
+  height: 50px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+`;
+
+export const MItem = styled(GatsbyLink)`
+  font-size: 0.6rem;
+  letter-spacing: 0.0075rem;
+  text-decoration: none;
+  color: #7c759a;
+  filter: grayscale(100%);
+  opacity: 0.5;
+`;
+
+export const MItemImg = styled.img`
+  height: 26px;
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 3px;
+`;
+
+export const MText = styled.div`
+  font-size: 12px;
 `;
