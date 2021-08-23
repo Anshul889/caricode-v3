@@ -25,3 +25,150 @@ a {
 a:hover {
   color: #484459;
 }
+
+.formitem {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.former {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 20px;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s ease-in-out;
+  height: 2.75em;
+  border: 1px solid rgba(144, 144, 144, 0.25);
+  border-radius: 4px;
+  background-color: rgba(144, 144, 144, 0.15);
+  color: inherit;
+  display: block;
+  padding: 0 calc(5% - 2px);
+  outline: 0;
+  text-decoration: none;
+  width: 90%;
+  margin: 0px;
+}
+
+input:focus {
+  border: 2px solid #7c759a;
+}
+
+input[type="checkbox"] {
+  /* background: rgba(144, 144, 144, 0.15);
+  border: 2px solid rgba(144, 144, 144, 0.25);
+  height: 2.0625em;
+  margin: 0;
+  padding: 0;
+  width: 2.0625em;
+  appearance: none; */
+  appearance: none;
+  display: block;
+  float: left;
+  margin-right: -2em;
+  opacity: 0;
+  width: 1em;
+  z-index: -1;
+  outline: 0;
+}
+
+input[type="checkbox"] + label {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 300;
+  margin-bottom: 0.16em;
+  padding-left: 2.4em;
+  padding-right: 0.75em;
+  position: relative;
+  outline: 0;
+}
+
+label {
+  letter-spacing: 0.2em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+label:focus {
+  outline: 0 !important;
+}
+
+input[type="checkbox"] + label:before {
+  background: rgba(144, 144, 144, 0.15);
+  border: solid 2px rgba(144, 144, 144, 0.25);
+  border-radius: 4px;
+  content: "";
+  display: inline-block;
+  font-size: 0.6em;
+  height: 13px;
+  left: 0;
+  line-height: 2.0625em;
+  padding-left: 3px;
+  padding-bottom: 6px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 16px;
+  outline: none;
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: #484459;
+  border-color: #484459;
+  color: #fff;
+  content: "\2713";
+  outline: none;
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: border-color 0.2s ease-in-out;
+  height: 5.5em;
+  border: 1px solid rgba(144, 144, 144, 0.25);
+  border-radius: 4px;
+  background-color: rgba(144, 144, 144, 0.15);
+  color: inherit;
+  display: block;
+  padding: 10px calc(5% - 2px);
+  outline: 0;
+  text-decoration: none;
+  width: 90%;
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+textarea:focus {
+  border: 2px solid #7c759a;
+}
+
+@media only screen and (min-width: 830px) {
+  textarea {
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+  }
+
+  input {
+    padding: 2px 5px;
+    width: calc(100% - 10px);
+  }
+
+  .former {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  .textdiv {
+    grid-column: span 2;
+  }
+  .contactformarea{
+    height: 150px;
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
-import { useTransition, animated } from "react-spring";
+import { Spring, config } from 'react-spring/renderprops'
+import styled from "styled-components";
 
 const Border = () => {
   const AnimatedBorder = styled.div`
@@ -23,7 +24,7 @@ const Border = () => {
             delay={800}
           >
             {(props) => (
-              <div className="hero-feature-border" style={props}></div>
+              <AnimatedBorder style={props}></AnimatedBorder>
             )}
           </Spring>
         )}
