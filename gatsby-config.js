@@ -7,7 +7,7 @@ module.exports = {
     image: "/images/image3.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@caricode",
     date: "2020-01-28",
-    title: "Caricode-v3",
+    title: "Caricode",
   },
   plugins: [
     "gatsby-plugin-styled-components",
