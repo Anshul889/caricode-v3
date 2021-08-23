@@ -1,7 +1,7 @@
 import React from 'react'
 import Lottie from 'react-lottie'
 import { Button } from '../Button/Button'
-import { Container ,BannerText, Heading, TagLine, Animation } from './styles'
+import { Container ,BannerText, Heading, TagLine, Animation } from './style'
 import animationData from './website-development.json'
 
 const Banner = () => {

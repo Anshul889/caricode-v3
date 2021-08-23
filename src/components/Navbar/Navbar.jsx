@@ -24,11 +24,11 @@ const Navbar = () => {
   return (
     <Container>
       <DesktopNavigation>
-        <Logo>
+        <Logo to="/">
           <span style={{ color: "#7c759a" }}>CARI</span>
           <span style={{ color: "hsla(0, 0%, 75%, 1)" }}>CODE</span>
         </Logo>
-        <MobileContact>
+        <MobileContact to="/contact/">
           <Button>Contact</Button>
         </MobileContact>
         <Left>
