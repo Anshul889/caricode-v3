@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import sg from '../images/sg.png'
 import { useStaticQuery, graphql, Link } from 'gatsby'
+import 'react-vis/dist/style.css'
 import Image from 'gatsby-image'
 import VisibilitySensor from 'react-visibility-sensor'
 import { Spring, config } from 'react-spring/renderprops'
@@ -14,11 +15,33 @@ import {
   DiscreteColorLegend,
 } from 'react-vis'
 import SEO from '../components/Seo/Seo'
-import { Container } from '../styles/web-applications-style'
+import {
+  Container,
+  CostEfectiveH,
+  CostEffectiveP,
+  FirstHeader,
+  FirstHeaderHeading,
+  Inner,
+  InnerStyles,
+  LoyaltyAnimation,
+  LoyaltyH,
+  LoyaltyP,
+  ReferralAnimation,
+  ReferralH,
+  ReferralP,
+  Why,
+  Why2,
+  WhyContainer,
+  WhyInner,
+} from '../styles/web-applications-style'
 import Webappbanner from '../components/Banners/Webappbanner'
 // import Webappbanner from '../components/Webappbanner'
 // import Referrals from '../components/Referrals'
 // import Loyalty from '../components/Loyalty'
+import Border from '../components/Border/Border.jsx'
+import CenteredBorder from '../components/Border/CenteredBorder'
+import Loyalty from '../components/Lotties/Loyalty/Loyalty'
+import Referrals from '../components/Lotties/Referrals/Referrals'
 
 const getImages = graphql`
   {
@@ -85,7 +108,148 @@ const WebApplications = () => {
         image="/images/image4.jpg"
         date={'2020-01-30'}
       />
-      <Container><Webappbanner /></Container>
+      <Container>
+        <Webappbanner />
+        <FirstHeader>
+          <FirstHeaderHeading>
+            Customer retention is a strong predictor of a firm's financial
+            success
+          </FirstHeaderHeading>
+        </FirstHeader>
+        <WhyContainer>
+          <WhyInner>
+            <Why>
+              <InnerStyles>
+                <div>
+                  <ReferralAnimation>
+                    <div style={{ marginTop: '30px' }}>
+                      <FlexibleWidthXYPlot
+                        margin={{ left: 70, right: 30 }}
+                        height={100}
+                        yType="ordinal"
+                      >
+                        <XAxis
+                          xDomain={[0, 120]}
+                          title={'Cost'}
+                          tickTotal={4}
+                        />
+                        <YAxis tickTotal={2} />
+                        <HorizontalBarSeries
+                          barWidth={0.7}
+                          xDomain={[0, 120]}
+                          data={retentioncost}
+                        />
+                      </FlexibleWidthXYPlot>
+                    </div>
+                  </ReferralAnimation>
+                  <CostEfectiveH>Cost Effective</CostEfectiveH>
+                  <CenteredBorder></CenteredBorder>
+                  <CostEffectiveP>
+                    It's{' '}
+                    <a
+                      href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        color: '#7c759a',
+                        textDecoration: 'underline',
+                      }}
+                    >
+                      5-25X more expensive
+                    </a>{' '}
+                    to acquire a new customer than it is to retain an existing
+                    customer.
+                  </CostEffectiveP>
+                </div>
+              </InnerStyles>
+            </Why>
+            <Why2>
+              <InnerStyles>
+                <FlexibleWidthXYPlot
+                  margin={{ left: 70, right: 30 }}
+                  height={300}
+                >
+                  <DiscreteColorLegend
+                    style={{
+                      position: 'absolute',
+                      left: '100px',
+                      top: '10px',
+                      opacity: '1',
+                    }}
+                    orientation="horizontal"
+                    items={[
+                      {
+                        title: 'Repeat Customers',
+                        color: '#12939A',
+                      },
+                      {
+                        title: 'Without',
+                        color: '#79C7E3',
+                      },
+                    ]}
+                  />
+                  <XAxis title={'Time(months)'} />
+                  <YAxis
+                    title={'Revenue'}
+                    yDomain={[0, 300000]}
+                    tickTotal={6}
+                  />
+                  <LineSeries
+                    curve={'curveMonotoneX'}
+                    data={retentionrevenue}
+                    style={{ fill: 'none' }}
+                  />
+                  <LineSeries data={acquisitionrevenue} />
+                </FlexibleWidthXYPlot>
+                <CostEfectiveH>ROI</CostEfectiveH>
+                <CostEffectiveP>
+                  A{' '}
+                  <a
+                    href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      color: '#7c759a',
+                      textDecoration: 'underline',
+                    }}
+                  >
+                    5% increase in customer retention
+                  </a>{' '}
+                  can increase company revenue by 25-95%.
+                </CostEffectiveP>
+              </InnerStyles>
+            </Why2>
+            <Why>
+              <InnerStyles>
+                <LoyaltyAnimation>
+                  <Loyalty />
+                </LoyaltyAnimation>
+                <LoyaltyH>Loyalty</LoyaltyH>
+                <CenteredBorder></CenteredBorder>
+                <LoyaltyP>
+                  Retained customers buy more often and spend more than newer
+                  customers. They've learned the value of a product or service
+                  and keep coming back, again and again.
+                </LoyaltyP>
+              </InnerStyles>
+            </Why>
+            <Why>
+              <InnerStyles>
+                <ReferralAnimation>
+                  <Referrals />
+                </ReferralAnimation>
+                <ReferralH>Referrals</ReferralH>
+                <CenteredBorder></CenteredBorder>
+                <ReferralP>
+                  Satisfied, loyal customers are more likely to sing a company's
+                  praises and refer their friends and family — bringing in new
+                  customers, free of charge.
+                </ReferralP>
+              </InnerStyles>
+            </Why>
+          </WhyInner>
+        </WhyContainer>
+      </Container>
     </Layout>
   )
 }

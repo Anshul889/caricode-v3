@@ -1,5 +1,5 @@
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: white;
   color: black;
   margin: 0;
@@ -20,6 +20,19 @@ h1 {
   font-size: 30.4px;
   letter-spacing: 6.08px;
   line-height: 45.6px;
+}
+
+h4 {
+  font-size: 17.6px !important;
+  font-weight: 400;
+  line-height: 26.4px;
+  letter-spacing: 3.52px;
+  text-align: center;
+}
+
+p {
+  font-weight: 300;
+  line-height: 29.12px;
 }
 
 ul {
@@ -75,7 +88,7 @@ input:focus {
   border: 2px solid #7c759a;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   /* background: rgba(144, 144, 144, 0.15);
   border: 2px solid rgba(144, 144, 144, 0.25);
   height: 2.0625em;
@@ -93,7 +106,7 @@ input[type="checkbox"] {
   outline: 0;
 }
 
-input[type="checkbox"] + label {
+input[type='checkbox'] + label {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -115,11 +128,11 @@ label:focus {
   outline: 0 !important;
 }
 
-input[type="checkbox"] + label:before {
+input[type='checkbox'] + label:before {
   background: rgba(144, 144, 144, 0.15);
   border: solid 2px rgba(144, 144, 144, 0.25);
   border-radius: 4px;
-  content: "";
+  content: '';
   display: inline-block;
   font-size: 0.6em;
   height: 13px;
@@ -134,11 +147,11 @@ input[type="checkbox"] + label:before {
   outline: none;
 }
 
-input[type="checkbox"]:checked + label:before {
+input[type='checkbox']:checked + label:before {
   background-color: #484459;
   border-color: #484459;
   color: #fff;
-  content: "\2713";
+  content: '\2713';
   outline: none;
 }
 
@@ -165,10 +178,11 @@ textarea:focus {
   border: 2px solid #7c759a;
 }
 
-.active{
-  filter: 'grayscale(0%)'!important;
-   opacity: 1
+.active {
+  filter: 'grayscale(0%)' !important;
+  opacity: 1;
 }
+
 
 @media only screen and (min-width: 830px) {
   textarea {
@@ -189,7 +203,7 @@ textarea:focus {
   .textdiv {
     grid-column: span 2;
   }
-  .contactformarea{
+  .contactformarea {
     height: 150px;
   }
 }
