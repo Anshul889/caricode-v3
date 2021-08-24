@@ -203,7 +203,7 @@ export const LoyaltyImage = styled.div`
 export const Auth = styled.div`
   display: grid;
   grid-template-columns: max-content;
-  gap: 10px;
+  gap: 15px;
   place-content: center;
   margin-bottom: 38px;
   background-color: white;
@@ -218,14 +218,12 @@ export const GoogleAuth = styled(Button)`
   border-radius: 4px;
   background-color: red;
   text-transform: none;
-  width: 200px;
+  padding: 12px 40px;
+  font-size: 17px;
 `
 
-export const FacebookAuth = styled(Button)`
-  border-radius: 4px;
+export const FacebookAuth = styled(GoogleAuth)`
   background-color: #4c69ba;
-  text-transform: none;
-  width: 200px;
 `
 
 export const HowRefer = styled.div`
@@ -258,3 +256,12 @@ export const RefInput = styled.input`
 `
 
 export const Invite = styled(Button)``
+
+export const FormFeature = styled.form`
+  width: 90%;
+  margin: 0 auto;
+`
+
+export const FormFeatureInput = styled.input`
+  margin-bottom: 12px;
+`

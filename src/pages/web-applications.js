@@ -55,6 +55,8 @@ import {
   RefForm,
   RefInput,
   Invite,
+  FormFeature,
+  FormFeatureInput,
 } from '../styles/web-applications-style'
 import Webappbanner from '../components/Banners/Webappbanner'
 // import Webappbanner from '../components/Webappbanner'
@@ -413,6 +415,69 @@ const WebApplications = () => {
                   decisions. B2B businesses with referral programs have 69%
                   faster closing times on sales and approximately 70% higher
                   conversion rates than those who don't.
+                </HowP>
+              </InnerStyles>
+            </EmailAuto>
+            <EmailAuto>
+              <InnerStyles>
+                <LoyaltyImage>
+                  <Img
+                    fluid={data.image2.childImageSharp.fluid}
+                    style={{ borderRadius: '4px' }}
+                  />
+                </LoyaltyImage>
+                <HowH>Payments</HowH>
+                <HowP>
+                  Making it as easy as possible for your customers to pay is
+                  essential for increasing conversions and sales. This is why
+                  your checkout page is critical. It’s the final stop for people
+                  shopping on your website. It’s the place where they hand over
+                  their credit card information and finally part with their
+                  hard-earned cash.
+                </HowP>
+              </InnerStyles>
+            </EmailAuto>
+            <EmailAuto>
+              <InnerStyles>
+                <LoyaltyImage>
+                  <Img
+                    fluid={data.image3.childImageSharp.fluid}
+                    style={{ borderRadius: '4px' }}
+                  />
+                </LoyaltyImage>
+                <HowH>Security</HowH>
+                <HowP>
+                  In many cases, application logic is best controlled on the
+                  server to avoid tampering on the client side. Cloud Functions
+                  is fully insulated from the client, so you can be sure its
+                  functions are private and secure and can’t be reverse
+                  engineered.
+                </HowP>
+              </InnerStyles>
+            </EmailAuto>
+            <EmailAuto>
+              <InnerStyles>
+                <HowRefer>
+                  <FormFeature>
+                    <FormFeatureInput
+                      placeholder="Name"
+                      type="text"
+                      autoComplete="name"
+                    />
+                    <FormFeatureInput
+                      placeholder="Email"
+                      type="email"
+                      autoComplete="email"
+                    />
+                  </FormFeature>
+                </HowRefer>
+                <HowH>Forms</HowH>
+                <HowP>
+                  Website forms are unique in that they allow one to control the
+                  type of information they collect from a potential client. They
+                  allow an individual or organization to provide information on
+                  specific fields and furthermore specify which fields are
+                  mandatory to fill in and the ones that are optional.
                 </HowP>
               </InnerStyles>
             </EmailAuto>

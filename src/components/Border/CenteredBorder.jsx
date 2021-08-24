@@ -16,7 +16,7 @@ const CenteredBorder = () => {
   return (
     <div>
       <VisibilitySensor offset={{
-          bottom: 600
+          bottom: 400
         }}>
         {({ isVisible }) => (
           <Spring
