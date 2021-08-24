@@ -48,8 +48,8 @@ const UiUx = () => {
             </Animation>
             <h4>Focused</h4>
             <p>
-              Motion design informs users by highlighting relationships between
-              elements, action availability, and action outcomes.
+              Motion focuses attention on what's important, without creating
+              unnecessary distraction.
             </p>
           </Principle>
           <Principle>
@@ -58,8 +58,8 @@ const UiUx = () => {
             </Animation>
             <h4>Expressive</h4>
             <p>
-              Motion design informs users by highlighting relationships between
-              elements, action availability, and action outcomes.
+              Motion celebrates moments in user journeys, adds character to
+              common interactions, and can express a brand’s style.
             </p>
           </Principle>
         </Principles>
