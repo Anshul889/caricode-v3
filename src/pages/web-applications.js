@@ -58,11 +58,7 @@ import {
   FormFeature,
   FormFeatureInput,
 } from '../styles/web-applications-style'
-import Webappbanner from '../components/Banners/Webappbanner'
-// import Webappbanner from '../components/Webappbanner'
-// import Referrals from '../components/Referrals'
-// import Loyalty from '../components/Loyalty'
-import Border from '../components/Border/Border.jsx'
+import Webappbanner from '../components/Banners/WebApp/Webappbanner'
 import CenteredBorder from '../components/Border/CenteredBorder'
 import Loyalty from '../components/Lotties/Loyalty/Loyalty'
 import Referrals from '../components/Lotties/Referrals/Referrals'
