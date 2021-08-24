@@ -49,9 +49,9 @@ const reactOptions = {
 }
 
 const Webappbanner = () => {
-  const [play, SetPlay] = useState(true);
+  const [play, SetPlay] = useState(false);
   useEffect(() => {
-    SetPlay(false)
+    SetPlay(true)
   })
   return (
     <AppHero>

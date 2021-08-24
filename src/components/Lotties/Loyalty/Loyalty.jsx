@@ -23,7 +23,7 @@ const defaultOptions = {
 }
 
 const Loyalty = () => {
-  const [play, SetPlay] = useState(true)
+  const [play, SetPlay] = useState(false)
   return (
     <Container>
       <VisibilitySensor
