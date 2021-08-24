@@ -66,6 +66,7 @@ import Border from '../components/Border/Border.jsx'
 import CenteredBorder from '../components/Border/CenteredBorder'
 import Loyalty from '../components/Lotties/Loyalty/Loyalty'
 import Referrals from '../components/Lotties/Referrals/Referrals'
+import WebappPopup from '../components/Popups/WebappPopup'
 
 const getImages = graphql`
   {
@@ -483,6 +484,7 @@ const WebApplications = () => {
             </EmailAuto>
           </HowInner>
         </HowContainer>
+        <WebappPopup />
       </Container>
     </Layout>
   )
