@@ -38,6 +38,8 @@ export const Principles = styled.div`
   row-gap: 20px;
   background-color: #f5f5f5;
   @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
   }
 `
 
@@ -54,6 +56,10 @@ export const Principle = styled.div`
   }
   p {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 80px 120px;
   }
 `
 
