@@ -3,14 +3,16 @@ import VisibilitySensor from "react-visibility-sensor";
 import { Spring, config } from 'react-spring/renderprops'
 import styled from "styled-components";
 
-const CenteredBorder = () => {
-  const AnimatedBorder = styled.div`
+const AnimatedBorder = styled.div`
     height: 1px;
     background-color: rgba(144, 144, 144, 0.25);
     width: 50px;
     margin-left: auto;
     margin-right: auto;
   `;
+
+const CenteredBorder = () => {
+  
   return (
     <div>
       <VisibilitySensor offset={{

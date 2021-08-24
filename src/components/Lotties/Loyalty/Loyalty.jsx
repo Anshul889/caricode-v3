@@ -3,8 +3,7 @@ import Lottie from 'react-lottie'
 import styled from 'styled-components'
 import animationData from './loyalty.json'
 
-const Loyalty = () => {
-  const Container = styled.div`
+const Container = styled.div`
     height: auto;
     @media screen and (min-width: 600px) {
       .main {
@@ -12,6 +11,10 @@ const Loyalty = () => {
       }
     }
   `
+
+
+const Loyalty = () => {
+  
   const defaultOptions = {
     loop: true,
     autoplay: true,
