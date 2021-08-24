@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Lottie from 'react-lottie'
 import animationData from './webapp.json'
 import serverData from './cloud-server.json'
@@ -21,10 +21,11 @@ import {
   ServerAnimation,
   Title,
 } from './webapp-style'
+import { useEffect } from 'react'
 
 const defaultOptions = {
   loop: true,
-  autoplay: true,
+  autoplay: false,
   animationData: animationData,
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid slice',
@@ -48,6 +49,10 @@ const reactOptions = {
 }
 
 const Webappbanner = () => {
+  const [play, SetPlay] = useState(true);
+  useEffect(() => {
+    SetPlay(false)
+  })
   return (
     <AppHero>
       <div>
@@ -65,7 +70,7 @@ const Webappbanner = () => {
             </ReactAnimation>
           </Feature>
           <MobileAnimation>
-            <Lottie options={defaultOptions} isStopped={false} />
+            <Lottie options={defaultOptions} isStopped={play} />
           </MobileAnimation>
           <PlaceholderImages>
             <PlaceholderImage></PlaceholderImage>
