@@ -14,7 +14,7 @@ export const Desktop = styled.div`
 export const HeroText = styled.div`
   @media only screen and (min-width: 760px) and (min-height: 450px) {
     align-self: center;
-    & > h1 {
+    h1 {
       font-size: 64px;
       text-transform: none;
       font-weight: 700;
@@ -22,7 +22,7 @@ export const HeroText = styled.div`
       letter-spacing: 1px;
     }
 
-    & > p {
+    p {
       font-size: 20px;
     }
   }
@@ -39,7 +39,7 @@ export const Mobile = styled.div`
   height: calc(100vh - 56px - 56px);
   width: 100%;
   overflow: hidden;
-  & > h1 {
+  h1 {
     font-size: 36px;
     text-transform: none;
     font-weight: 800;
