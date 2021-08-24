@@ -22,31 +22,32 @@ import {
   Title,
 } from './webapp-style'
 
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
+const cloudOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: serverData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
+const reactOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: reactData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
+
 const Webappbanner = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  }
-  const cloudOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: serverData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  }
-  const reactOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: reactData,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  }
   return (
     <AppHero>
       <div>

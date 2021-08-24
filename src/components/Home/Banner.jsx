@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import {
   Container,
   BannerText,
@@ -7,20 +7,20 @@ import {
   Animation,
   Grid,
   GetStarted,
-} from "./style";
-import Lottie from "react-lottie";
-import animationData from "./website-development.json";
+} from './style'
+import Lottie from 'react-lottie'
+import animationData from './website-development.json'
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
+}
 
 const Banner = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <Container>
       <Grid>
@@ -38,16 +38,16 @@ const Banner = () => {
               window.scrollTo({
                 top: 700,
                 left: 0,
-                behavior: "smooth",
+                behavior: 'smooth',
               })
             }
           >
-            {" "}
+            {' '}
             Get Started
           </GetStarted>
         </BannerText>
       </Grid>
     </Container>
-  );
-};
-export default Banner;
+  )
+}
+export default Banner
