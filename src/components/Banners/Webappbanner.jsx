@@ -49,10 +49,13 @@ const reactOptions = {
 }
 
 const Webappbanner = () => {
-  const [play, SetPlay] = useState(true);
+  const [play, setPlay] = useState(true)
   useEffect(() => {
-    SetPlay(false)
-  })
+    let timer1 = setTimeout(() => setPlay(false), 5000)
+    return () => {
+      clearTimeout(timer1)
+    }
+  }, [])
   return (
     <AppHero>
       <div>
