@@ -9,6 +9,12 @@
   max-width: 1080px;
 }
 
+.headline h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 20px;
+}
+
 .colorpicker{
   margin: 30px auto;
   max-width: 1080px;
@@ -562,6 +568,12 @@ input:checked + .blackslider:before {
     margin: 0 auto;
     margin-bottom: 40px;
   }
+
+  .headline h2{
+    padding-top: 30px;
+    font-size: 36px;
+  }
+
   .headline h4{
     text-align: center;
   }
