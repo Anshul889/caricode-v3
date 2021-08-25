@@ -6,6 +6,13 @@ export const Mobile = styled.div`
   }
 `
 
+export const Desktop = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+`
+
 export const PrinciplesHeading = styled.div`
   background-color: #f5f5f5;
   padding-top: 20px;
@@ -34,7 +41,7 @@ export const PrinciplesHeading = styled.div`
       font-size: 48px;
       line-height: 50px;
     }
-    p{
+    p {
       font-size: 17px;
     }
   }
@@ -106,7 +113,7 @@ export const Performance = styled.div`
       text-transform: uppercase;
       letter-spacing: 0.15em;
     }
-    p{
+    p {
       font-size: 17px;
     }
   }
@@ -118,3 +125,49 @@ export const Olydiv = styled.div`
     margin: 0 auto;
   }
 `
+
+export const Showcase = styled(PrinciplesHeading)``
+
+export const InnerStyles = styled.div`
+  h2 {
+  }
+`
+
+export const Hierarchy = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  background-color: white;
+  width: 90%;
+  padding: 15px 0 5px 0;
+  border-radius: 30px;
+  p {
+    width: 90%;
+    margin: 20px auto;
+  }
+`
+
+export const Brand = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1080px;
+  margin-bottom: 45px;
+  background-color: white;
+  padding: 5%;
+  border-radius: 30px;
+`
+
+export const IconsDiv = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 5%;
+  background-color: white;
+  border-radius: 30px;
+  padding-bottom: 1px;
+`
+export const Illustrations = styled.div``
+export const Icon = styled.div``
+export const MemorableDiv = styled.div``
+export const Feedback = styled.div``
+export const FeedbackInner = styled.div``

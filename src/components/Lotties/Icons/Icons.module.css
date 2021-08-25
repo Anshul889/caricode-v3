@@ -1,0 +1,91 @@
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin: 30px 0;
+}
+
+.thumbicon {
+  width: 50%;
+  grid-row: 1/ 1;
+  grid-column: 1/1;
+}
+
+.thumbicon path {
+  stroke: #7c759a;
+  fill: #7c759a;
+  stroke-dasharray: 6420;
+  stroke-dashoffset: 1560;
+  animation: animate-heart 5s infinite linear forwards;
+  animation-delay: 2s;
+  stroke-width: 5;
+}
+
+@keyframes animate-heart {
+  0% {
+    fill-opacity: 0;
+  }
+
+  30% {
+    fill-opacity: 0;
+  }
+
+  40% {
+    fill-opacity: 1;
+  }
+
+  90% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+  }
+}
+
+.hearticon {
+  width: 50%;
+}
+
+.staricon {
+  width: 50%;
+}
+
+.arrowicon {
+  width: 50%;
+}
+
+.hearticon path {
+  stroke: #7c759a;
+  fill: #7c759a;
+  stroke-dasharray: 6420;
+  stroke-dashoffset: 1560;
+  animation: animate-heart 5s infinite linear forwards;
+  animation-delay: 2s;
+  stroke-width: 5;
+}
+
+.staricon path {
+  stroke: #7c759a;
+  fill: #7c759a;
+  stroke-dasharray: 6420;
+  stroke-dashoffset: 1560;
+  animation: animate-heart 5s infinite linear forwards;
+  animation-delay: 2s;
+  stroke-width: 5;
+}
+
+.arrowicon path {
+  stroke: #7c759a;
+  fill: #7c759a;
+  stroke-dasharray: 6420;
+  stroke-dashoffset: 1560;
+  animation: animate-heart 5s infinite linear forwards;
+  animation-delay: 2s;
+  stroke-width: 5;
+}
+
+@media only screen and (min-width: 600px) {
+  .icons{
+    margin-bottom: 0px;
+  }
+}

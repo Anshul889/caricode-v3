@@ -1,0 +1,115 @@
+.memorable{
+  height: 190px
+}
+
+.outer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 145px;
+}
+
+.animatedbutton {
+  animation: press 10s linear infinite forwards;
+}
+
+.spinner {
+  margin-bottom: 20px;
+  animation: spin 10s linear infinite forwards;
+  width: 20%;
+  transform: translateX(15px);
+  text-align: center;
+  position: relative;
+  left: 40%;
+}
+
+.payment {
+  margin: 20px auto;
+  animation: spin 10s linear infinite forwards;
+  text-align: center;
+}
+
+.complete{
+    transform: translateY(-40px);
+    text-align: center;
+    font-size: 20px;
+    color: #7c759a;
+    animation: complete 10s linear infinite forwards;
+}
+
+.confetti{
+  transform: translateY(-140px);
+}
+
+@keyframes press {
+  0% {
+    opacity: 1;
+    background-color: #7c759a;
+  }
+
+  15% {
+    background-color: #7c759a;
+  }
+  16% {
+    background-color: #5a556f;
+  }
+
+  17% {
+    background-color: #7c759a;
+  }
+
+  19% {
+    opacity: 1;
+  }
+
+  20%{
+      opacity: 0;
+  }
+
+  100% {
+    opacity: 0  ;
+    background-color: #7c759a;
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: 0;
+  }
+  19% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes complete {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    51% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media only screen and (min-width: 760px) {
+  .spinner{
+    transform: translateX(25px);
+  }
+}

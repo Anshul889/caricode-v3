@@ -1,0 +1,52 @@
+.inner {
+    background: #7c759a;
+    padding: 1em;
+    border-radius: 4px;
+    width: 275px;
+    clip-path: circle(10% at 90% 20%);
+    animation: coolhover 4s linear infinite forwards;
+    cursor: pointer;
+    margin: 20px auto; 
+    height: 120px;
+}
+
+.brandh {
+    color: white;
+    margin: 0;
+}
+
+.brandp {
+    color: white;
+    font-size: .8rem;
+    text-align: start!important;
+}
+.brands {
+    float: right;
+    color: white;
+    font-weight: bold;
+    transition: color .5s;
+    position: relative;
+    margin-right: 3.5%;
+    transform: translateX(-2.5px);
+}
+
+@keyframes coolhover {
+    0%{
+        clip-path: circle(10% at 90% 20%);
+    }
+    20%{
+        clip-path: circle(10% at 90% 20%);
+    }
+    29%{
+        clip-path: circle(75%);
+    }
+    75%{
+        clip-path: circle(75%);
+    }
+    84%{
+        clip-path: circle(10% at 90% 20%);
+    }
+    100%{
+        clip-path: circle(10% at 90% 20%);
+    }
+}
