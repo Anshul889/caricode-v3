@@ -9,6 +9,7 @@ import Icons from '../components/Lotties/Icons/Icons'
 import Informative from '../components/Lotties/Informative/Informative'
 import Olympics from '../components/Lotties/Olympics/Olympics'
 import TabMotion from '../components/Lotties/TabMotion/TabMotion'
+import { Facebook } from 'react-content-loader'
 import SEO from '../components/Seo/Seo'
 import {
   Animation,
@@ -29,6 +30,8 @@ import {
   PrinciplesHeading,
   Showcase,
 } from '../styles/uiux-style'
+import Failed from '../components/Lotties/Failed/Failed'
+import Blur from '../components/Lotties/Blur/Blur'
 
 const UiUx = () => {
   return (
@@ -95,7 +98,7 @@ const UiUx = () => {
           <InnerStyles>
             <h2>Showcase</h2>
             <Hierarchy>
-            <TabMotion />
+              <TabMotion />
               <h4>Hierarchy</h4>
               <p>
                 Motion helps orient users by showing how elements in a
@@ -105,7 +108,7 @@ const UiUx = () => {
               </p>
             </Hierarchy>
             <Brand>
-            <Branding />
+              <Branding />
               <h4>Brand Expression</h4>
               <p>Motion is used to express a brand’s personality and style.</p>
             </Brand>
@@ -132,6 +135,7 @@ const UiUx = () => {
             <Feedback>
               <FeedbackInner>
                 <div>
+                  <Failed />
                   <h4>Feedback and status</h4>
                   <p>Ui animations make system errors more palatable.</p>
                 </div>
@@ -140,12 +144,14 @@ const UiUx = () => {
                     Motion provides timely feedback and indicates the status of
                     user or system actions.
                   </p>
+                  <Facebook foregroundColor="#7c759a" speed="2" />
                   <p>
                     Animated list items are placeholders that convey content is
                     loading.
                   </p>
                 </div>
                 <div>
+                  <Blur />
                   <p>
                     Efficiently load images to speed up the initial load and
                     save bandwidth. Hold the image position so your page doesn’t

@@ -167,7 +167,18 @@ export const IconsDiv = styled.div`
   padding-bottom: 1px;
 `
 export const Illustrations = styled.div``
-export const Icon = styled.div``
-export const MemorableDiv = styled.div``
-export const Feedback = styled.div``
+export const Icon = styled.div`
+  margin-bottom: 45px;
+`
+export const MemorableDiv = styled.div`
+  margin-bottom: 45px;
+`
+export const Feedback = styled.div`
+  width: 80%;
+  margin: 40px auto;
+  max-width: 1080px;
+  padding: 5%;
+  background-color: white;
+  border-radius: 30px;
+`
 export const FeedbackInner = styled.div``
