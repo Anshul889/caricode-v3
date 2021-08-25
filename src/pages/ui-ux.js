@@ -14,24 +14,44 @@ import SEO from '../components/Seo/Seo'
 import {
   Animation,
   Brand,
+  Desktop,
   Feedback,
   FeedbackInner,
   Hierarchy,
   Icon,
+  IconAnimations,
   IconsDiv,
   Illustrations,
   InnerStyles,
+  ItemFour,
+  ItemOne,
+  ItemText,
+  ItemThree,
+  ItemTwo,
   MemorableDiv,
   Mobile,
   Olydiv,
+  OneAnimation,
   Performance,
   Principle,
   Principles,
   PrinciplesHeading,
+  Second,
+  SecondHeader,
   Showcase,
+  ShowcaseOne,
+  ShowcaseTwo,
+  TwoAnimation,
 } from '../styles/uiux-style'
 import Failed from '../components/Lotties/Failed/Failed'
 import Blur from '../components/Lotties/Blur/Blur'
+import ReactLogo from '../components/Lotties/ReactLogo/ReactLogo'
+import Bookmark from '../components/Lotties/Bookmark/Bookmark'
+import Burger from '../components/Lotties/Burger/Burger'
+import Upvote from '../components/Lotties/Upvote/Upvote'
+import Star from '../components/Lotties/Star/Star'
+import DFailed from '../components/Lotties/DFailed/DFailed'
+import UiKit from '../components/UiKit/UiKit'
 
 const UiUx = () => {
   return (
@@ -163,6 +183,71 @@ const UiUx = () => {
           </InnerStyles>
         </Showcase>
       </Mobile>
+      <Desktop>
+        <Second>
+          <SecondHeader>
+            <h2>Showcase</h2>
+            <p>
+              Here’s a selection a some of our coolest animations and motions
+            </p>
+            <ShowcaseOne>
+              <ItemOne>
+                <OneAnimation>
+                  <TabMotion />
+                </OneAnimation>
+                <ItemText>
+                  <h3>HIERARCHY</h3>
+                  <p>
+                    Motion helps orient users by showing how elements in a
+                    transition are related. Motion indicates the hierarchical
+                    relationship between “Caricode” and Alt Colors,” peer items
+                    in the navigation
+                  </p>
+                </ItemText>
+              </ItemOne>
+              <ItemTwo>
+                <TwoAnimation>
+                  <ReactLogo />
+                </TwoAnimation>
+                <ItemText>
+                  <h3>BRAND EXPRESSION</h3>
+                  <p>
+                    Motion is used to express a brand’s personality and style.
+                    Need a few lines on animated logos.
+                  </p>
+                </ItemText>
+              </ItemTwo>
+            </ShowcaseOne>
+            <ShowcaseTwo>
+              <ItemThree>
+                <IconAnimations>
+                  <Bookmark />
+                  <Burger />
+                  <Upvote />
+                  <Star />
+                </IconAnimations>
+                <ItemText>
+                  <h3>Icons and Illustrations</h3>
+                  <p>
+                    Subtle animation in icons, illustrations, and product logos
+                    can add polish and playfulness to the user experience.
+                  </p>
+                </ItemText>
+              </ItemThree>
+              <ItemFour>
+                <OneAnimation>
+                  <DFailed />
+                </OneAnimation>
+                <ItemText>
+                  <h3>Feedback and Status</h3>
+                  <p>Ui animations make system errors more palatable.</p>
+                </ItemText>
+              </ItemFour>
+            </ShowcaseTwo>
+          </SecondHeader>
+        </Second>
+      </Desktop>
+      <UiKit />
     </Layout>
   )
 }

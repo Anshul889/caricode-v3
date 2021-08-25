@@ -182,3 +182,105 @@ export const Feedback = styled.div`
   border-radius: 30px;
 `
 export const FeedbackInner = styled.div``
+
+export const Second = styled.div`
+  background-color: #f5f5f5;
+  padding: 48px 0;
+`
+
+export const SecondHeader = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    line-height: 50px;
+    margin: 0.96em 0 24px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  p {
+    width: 90%;
+    margin: 24px auto 24px auto;
+    text-align: center;
+    font-size: 17px;
+  }
+`
+
+export const ShowcaseOne = styled.div`
+  display: grid;
+  grid-template-columns: 440px 2fr;
+  padding-top: 40px;
+  column-gap: 30px;
+`
+
+export const ItemOne = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 5%;
+  padding-right: 13px;
+  border-radius: 30px;
+`
+
+export const OneAnimation = styled.div`
+  display: grid;
+  place-content: center;
+  height: 300px;
+`
+
+export const ItemText = styled.div`
+  h3 {
+    text-align: center
+  }
+  p {
+  }
+`
+
+export const ItemTwo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 5%;
+  border-radius: 30px;
+  grid-template-rows: 300px 179px;
+`
+
+export const TwoAnimation = styled.div`
+  transform: scale(1.3);
+  display: grid;
+  place-content: center;
+  height: 300px;
+`
+
+export const ShowcaseTwo = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 40px;
+  column-gap: 30px;
+`
+
+export const ItemThree = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 7%;
+  border-radius: 30px;
+`
+
+export const IconAnimations = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`
+
+export const ItemFour = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  padding: 7%;
+  border-radius: 30px;
+`

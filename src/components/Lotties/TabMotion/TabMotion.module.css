@@ -54,15 +54,15 @@
 
 .pitem {
   background-color: #7c759a;
-  height: calc(86vw / 3 - 30px);
-  width: calc(86vw / 3 - 30px);
+  height: calc(90vw / 3 - 30px);
+  width: calc(90vw / 3 - 30px);
   margin: 15px;
   border-radius: 4px;
 }
 
 .citem {
-  height: calc(86vw / 3 - 30px);
-  width: calc(86vw / 3 - 30px);
+  height: calc(90vw / 3 - 30px);
+  width: calc(90vw / 3 - 30px);
   margin: 15px;
   border-radius: 4px;
 }
