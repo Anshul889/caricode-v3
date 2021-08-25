@@ -15,17 +15,28 @@ export const PrinciplesHeading = styled.div`
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 0.2em;
-    line-height: 1.5;
-    margin: 0.96em 0 0.96em 0;
+    letter-spacing: 0.15em;
+    line-height: 40px;
+    margin: 0.96em 0 24px 0;
     text-transform: uppercase;
     text-align: center;
+    font-size: 36px;
   }
 
   p {
     width: 90%;
-    margin: 0 auto;
+    margin: 24px auto 48px auto;
     text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+    }
+    p{
+      font-size: 17px;
+    }
   }
 `
 export const Principles = styled.div`
@@ -48,6 +59,7 @@ export const Principle = styled.div`
   grid-template-columns: 1fr;
   background-color: white;
   padding: 5%;
+  padding-bottom: 13%;
   border-radius: 30px;
   h4 {
     margin-top: 15px;
@@ -56,10 +68,12 @@ export const Principle = styled.div`
   }
   p {
     text-align: center;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 80px 120px;
+    grid-template-rows: 200px 80px 150px;
+    padding-bottom: 5%;
   }
 `
 
@@ -67,7 +81,40 @@ export const Animation = styled.div``
 
 export const Performance = styled.div`
   h2 {
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 40px;
+    margin: 64px auto 24px auto;
+    text-transform: none;
+    text-align: center;
+    font-size: 36px;
+    max-width: 1200px;
+    width: 90%;
   }
+
   p {
+    width: 90%;
+    margin: 24px auto 48px auto;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    h2 {
+      font-size: 48px;
+      line-height: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+    p{
+      font-size: 17px;
+    }
+  }
+`
+
+export const Olydiv = styled.div`
+  @media screen and (min-width: 768px) {
+    width: 50%;
+    margin: 0 auto;
   }
 `

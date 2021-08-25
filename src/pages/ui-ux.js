@@ -4,10 +4,12 @@ import Layout from '../components/Layout/Layout'
 import Expressive from '../components/Lotties/Expressive/Expressive'
 import Focused from '../components/Lotties/Focused/Focused'
 import Informative from '../components/Lotties/Informative/Informative'
+import Olympics from '../components/Lotties/Olympics/Olympics'
 import SEO from '../components/Seo/Seo'
 import {
   Animation,
   Mobile,
+  Olydiv,
   Performance,
   Principle,
   Principles,
@@ -70,6 +72,9 @@ const UiUx = () => {
           You can go forward, backward, and most importantly you can program
           your animation to respond to any interaction.
         </p>
+        <Olydiv>
+          <Olympics />
+        </Olydiv>
       </Performance>
     </Layout>
   )
