@@ -290,7 +290,31 @@ button {
   }
 }
 
+.parallaxcontainer::-webkit-scrollbar {
+  display: none;
+}
+
+.parallaxcontainer {
+  -ms-overflow-style: none;
+  color: white;
+}
+
+.parallaxdesktop {
+  display: none;
+  -ms-overflow-style: none;
+}
+
+.parallaxdesktop::-webkit-scrollbar {
+  display: none;
+}
+
 @media only screen and (min-width: 830px) {
+  .parallaxcontainer {
+    display: none;
+  }
+  .parallaxdesktop {
+    display: block;
+  }
   textarea {
     margin-bottom: 30px;
     padding: 5px 10px;

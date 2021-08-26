@@ -1,0 +1,38 @@
+.banner{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bannerimage{
+    width: 100%;
+    overflow: hidden;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    z-index: -1;
+}
+
+.image{
+    width: 100%;
+}
+
+.filter{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    height: 600px;
+    width: 100%;
+    background-color: #1e2731;
+    opacity: 0.65;
+    z-index: 100;
+}
+
+.herotext {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    place-self: center;
+    height: 200px;
+    width: 50%;
+    color: white;
+    z-index: 101;
+}
+
