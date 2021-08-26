@@ -38,6 +38,7 @@ import {
   Olydiv,
   OneAnimation,
   Performance,
+  Pinterest,
   Principle,
   Principles,
   PrinciplesHeading,
@@ -61,6 +62,9 @@ import DFailed from '../components/Lotties/DFailed/DFailed'
 import UiKit from '../components/UiKit/UiKit'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+import AirbnbLottie from '../components/Lotties/Airbnb/AirbnbLottie'
+import DuoLingoLottie from '../components/Lotties/Duolingo/Duolingo'
+import PinterestLottie from '../components/Lotties/Pinterest/Pinterest'
 
 const getImages = graphql`
   {
@@ -292,12 +296,13 @@ const UiUx = () => {
         <EvwhInner>
           <BigItem>
             <Airbnb>
-              <Img fluid={data.airbnb.childImageSharp.fluid} />
+              <AirbnbLottie />
+              <h3>Airbnb</h3>
             </Airbnb>
           </BigItem>
           <SmallItem>
             <Duolingo>
-              <Img fluid={data.image1.childImageSharp.fluid} />
+              <DuoLingoLottie />
             </Duolingo>
           </SmallItem>
           <SmallItemText>
@@ -306,9 +311,9 @@ const UiUx = () => {
             learning.”
           </SmallItemText>
           <SmallItem>
-            <Duolingo>
-              <Img fluid={data.headspace.childImageSharp.fluid} style={{borderRadius: '10px'}} />
-            </Duolingo>
+            <Pinterest>
+              <PinterestLottie />
+            </Pinterest>
           </SmallItem>
           <SmallItemText>
             “Embracing animations allows me to deepen otherwise static graphics

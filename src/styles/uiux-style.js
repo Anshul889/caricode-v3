@@ -289,7 +289,7 @@ export const Everywhere = styled(Performance)`
   background-color: #f5f5f5;
   h2 {
     margin-top: 0;
-    padding-top:64px;
+    padding-top: 64px;
   }
 `
 
@@ -303,40 +303,57 @@ export const EvwhInner = styled.div`
   grid-gap: 30px;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr max-content 1fr max-content;
+    grid-template-rows: 225px 225px max-content 225px max-content;
   }
 `
 
 export const BigItem = styled.div`
   background-color: rgb(255, 90, 111);
-  border-radius: 30px;
+  border-radius: 10px;
   display: grid;
   @media screen and (min-width: 768px) {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    border-radius: 30px;
   }
 `
 
 export const SmallItem = styled.div`
+  background-color: white;
+  border-radius: 10px;
   @media screen and (min-width: 768px) {
     grid-column: 2 / span 1;
   }
 `
 
+export const Pinterest = styled(SmallItem)`
+  background-color: #f2304d;
+`
+
 export const Airbnb = styled.div`
   place-self: center;
   width: 40%;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  h3 {
+    margin-top: 0px;
+  }
   @media screen and (min-width: 768px) {
     width: 60%;
+    font-size: 28px;
   }
 `
 
 export const Duolingo = styled.div`
   grid-column: 2 / span 1;
+  border-radius: 10px;
 `
 
 export const Headspace = styled.div`
   grid-column: 2 / span 1;
+  border-radius: 10px;
+  background-color: red;
 `
 
 export const SmallItemText = styled.div`
