@@ -110,8 +110,6 @@ export const Performance = styled.div`
     h2 {
       font-size: 48px;
       line-height: 50px;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
     }
     p {
       font-size: 17px;
@@ -189,6 +187,7 @@ export const Second = styled.div`
 `
 
 export const SecondHeader = styled.div`
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   h2 {
@@ -235,7 +234,7 @@ export const OneAnimation = styled.div`
 
 export const ItemText = styled.div`
   h3 {
-    text-align: center
+    text-align: center;
   }
   p {
   }
@@ -283,4 +282,70 @@ export const ItemFour = styled.div`
   background-color: white;
   padding: 7%;
   border-radius: 30px;
+`
+
+export const Everywhere = styled(Performance)`
+  padding-bottom: 50px;
+  background-color: #f5f5f5;
+  h2 {
+    margin-top: 0;
+    padding-top:64px;
+  }
+`
+
+export const EvwhInner = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.8fr;
+  grid-template-rows: 1fr 1fr;
+  width: 90%;
+  margin: 30px auto;
+  max-width: 1200px;
+  grid-gap: 30px;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr max-content 1fr max-content;
+  }
+`
+
+export const BigItem = styled.div`
+  background-color: rgb(255, 90, 111);
+  border-radius: 30px;
+  display: grid;
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+`
+
+export const SmallItem = styled.div`
+  @media screen and (min-width: 768px) {
+    grid-column: 2 / span 1;
+  }
+`
+
+export const Airbnb = styled.div`
+  place-self: center;
+  width: 40%;
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
+`
+
+export const Duolingo = styled.div`
+  grid-column: 2 / span 1;
+`
+
+export const Headspace = styled.div`
+  grid-column: 2 / span 1;
+`
+
+export const SmallItemText = styled.div`
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+  line-height: 25px;
+  @media screen and (min-width: 768px) {
+    grid-column: 3 / span 1;
+    margin-top: 50px;
+  }
 `

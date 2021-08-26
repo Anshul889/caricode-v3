@@ -12,9 +12,14 @@ import TabMotion from '../components/Lotties/TabMotion/TabMotion'
 import { Facebook } from 'react-content-loader'
 import SEO from '../components/Seo/Seo'
 import {
+  Airbnb,
   Animation,
+  BigItem,
   Brand,
   Desktop,
+  Duolingo,
+  Everywhere,
+  EvwhInner,
   Feedback,
   FeedbackInner,
   Hierarchy,
@@ -41,6 +46,8 @@ import {
   Showcase,
   ShowcaseOne,
   ShowcaseTwo,
+  SmallItem,
+  SmallItemText,
   TwoAnimation,
 } from '../styles/uiux-style'
 import Failed from '../components/Lotties/Failed/Failed'
@@ -52,8 +59,37 @@ import Upvote from '../components/Lotties/Upvote/Upvote'
 import Star from '../components/Lotties/Star/Star'
 import DFailed from '../components/Lotties/DFailed/DFailed'
 import UiKit from '../components/UiKit/UiKit'
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+
+const getImages = graphql`
+  {
+    image1: file(relativePath: { eq: "duolingo.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    headspace: file(relativePath: { eq: "headspace.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    airbnb: file(relativePath: { eq: "airbnb.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const UiUx = () => {
+  const data = useStaticQuery(getImages)
   return (
     <Layout>
       <SEO
@@ -247,6 +283,39 @@ const UiUx = () => {
           </SecondHeader>
         </Second>
       </Desktop>
+      <Everywhere>
+        <h2>Animations are everywhere</h2>
+        <p>
+          Big tech companies use animations to boost conversions and engage
+          users with powerful motion design experiences.
+        </p>
+        <EvwhInner>
+          <BigItem>
+            <Airbnb>
+              <Img fluid={data.airbnb.childImageSharp.fluid} />
+            </Airbnb>
+          </BigItem>
+          <SmallItem>
+            <Duolingo>
+              <Img fluid={data.image1.childImageSharp.fluid} />
+            </Duolingo>
+          </SmallItem>
+          <SmallItemText>
+            “By leveraging animations, we can provide a whole experience.
+            Animations help us keep users engaged, delighted, and always
+            learning.”
+          </SmallItemText>
+          <SmallItem>
+            <Duolingo>
+              <Img fluid={data.headspace.childImageSharp.fluid} style={{borderRadius: '10px'}} />
+            </Duolingo>
+          </SmallItem>
+          <SmallItemText>
+            “Embracing animations allows me to deepen otherwise static graphics
+            into moments of joy.”
+          </SmallItemText>
+        </EvwhInner>
+      </Everywhere>
       <UiKit />
     </Layout>
   )
