@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import animationData from './responsive.json'
+import animationData from './responsive-alt.json'
 
 const defaultOptions = {
   loop: true,
