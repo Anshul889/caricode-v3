@@ -19,7 +19,7 @@ const Olympics = () => {
 
   return (
     <Animation>
-      <VisibilitySensor offset={{bottom: 100}} onChange={() => setPause(!pause)}>
+      <VisibilitySensor offset={{bottom: -50, top: -100}} onChange={() => setPause(!pause)}>
         <Lottie
           options={defaultOptions}
           width={'90%'}
