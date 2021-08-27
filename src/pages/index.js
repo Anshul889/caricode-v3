@@ -1,3 +1,4 @@
+import { navigate } from 'gatsby'
 import * as React from 'react'
 import { Button } from '../components/Button/Button'
 import Contact from '../components/Contact/Contact'
@@ -44,7 +45,7 @@ const IndexPage = () => {
             </IconAnimations>
             <h4>User Experience</h4>
             <p>Gold standard animations to suit your brand</p>
-            <Button secondary style={{ width: '200px', margin: '0 auto' }}>
+            <Button onClick={() => {navigate("/ui-ux/")}} secondary style={{ width: '200px', margin: '0 auto' }}>
               Learn More
             </Button>
           </Item>
@@ -57,7 +58,7 @@ const IndexPage = () => {
               Create amazing experiences for the web in record time—without
               thinking once about servers or devops.
             </p>
-            <Button secondary style={{ width: '200px', margin: '0 auto' }}>
+            <Button onClick={() => {navigate("/web-applications/")}} secondary style={{ width: '200px', margin: '0 auto' }}>
               Learn More
             </Button>
           </Item>
@@ -71,7 +72,7 @@ const IndexPage = () => {
               customers. Our apps are backed by robust, scalable technology to
               deliver customer engagement and return on your investment
             </p>
-            <Button secondary style={{ width: '200px', margin: '0 auto' }}>
+            <Button onClick={() => {navigate("/ecommerce/")}} secondary style={{ width: '200px', margin: '0 auto' }}>
               Learn More
             </Button>
           </Item>
