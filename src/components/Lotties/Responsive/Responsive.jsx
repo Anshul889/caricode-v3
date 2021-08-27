@@ -18,6 +18,7 @@ const ResponsiveLottie = () => {
         options={defaultOptions}
         isStopped={false}
         height={250}
+        speed={1.3}
       />
     </div>
   )
