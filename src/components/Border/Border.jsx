@@ -13,7 +13,9 @@ const AnimatedBorder = styled.div`
 const Border = () => {
   return (
     <div>
-      <VisibilitySensor>
+      <VisibilitySensor  offset={{
+          bottom: 300
+        }}>
         {({ isVisible }) => (
           <Spring
             from={{ width: '1px', marginBottom: '20px' }}
