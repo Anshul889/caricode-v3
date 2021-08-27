@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Button } from '../components/Button/Button'
 import Contact from '../components/Contact/Contact'
 import Banner from '../components/Home/Banner'
 import Layout from '../components/Layout/Layout'
@@ -20,6 +21,8 @@ import {
   IconAnimations,
   InnerStyles,
   Item,
+  Learn,
+  SalesAnimation,
   SectionTwo,
 } from '../styles/index-style'
 
@@ -41,6 +44,9 @@ const IndexPage = () => {
             </IconAnimations>
             <h4>User Experience</h4>
             <p>Gold standard animations to suit your brand</p>
+            <Button secondary style={{ width: '200px', margin: '0 auto' }}>
+              Learn More
+            </Button>
           </Item>
           <Item>
             <Animation>
@@ -51,17 +57,23 @@ const IndexPage = () => {
               Create amazing experiences for the web in record time—without
               thinking once about servers or devops.
             </p>
+            <Button secondary style={{ width: '200px', margin: '0 auto' }}>
+              Learn More
+            </Button>
           </Item>
           <Item>
-            <Animation>
+            <SalesAnimation>
               <SalesLottie />
-            </Animation>
+            </SalesAnimation>
             <h4>Ecommerce</h4>
             <p>
               We build ecommerce apps that deliver an amazing experience to your
               customers. Our apps are backed by robust, scalable technology to
               deliver customer engagement and return on your investment
             </p>
+            <Button secondary style={{ width: '200px', margin: '0 auto' }}>
+              Learn More
+            </Button>
           </Item>
         </InnerStyles>
       </SectionTwo>

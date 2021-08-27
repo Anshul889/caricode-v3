@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Button = styled.button`
   color: white;
@@ -19,4 +19,20 @@ export const Button = styled.button`
   transition-duration: 0.4s;
   cursor: pointer;
   text-transform: uppercase;
-`;
+  ${(props) =>
+    props.secondary &&
+    css`
+      display: block;
+      background: white;
+      color: black;
+      border: 1px solid rgba(104, 104, 104, 0.15);
+      cursor: pointer;
+      display: inline-block;
+      font-size: 0.75em;
+      font-weight: 400;
+      height: 3.7em;
+      letter-spacing: 0.13em;
+      padding: 0.375rem
+      width: 200px;
+    `};
+`

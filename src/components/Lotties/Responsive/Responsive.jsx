@@ -13,12 +13,11 @@ const defaultOptions = {
 
 const ResponsiveLottie = () => {
   return (
-    <div style={{height: '250px', overflow:'hidden', transform: 'translateY(-20px)'}}>
+    <div style={{height: '250px', transform: 'translateY(-20px)'}}>
       <Lottie
         options={defaultOptions}
         isStopped={false}
         height={250}
-        speed={0.5}
       />
     </div>
   )
