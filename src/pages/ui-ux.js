@@ -17,6 +17,7 @@ import {
   BigItem,
   Brand,
   Desktop,
+  Drag,
   Duolingo,
   Everywhere,
   EvwhInner,
@@ -33,6 +34,7 @@ import {
   ItemText,
   ItemThree,
   ItemTwo,
+  Loader,
   MemorableDiv,
   Mobile,
   Olydiv,
@@ -64,6 +66,8 @@ import { graphql, useStaticQuery } from 'gatsby'
 import AirbnbLottie from '../components/Lotties/Airbnb/AirbnbLottie'
 import DuoLingoLottie from '../components/Lotties/Duolingo/Duolingo'
 import PinterestLottie from '../components/Lotties/Pinterest/Pinterest'
+import LoaderLottie from '../components/Lotties/Loader/Loader'
+import DragLottie from '../components/Lotties/Drag/Drag'
 
 const getImages = graphql`
   {
@@ -198,12 +202,17 @@ const UiUx = () => {
                   <h4>Feedback and status</h4>
                   <p>Ui animations make system errors more palatable.</p>
                 </div>
+                  <Drag>
+                    <DragLottie />
+                  </Drag>
                 <div>
                   <p>
-                    Motion provides timely feedback and indicates the status of
-                    user or system actions.
+                    Motion of a card makes selection, positioning, and release
+                    visible.
                   </p>
-                  <Facebook foregroundColor="#7c759a" speed="2" />
+                  <Loader>
+                    <LoaderLottie />
+                  </Loader>
                   <p>
                     Animated list items are placeholders that convey content is
                     loading.

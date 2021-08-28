@@ -1,5 +1,5 @@
 .blurimage {
-  border-radius: 4px;
+  border-radius: 10px;
   width: 100%;
   animation: blurimage 4s linear infinite forwards;
 }

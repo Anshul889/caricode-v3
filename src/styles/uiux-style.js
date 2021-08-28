@@ -284,6 +284,10 @@ export const ItemFour = styled.div`
   border-radius: 30px;
 `
 
+export const Loader = styled.div``
+
+export const Drag = styled.div``
+
 export const Everywhere = styled(Performance)`
   padding-bottom: 50px;
   background-color: #f5f5f5;
