@@ -246,7 +246,7 @@ export const ItemTwo = styled.div`
   background-color: white;
   padding: 5%;
   border-radius: 30px;
-  grid-template-rows: 300px 179px;
+  grid-template-rows: 287px 179px;
 `
 
 export const TwoAnimation = styled.div`
@@ -269,6 +269,7 @@ export const ItemThree = styled.div`
   background-color: white;
   padding: 7%;
   border-radius: 30px;
+  grid-template-rows: 300px 179px;
 `
 
 export const IconAnimations = styled.div`
@@ -282,6 +283,7 @@ export const ItemFour = styled.div`
   background-color: white;
   padding: 7%;
   border-radius: 30px;
+  grid-template-rows: 300px 179px;
 `
 
 export const Loader = styled.div``
