@@ -264,7 +264,7 @@ const UiKit = () => {
             </div>
           )}
           {theme.bg == '#a4373a' && (
-            <div className={styles.toggle}>
+            <div>
               <form>
                 <label className={styles.redswitch}>
                   <input type="checkbox" />
@@ -274,7 +274,7 @@ const UiKit = () => {
             </div>
           )}
           {theme.bg == '#7c759a' && (
-            <div className={styles.toggle}>
+            <div>
               <form>
                 <label className={styles.purpleswitch}>
                   <input type="checkbox" />
@@ -284,7 +284,7 @@ const UiKit = () => {
             </div>
           )}
           {theme.bg == '#0078d4' && (
-            <div className={styles.toggle}>
+            <div>
               <form>
                 <label className={styles.blueswitch}>
                   <input type="checkbox" />
@@ -294,7 +294,7 @@ const UiKit = () => {
             </div>
           )}
           {theme.bg == '#008272' && (
-            <div className={styles.toggle}>
+            <div>
               <form>
                 <label className={styles.greenswitch}>
                   <input type="checkbox" />
@@ -304,7 +304,7 @@ const UiKit = () => {
             </div>
           )}
           {theme.bg == 'white' && (
-            <div className={styles.toggle}>
+            <div>
               <form>
                 <label className={styles.whiteswitch}>
                   <input type="checkbox" />
@@ -314,7 +314,7 @@ const UiKit = () => {
             </div>
           )}
           {theme.bg == 'black' && (
-            <div className={styles.toggle}>
+            <div>
               <form>
                 <label className={styles.blackswitch}>
                   <input type="checkbox" />
