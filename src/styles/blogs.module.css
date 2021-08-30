@@ -1,0 +1,679 @@
+.main h1 {
+  font-weight: 400;
+}
+
+.main h2 {
+  font-size: 36px;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main {
+  margin-bottom: 50px;
+}
+
+.ctrposition {
+  padding: 38px 0;
+  background-color: #484459;
+  color: white;
+}
+
+.pieouter {
+  display: grid;
+  place-content: center;
+}
+
+.mainorganic {
+  padding: 38px 0;
+  border-bottom: 1px solid rgba(144, 144, 144, 0.15);
+}
+
+.startonline {
+  padding: 38px 0;
+}
+
+.finner {
+  display: grid;
+}
+
+.searchbar {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  background-color: white;
+  place-content: center;
+  place-items: center;
+  border-radius: 5px;
+  height: 50px;
+  padding-right: 5px;
+  grid-gap: 7px;
+  margin-bottom: 15px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 680px;
+  grid-row: 2;
+}
+
+.searchanimation {
+  display: none;
+}
+
+.searchbar input {
+  background-color: white;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+.searchbar img {
+  width: 92px;
+  padding-left: 5px;
+}
+
+.contentmeasure {
+  padding-top: 38px;
+  padding-bottom: 15px;
+  background-color: #484459;
+  color: white;
+}
+
+.organicclicks {
+  padding: 15px 5px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dot {
+  color: black;
+}
+
+.webaddress {
+  color: #202124;
+}
+
+.adwarning {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  column-gap: 10px;
+  line-height: 1.5;
+}
+
+.searchresultred {
+  background-color: hsl(0, 67%, 70%, 0.8);
+  border-radius: 10px;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.searchresultgreen {
+  background-color: rgba(156, 230, 127, 0.8);
+  border-radius: 10px;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.ad {
+  color: #202124;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.title {
+  color: #1a0dab;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.description {
+  color: #4d5156;
+}
+
+.main table {
+  text-align: center;
+  width: 100%;
+  background-color: #484459;
+  border-radius: 10px;
+  padding: 10px 0;
+  color: white;
+}
+
+.main th {
+  width: 50%;
+}
+
+.increase {
+  color: #2ddde6;
+}
+
+.main h1,
+h2 {
+  text-transform: none;
+}
+
+.contentmarketing {
+  padding-bottom: 38px;
+  padding-top: 15px;
+  background-color: #484459;
+  color: white;
+}
+
+.ctrtable {
+  padding: 38px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.snippets {
+  padding: 38px 0;
+  margin-bottom: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.spee {
+  background-color: #484459;
+  color: white;
+  padding: 38px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sitespeed {
+  background-color: #484459;
+  color: white;
+  padding: 38px 0;
+}
+
+.speed {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 30px;
+  padding-top: 15px;
+  justify-content: center;
+}
+
+.speed img {
+  display: block;
+  width: 25px;
+  margin: 0 auto;
+}
+
+.pwaimg {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 20px;
+}
+
+img.pwaicon {
+  display: block;
+  height: 25px;
+  width: 30px;
+  margin: 0 auto;
+}
+
+img.pwaappicon {
+  position: absolute;
+  height: 20px;
+  width: 21px;
+  top: 20%;
+  left: 39%;
+}
+
+.slow {
+  position: relative;
+}
+
+.manimation {
+  width: 95%;
+  margin-bottom: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dhero {
+  display: none;
+}
+
+.usersvg {
+  height: 40px;
+}
+
+.windowsvg {
+  grid-column: 1 / span 3;
+  width: 40%;
+  max-width: 200px;
+}
+
+.socialsharing {
+  padding: 38px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.algodata {
+  padding: 38px 0;
+  background-color: #484459;
+  color: white;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.mhero {
+  height: calc(100vh - 56px - 56px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.mhero h1 {
+  font-size: 36px;
+  text-transform: none;
+  font-weight: 800;
+  line-height: 42px;
+  letter-spacing: -0.4px;
+  width: 60%;
+  margin-left: 7%;
+  margin-top: 40px;
+  margin-bottom: 20vh;
+}
+
+.firstheader {
+  padding: 38px 0;
+  content-visibility: auto;
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  column-gap: 50px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  justify-items: center;
+  column-gap: 20px;
+}
+
+.stats h1 {
+  color: rgb(124, 117, 154);
+  grid-row: 1;
+  margin-bottom: 0;
+  font-size: 46px;
+}
+
+.stats p {
+  margin: 0 auto;
+}
+
+.dslide {
+  display: none;
+}
+
+.featureselected {
+  background-color: white;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-rows: 50px;
+  align-items: center;
+  grid-template-columns: 2fr 1.3fr;
+  font-size: 14px;
+  place-content: center;
+  grid-gap: 10px;
+}
+
+.mfeatures {
+  justify-self: start;
+}
+
+.dfeatureupper {
+  display: none;
+}
+
+.mfeatureupper {
+  display: block;
+  position: fixed;
+  background-color: white;
+  bottom: 100px;
+  border: 1px solid rgba(144, 144, 144, 0.15);
+  height: 50px;
+  width: 100%;
+  z-index: 99;
+}
+
+.loadingform {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.submittedform {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.dwhyonline {
+  display: none;
+}
+
+.dbody {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .main p {
+    font-size: 17px;
+  }
+  .mhero {
+    display: none;
+  }
+  .dhero {
+    display: grid;
+    height: 700px;
+    place-content: center;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .dinner {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      56deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(157, 145, 191, 1) 0%,
+      rgba(187, 135, 135, 0.8911939775910365) 39%,
+      rgba(232, 170, 163, 1) 100%
+    );
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    column-gap: 30px;
+  }
+
+  .dhero h1 {
+    font-size: 48px;
+    text-transform: none;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-top: 20%;
+  }
+
+  .dhero p {
+    margin-left: 5%;
+    margin-bottom: 20%;
+  }
+
+  .dashboard {
+    display: grid;
+    place-content: center;
+  }
+
+  .main {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      133deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(203, 189, 245, 1) 0%,
+      rgba(255, 255, 255, 1) 43%,
+      rgba(248, 199, 195, 1) 100%
+    );
+  }
+
+  .main h2 {
+    font-size: 40px;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .imagesharing {
+    width: 60%;
+    margin: 30px auto;
+  }
+
+  .usersvg {
+    height: 60px;
+  }
+  .whyonline {
+    display: none;
+  }
+
+  .firstheader {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .finner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 60px 120px;
+    height: 450px;
+    grid-template-rows: 150px 150px 150px;
+  }
+
+  .finner h2 {
+    margin-top: 0;
+  }
+
+  .firstheader p {
+    grid-column: 2;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 24px;
+  }
+
+  .searchbar {
+    display: none;
+  }
+
+  .searchanimation {
+    display: block;
+    grid-row: 1 / span 3;
+  }
+
+  .stats {
+    grid-column: 2;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 20px;
+    justify-items: start;
+  }
+
+  .stats h1 {
+    font-size: 64px;
+    margin-bottom: 5px;
+    line-height: 70px;
+  }
+
+  .stats p {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .firstp {
+    grid-row: 2;
+    grid-column: 1 !important;
+  }
+
+  .secondp {
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  .organicclicks {
+    width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-shadow: none;
+  }
+
+  .ctrposition {
+    background-color: lightblue;
+    color: black;
+  }
+  .contentmeasure {
+    background-color: white;
+    color: black;
+  }
+  .contentmarketing {
+    background-color: white;
+    color: black;
+  }
+
+  .howblog {
+    display: none;
+  }
+  .howblog h4 {
+    color: white;
+    margin: 0;
+    padding: 18px 0;
+  }
+  .mainorganic {
+    border-bottom: none;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .searchbar {
+    grid-gap: 30px;
+    padding: 20px;
+  }
+
+  .searchbar input {
+    padding-left: 20px;
+  }
+  .algodata {
+    display: none;
+  }
+  .dslide {
+    display: block;
+    overflow-x: hidden;
+    width: 100%;
+    background-color: #484459;
+  }
+  .ctrtable {
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 500px;
+    justify-items: center;
+  }
+
+  .ctrtable h4 {
+    padding: 18px 0;
+    color: black;
+    place-self: center;
+  }
+  .whyonline {
+    display: none;
+  }
+  .dfeatureupper {
+    display: block;
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+    bottom: 50px;
+    border: 1px solid rgba(144, 144, 144, 0.15);
+    height: 50px;
+    width: 100%;
+    z-index: 1001;
+  }
+
+  .dfeatureupper input {
+    width: 300px;
+    height: 29px;
+  }
+  .mfeatureupper {
+    display: none;
+  }
+  .featureselected {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: 50px;
+    align-items: center;
+    grid-template-columns: 320px 150px;
+    font-size: 14px;
+    place-content: center;
+    max-width: 600px;
+    grid-gap: 30px;
+  }
+  .dwhyonline {
+    display: grid;
+  }
+
+  .dbody {
+    display: block;
+  }
+  .trafficexperience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 90px auto;
+    max-width: 1200px;
+    column-gap: 20px;
+  }
+  .webtraffic {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(142, 148, 248);
+    background: linear-gradient(
+      45deg,
+      rgba(142, 148, 248, 1) 0%,
+      rgba(188, 156, 186, 1) 100%
+    );
+    color: white;
+  }
+
+  .webtraffic h3 {
+    margin: 60px 30px;
+    font-size: 36px;
+  }
+
+  .richexperiences {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: rgb(142, 148, 248);
+    background: linear-gradient(
+      45deg,
+      rgba(142, 148, 248, 1) 0%,
+      rgba(188, 156, 186, 1) 100%
+    );
+    color: white;
+  }
+
+  .richexperiences h3 {
+    margin: 60px 30px;
+    font-size: 36px;
+  }
+
+  .uiux {
+    width: 90%;
+    margin: 90px auto;
+    max-width: 1200px;
+    background-color: white;
+  }
+
+  .uiinner{
+    display: grid;
+    grid-template-columns: 1fr 0.35fr;
+    width: 90%;
+    padding: 40px;
+    margin: 0 auto;
+    column-gap: 60px;
+  }
+
+  .uiux h2{
+    margin: 20px;
+  }
+}
