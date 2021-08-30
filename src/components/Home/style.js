@@ -58,14 +58,14 @@ export const Heading = styled.h1`
   letter-spacing: 0.5px;
   text-align: center;
   @media screen and (min-width: 600px) {
-    font-size: 47px;
+    font-size: 40px;
   }
 `;
 
 export const TagLine = styled.p`
   text-align: center;
   @media screen and (min-width: 600px) {
-    font-size: 26px;
+    font-size: 23px;
   }
 `;
 

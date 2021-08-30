@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const AnimatedBorder = styled.div`
   height: 1px;
-  background-color: rgba(144, 144, 144, 0.25);
+  background-color: rgba(144, 144, 144, 0.45);
   width: 50px;
   margin-left: 1px;
 `
