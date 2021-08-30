@@ -3,7 +3,7 @@ import * as styles from './Icons.module.css'
 
 const Icons = () => {
   return (
-    <div className={styles.outer}>
+    <div>
       <div className={styles.icons}>
         <div className={styles.thumbicon}>
           <svg

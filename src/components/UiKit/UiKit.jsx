@@ -117,7 +117,7 @@ const UiKit = () => {
         </div>
       )}
       <div className={styles.components}>
-        <div className={styles.mobilecomponents}>
+        <div>
           <div className={styles.inputcomponent}>
             {theme.bg == '#a4373a' && (
               <input

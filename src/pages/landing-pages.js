@@ -161,10 +161,7 @@ const LandingPages = () => {
 
         <ParallaxLayer offset={0} speed={0.5}>
           <div className={styles.animation}>
-          <Lottie
-            options={defaultOptions}
-            isStopped={false}
-          />
+            <Lottie options={defaultOptions} isStopped={false} />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0.65} speed={0.1}>
@@ -189,7 +186,7 @@ const LandingPages = () => {
                 to={{ opacity: isVisible ? 1 : 0 }}
                 delay={1000}
               >
-                {props => (
+                {(props) => (
                   <img
                     src={question}
                     className={styles.questionimg}
@@ -205,12 +202,10 @@ const LandingPages = () => {
           <img src={user} className={styles.specificuser} alt="" />
         </ParallaxLayer>
         <ParallaxLayer offset={1.58} speed={0}>
-          <h4 className={`${styles.paragraph} ${styles.specific}`}>
-            Be specific
-          </h4>
+          <h4 className={`${styles.paragraph} `}>Be specific</h4>
         </ParallaxLayer>
         <ParallaxLayer offset={1.65} speed={0}>
-          <p className={`${styles.paragraph} ${styles.specific}`}>
+          <p className={`${styles.paragraph} `}>
             The paradox of choice reveals that less is more. Too many options
             will often hinder people from making a choice. If your landing page
             design is focused on a single purpose, you’re helping your customers
@@ -344,13 +339,13 @@ const LandingPages = () => {
                   }}
                   delay={500}
                 >
-                  {props => (
+                  {(props) => (
                     <div className={styles.refform} style={props}>
                       <input
                         placeholder={'Email'}
                         className={styles.referralinput}
                       />
-                      <button className={styles.refinvite}>SIGN UP</button>
+                      <button>SIGN UP</button>
                     </div>
                   )}
                 </Spring>
@@ -368,8 +363,8 @@ const LandingPages = () => {
         </ParallaxLayer>
       </Parallax>
       <div className={styles.dlanding}>
-        <LandingHero/>
-        <div className={styles.landingTwo}>
+        <LandingHero />
+        <div>
           <div className={styles.odditem}>
             <div className={styles.colorbg1}>
               <h3>Be specific</h3>
@@ -388,7 +383,7 @@ const LandingPages = () => {
                   }}
                   delay={800}
                 >
-                  {props => (
+                  {(props) => (
                     <div className={styles.oddcontent} style={props}>
                       <p>
                         The paradox of choice reveals that less is more. Too
@@ -421,7 +416,7 @@ const LandingPages = () => {
                   }}
                   delay={800}
                 >
-                  {props => (
+                  {(props) => (
                     <div className={styles.evencontent} style={props}>
                       <p>
                         The design of a website is what drives our first
@@ -454,7 +449,7 @@ const LandingPages = () => {
                   }}
                   delay={800}
                 >
-                  {props => (
+                  {(props) => (
                     <div className={styles.oddcontent} style={props}>
                       <p>
                         People don’t go looking for testimonials. Instead, they
@@ -486,7 +481,7 @@ const LandingPages = () => {
                   }}
                   delay={800}
                 >
-                  {props => (
+                  {(props) => (
                     <div className={styles.evencontent} style={props}>
                       <p>You need to give away valuable content for free</p>
                     </div>
@@ -505,7 +500,7 @@ const LandingPages = () => {
           config={config.slow}
           delay={10000}
         >
-          {props => (
+          {(props) => (
             <div className={styles.dfeatureupper} style={props}>
               {!submitted && !loading && (
                 <div className={styles.featureselected}>
@@ -514,22 +509,12 @@ const LandingPages = () => {
                     autoComplete="email"
                     placeholder="Email"
                     onClick={() => setInputfield(true)}
-                    onChange={e => setEmail(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   {inputField ? (
-                    <button
-                      onClick={() => handleSubmit()}
-                      className={styles.submitecom}
-                    >
-                      Submit
-                    </button>
+                    <button onClick={() => handleSubmit()}>Submit</button>
                   ) : (
-                    <button
-                      className={styles.submitecom}
-                      style={{ opacity: '0.5' }}
-                    >
-                      Submit
-                    </button>
+                    <button style={{ opacity: '0.5' }}>Submit</button>
                   )}
                 </div>
               )}
@@ -586,7 +571,7 @@ const LandingPages = () => {
                           config={config.slow}
                           delay={1500}
                         >
-                          {props => (
+                          {(props) => (
                             <svg
                               aria-hidden="true"
                               focusable="false"
@@ -640,7 +625,7 @@ const LandingPages = () => {
                           config={config.slow}
                           delay={1500}
                         >
-                          {props => (
+                          {(props) => (
                             <svg
                               aria-hidden="true"
                               focusable="false"
@@ -694,7 +679,7 @@ const LandingPages = () => {
                           config={config.slow}
                           delay={1500}
                         >
-                          {props => (
+                          {(props) => (
                             <svg
                               aria-hidden="true"
                               focusable="false"
@@ -756,7 +741,7 @@ const LandingPages = () => {
                         config={config.molasses}
                         delay={800}
                       >
-                        {props => (
+                        {(props) => (
                           <svg
                             aria-hidden="true"
                             focusable="false"
@@ -1153,7 +1138,7 @@ const LandingPages = () => {
                           config={config.slow}
                           delay={1500}
                         >
-                          {props => (
+                          {(props) => (
                             <svg
                               aria-hidden="true"
                               focusable="false"
@@ -1186,7 +1171,7 @@ const LandingPages = () => {
             <div className={styles.emailauto}>
               <div className={styles.inner}>
                 <div className={styles.emailimage}>
-                  <div className={styles.salesgraph}>
+                  <div>
                     <VisibilitySensor>
                       {({ isVisible }) => (
                         <svg height="100" width="100%">
@@ -1199,7 +1184,7 @@ const LandingPages = () => {
                               value2: isVisible ? '0%' : '100%',
                             }}
                           >
-                            {props => (
+                            {(props) => (
                               <line
                                 x1="0"
                                 y1="100"
@@ -1251,7 +1236,7 @@ const LandingPages = () => {
         config={config.slow}
         delay={10000}
       >
-        {props => (
+        {(props) => (
           <div className={styles.mfeatureupper} style={props}>
             {!submitted && !loading && (
               <div className={styles.featureselected}>
@@ -1260,22 +1245,12 @@ const LandingPages = () => {
                   autoComplete="email"
                   placeholder="Email"
                   onClick={() => setInputfield(true)}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 {inputField ? (
-                  <button
-                    onClick={() => handleSubmit()}
-                    className={styles.submitecom}
-                  >
-                    Submit
-                  </button>
+                  <button onClick={() => handleSubmit()}>Submit</button>
                 ) : (
-                  <button
-                    className={styles.submitecom}
-                    style={{ opacity: '0.5' }}
-                  >
-                    Submit
-                  </button>
+                  <button style={{ opacity: '0.5' }}>Submit</button>
                 )}
               </div>
             )}
