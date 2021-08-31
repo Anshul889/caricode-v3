@@ -4,13 +4,17 @@ import SEO from '../components/Seo/Seo'
 import {
   Container,
   Content,
+  FirstItem,
   Heading,
   Inner,
+  Rec,
   Recommended,
-  RecommendedItem,
+  SecondItem,
 } from '../styles/page-style'
 import { FlexibleWidthXYPlot, XAxis, YAxis, LineMarkSeries } from 'react-vis'
 import LoadingSpeed from '../components/LoadingSpeed/LoadingSpeed'
+import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
 const databounce = [
   { x: 0, y: 0 },
@@ -19,7 +23,6 @@ const databounce = [
   { x: 6, y: 106 },
   { x: 10, y: 123 },
 ]
-
 
 const WebPerformance = () => {
   return (
@@ -36,8 +39,8 @@ const WebPerformance = () => {
       />
       <Container>
         <Inner>
-          <Heading>Web Performance</Heading>
           <Content>
+            <Heading>Web Performance</Heading>
             <p>
               At CariCode we believe web performance is crucial for your
               business and fundamental to good user experience. It is crucial
@@ -47,7 +50,9 @@ const WebPerformance = () => {
               internet users. Many of these users access the web over varying
               networks.
             </p>
-            <LoadingSpeed />
+            <p>
+              <LoadingSpeed />
+            </p>
             <p>
               Performance is one of the key challenges faced by most businesses
               on the web. Websites and apps are richer in functionality than
@@ -68,7 +73,7 @@ const WebPerformance = () => {
               success of any online venture, as high performing sites engage and
               retain users better than poorly performing ones.
             </p>
-            <div>
+            <p>
               <FlexibleWidthXYPlot
                 margin={{ left: 60, right: 30 }}
                 height={300}
@@ -81,11 +86,35 @@ const WebPerformance = () => {
                   data={databounce}
                 />
               </FlexibleWidthXYPlot>
-            </div>
+            </p>
           </Content>
           <Recommended>
-            <RecommendedItem></RecommendedItem>
-            <RecommendedItem></RecommendedItem>
+            <Rec>
+              <FirstItem>
+                <Link to="/multi-device-support">
+                  <StaticImage src="../images/image4.jpg" />
+                </Link>
+                <h3>
+                  <Link to="/multi-device-support">Multi Device Support</Link>
+                </h3>
+                <p>
+                  Our responsive designs work behind-the-scenes to give a user a
+                  seamless experience no matter what device they choose.
+                </p>
+              </FirstItem>
+              <SecondItem>
+                <Link to="/base-technologies">
+                  <StaticImage src="../images/image5.jpg" />
+                </Link>
+                <h3>
+                  <Link to="/base-technologies">Base Technologies</Link>
+                </h3>
+                <p>
+                  At CariCode, we build all our web applications with React JS,
+                  a scalable technology developed and maintained by Facebook.
+                </p>
+              </SecondItem>
+            </Rec>
           </Recommended>
         </Inner>
       </Container>

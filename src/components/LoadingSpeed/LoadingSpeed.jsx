@@ -76,7 +76,7 @@ const LoadingSpeed = () => {
                 ></path>
                 <path
                   class="fa-primary"
-                  fill="currentColor"
+                  fill="black"
                   d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
                 ></path>
                 <line
@@ -160,7 +160,7 @@ const LoadingSpeed = () => {
             ></path>
             <path
               class="fa-primary"
-              fill="currentColor"
+              fill="black"
               d="M0 384V48A48 48 0 0 1 48 0h224a48 48 0 0 1 48 48v336z"
             ></path>
           </g>

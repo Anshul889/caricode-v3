@@ -1,18 +1,18 @@
-import styled from "styled-components";
-import { Button } from "../Button/Button";
+import styled from 'styled-components'
+import { Button } from '../Button/Button'
 
 export const Container = styled.div`
   width: 100%;
   overflow: hidden;
   padding-bottom: 45px;
-  background-color: #7c759a;
+  background-color: #696969;
   color: white;
   @media screen and (min-width: 600px) {
     padding-top: 100px;
     padding-bottom: 100px;
     display: grid;
   }
-`;
+`
 
 export const Grid = styled.div`
   @media screen and (min-width: 600px) {
@@ -24,7 +24,7 @@ export const Grid = styled.div`
   @media screen and (min-width: 1600px) {
     height: auto;
   }
-`;
+`
 
 export const Animation = styled.div`
   transform: scale(1.2);
@@ -40,7 +40,7 @@ export const Animation = styled.div`
     transform: scale(1);
     padding-top: 0px;
   }
-`;
+`
 
 export const BannerText = styled.div`
   width: 90%;
@@ -50,7 +50,7 @@ export const BannerText = styled.div`
     place-content: center;
     text-align: start;
   }
-`;
+`
 
 export const Heading = styled.h1`
   font-size: 30px;
@@ -60,19 +60,21 @@ export const Heading = styled.h1`
   @media screen and (min-width: 600px) {
     font-size: 40px;
   }
-`;
+`
 
 export const TagLine = styled.p`
   text-align: center;
   @media screen and (min-width: 600px) {
     font-size: 23px;
   }
-`;
+`
 
 export const GetStarted = styled(Button)`
   display: block;
   margin: 0 auto;
+  background-color: white;
+  color: #444;
   @media screen and (min-width: 600px) {
     display: none;
   }
-`;
+`

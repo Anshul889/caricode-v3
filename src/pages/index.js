@@ -120,7 +120,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/web-performance/')
                 }}
                 secondary
               >
