@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Layout from '../components/Layout/Layout'
 import SEO from '../components/Seo/Seo'
 import {
@@ -14,31 +14,7 @@ import {
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
-const databounce = [
-  { x: 0, y: 0 },
-  { x: 3, y: 32 },
-  { x: 5, y: 90 },
-  { x: 6, y: 106 },
-  { x: 10, y: 123 },
-]
-
-const MultiDeviceSupport = () => {
-  const [myData, setData] = useState([
-    { angle: 1.3, label: 'Mobile' },
-    { angle: 1.3, label: 'Desktop' },
-    { angle: 0.5, label: 'Tablet' },
-  ])
-  useEffect(() => {
-    setTimeout(
-      () =>
-        setData([
-          { angle: 5.1, label: 'Mobile' },
-          { angle: 4.7, label: 'Desktop' },
-          { angle: 0.2, label: 'Tablet' },
-        ]),
-      300
-    )
-  })
+const BaseTechnologies = () => {
   return (
     <Layout>
       <SEO
@@ -191,4 +167,4 @@ const MultiDeviceSupport = () => {
   )
 }
 
-export default MultiDeviceSupport
+export default BaseTechnologies
