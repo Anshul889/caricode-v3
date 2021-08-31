@@ -119,7 +119,7 @@ const MultiDeviceSupport = () => {
                   <StaticImage src="../images/image5.jpg" />
                 </Link>
                 <h3>
-                  <Link to="/multi-device-support">Base Technologies</Link>
+                  <Link to="/base-technologies">Base Technologies</Link>
                 </h3>
                 <p>
                   At CariCode, we build all our web applications with React JS,
@@ -127,11 +127,11 @@ const MultiDeviceSupport = () => {
                 </p>
               </FirstItem>
               <SecondItem>
-                <Link to="/base-technologies">
+                <Link to="/clean-design">
                   <StaticImage src="../images/image6.jpg" />
                 </Link>
                 <h3>
-                  <Link to="/base-technologies">Clean Design</Link>
+                  <Link to="/clean-design">Clean Design</Link>
                 </h3>
                 <p>
                   Mobile users are very goal-oriented. They expect to be able to

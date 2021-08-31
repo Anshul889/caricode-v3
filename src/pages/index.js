@@ -141,7 +141,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/multi-device-support/')
                 }}
                 secondary
               >
