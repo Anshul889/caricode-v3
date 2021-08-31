@@ -163,7 +163,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/base-technologies/')
                 }}
                 secondary
               >
@@ -184,7 +184,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/clean-design/')
                 }}
                 secondary
               >
@@ -205,7 +205,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/custom-functionality/')
                 }}
                 secondary
               >
@@ -227,7 +227,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/progressive-web-apps/')
                 }}
                 secondary
               >

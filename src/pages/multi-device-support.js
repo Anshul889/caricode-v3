@@ -12,13 +12,8 @@ import {
   SecondItem,
 } from '../styles/page-style'
 import {
-  FlexibleWidthXYPlot,
-  XAxis,
-  YAxis,
-  LineMarkSeries,
   RadialChart,
 } from 'react-vis'
-import LoadingSpeed from '../components/LoadingSpeed/LoadingSpeed'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
 
