@@ -11,7 +11,6 @@ export const Inner = styled.div`
   @media screen and (min-width: 768px) {
     grid-template-columns: 3fr 1fr;
     column-gap: 30px;
-    ma
   }
 `
 
