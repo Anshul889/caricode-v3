@@ -137,7 +137,7 @@ const BaseTechnologies = () => {
             <Rec>
               <FirstItem>
                 <Link to="/multi-device-support">
-                  <StaticImage src="../images/image5.jpg" />
+                  <StaticImage src="../images/image6.jpg" />
                 </Link>
                 <h3>
                   <Link to="/clean-design">Clean Design</Link>
@@ -149,7 +149,7 @@ const BaseTechnologies = () => {
               </FirstItem>
               <SecondItem>
                 <Link to="/customised-functionality">
-                  <StaticImage src="../images/image6.jpg" />
+                  <StaticImage src="../images/image7.jpg" />
                 </Link>
                 <h3>
                   <Link to="/custom-functionality">Custom Functionality</Link>
