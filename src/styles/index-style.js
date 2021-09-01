@@ -124,7 +124,7 @@ export const SectionThree = styled.div`
 
 export const Card = styled.div`
   display: grid;
-  grid-template-rows: 185px max-content;
+  grid-template-rows: max-content max-content;
   row-gap: 15px;
   width: 90%;
   margin: 0 auto;

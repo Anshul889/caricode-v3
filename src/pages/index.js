@@ -5,17 +5,17 @@ import { Button } from '../components/Button/Button'
 import Contact from '../components/Contact/Contact'
 import Banner from '../components/Home/Banner'
 import Layout from '../components/Layout/Layout'
-import Bookmark from '../components/Lotties/Bookmark/Bookmark'
+
 import BookmarkSmall from '../components/Lotties/Bookmark/BookmarkSmall'
-import Burger from '../components/Lotties/Burger/Burger'
+
 import BurgerSmall from '../components/Lotties/Burger/BurgerSmall'
 import CartSmall from '../components/Lotties/Cart/CartSmall'
 import NotificationSmall from '../components/Lotties/Notification/NotificationSmall'
 import ResponsiveLottie from '../components/Lotties/Responsive/Responsive'
 import SalesLottie from '../components/Lotties/Sales/SalesLottie'
-import Star from '../components/Lotties/Star/Star'
+
 import StarSmall from '../components/Lotties/Star/Starsmall'
-import Upvote from '../components/Lotties/Upvote/Upvote'
+
 import UpvoteSmall from '../components/Lotties/Upvote/UpvoteSmall'
 import SEO from '../components/Seo/Seo'
 import {
@@ -26,7 +26,6 @@ import {
   IconAnimations,
   InnerStyles,
   Item,
-  Learn,
   SalesAnimation,
   SectionThree,
   SectionThreeContainer,
@@ -120,7 +119,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/web-performance/')
                 }}
                 secondary
               >
@@ -141,7 +140,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/multi-device-support/')
                 }}
                 secondary
               >
@@ -163,7 +162,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/base-technologies/')
                 }}
                 secondary
               >
@@ -184,7 +183,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/clean-design/')
                 }}
                 secondary
               >
@@ -205,7 +204,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/custom-functionality/')
                 }}
                 secondary
               >
@@ -227,7 +226,7 @@ const IndexPage = () => {
               </p>
               <Button
                 onClick={() => {
-                  navigate('/ui-ux/')
+                  navigate('/progressive-web-apps/')
                 }}
                 secondary
               >
