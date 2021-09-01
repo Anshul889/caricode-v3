@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
+import { UxContainer } from '../../../styles/index-style'
 import animationData from './upvote.json'
 
 const defaultOptions = {
@@ -13,9 +14,9 @@ const defaultOptions = {
 
 const UpvoteSmall = () => {
   return (
-    <div style={{ height: '100px', widht: '100px' }}>
+    <UxContainer>
       <Lottie options={defaultOptions} isStopped={false} speed={0.75} />
-    </div>
+    </UxContainer>
   )
 }
 

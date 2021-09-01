@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
+import { UxContainer } from '../../../styles/index-style'
 import animationData from './bookmark.json'
 
 const defaultOptions = {
@@ -11,14 +12,15 @@ const defaultOptions = {
   },
 }
 
+
 const BookmarkSmall = () => {
   return (
-    <div style={{height: '100px', width: '100px'}}>
+    <UxContainer>
       <Lottie
         options={defaultOptions}
         isStopped={false}
       />
-    </div>
+    </UxContainer>
   )
 }
 

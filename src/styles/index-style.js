@@ -102,6 +102,11 @@ export const SectionThreeContainer = styled.div`
   }
 `
 
+export const UxContainer = styled.div`
+height: 100px;
+width: 100px;
+`
+
 export const SectionThree = styled.div`
   display: grid;
   grid-template-columns: 1fr;
