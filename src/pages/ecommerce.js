@@ -11,6 +11,7 @@ import {
   Carousel,
   CarouselContainer,
   CarouselItem,
+  Heading,
   Number,
 } from '../styles/ecommerce-style'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -73,7 +74,7 @@ const Ecommerce = () => {
         </Carousel>
       </CarouselContainer>
       <Cards>
-        <h4>Get started with 3 easy steps</h4>
+        <Heading>Get started with 3 easy steps</Heading>
         <Card>
           <Number>1</Number>
           <h4>Base Features</h4>

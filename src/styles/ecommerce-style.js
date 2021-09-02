@@ -69,6 +69,12 @@ export const Cards = styled.div`
   }
 `
 
+export const Heading = styled.h4`
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / span 3;
+  }
+`
+
 export const Card = styled.div`
   width: 90%;
   margin: 38px auto;
@@ -94,4 +100,8 @@ export const Card = styled.div`
   }
 `
 
-export const Number = styled.div``
+export const Number = styled.div`
+  place-self: center;
+  font-size: 40px;
+  text-align: center;
+`

@@ -104,7 +104,11 @@ const EcommerceTwoSelect = () => {
                     {index + 1}. {item.name}{' '}
                   </span>
                   <span
-                    style={{ color: 'red', textDecoration: 'underline' }}
+                    style={{
+                      color: 'red',
+                      textDecoration: 'underline',
+                      cursor: 'pointer',
+                    }}
                     onClick={() => removeSelected(item)}
                   >
                     Remove
