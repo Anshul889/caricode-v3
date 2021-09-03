@@ -1,4 +1,4 @@
-import { navigate } from 'gatsby'
+import { Link, navigate } from 'gatsby'
 import * as React from 'react'
 import Border from '../components/Border/Border'
 import { Button } from '../components/Button/Button'
@@ -110,7 +110,9 @@ const IndexPage = () => {
               <StaticImage src="../images/image3.jpg" />
             </CardImage>
             <CardText>
-              <h4>Web Performance</h4>
+              <Link to="/web-performance">
+                <h4>Web Performance</h4>
+              </Link>
               <Border />
               <p>
                 Performance plays a significant role in the success of any
@@ -132,7 +134,9 @@ const IndexPage = () => {
               <StaticImage src="../images/image4.jpg" />
             </CardImage>
             <CardText>
-              <h4>Multi Device Support</h4>
+              <Link to="/multi-device-support">
+                <h4>Multi Device Support</h4>
+              </Link>
               <Border />
               <p>
                 Screen sizes are always changing, so it's important that your
@@ -153,7 +157,9 @@ const IndexPage = () => {
               <StaticImage src="../images/image5.jpg" />
             </CardImage>
             <CardText>
-              <h4>Base Technologies</h4>
+              <Link to="/base-technologies/">
+                <h4>Base Technologies</h4>
+              </Link>
               <Border />
               <p>
                 Built with React JS, a scalable technology developed and
@@ -172,10 +178,17 @@ const IndexPage = () => {
           </Card>
           <Card>
             <CardImage>
-              <StaticImage src="../images/image6.jpg" />
+              <StaticImage
+                onClick={() => {
+                  navigate('/clean-design/')
+                }}
+                src="../images/image6.jpg"
+              />
             </CardImage>
             <CardText>
-              <h4>Clean Design</h4>
+              <Link to="/clean-design/">
+                <h4>Clean Design</h4>
+              </Link>
               <Border />
               <p>
                 Mobile users are very goal-oriented. They expect to be able to
@@ -196,7 +209,9 @@ const IndexPage = () => {
               <StaticImage src="../images/image7.jpg" />
             </CardImage>
             <CardText>
-              <h4>Custom Functionality</h4>
+              <Link to="/custom-functionality/">
+                <h4>Custom Functionality</h4>
+              </Link>
               <Border />
               <p>
                 Custom Navigation for the Web and Mobile, Authentications, Blog,
@@ -217,7 +232,9 @@ const IndexPage = () => {
               <StaticImage src="../images/image8.jpg" />
             </CardImage>
             <CardText>
-              <h4>Progressive Web Apps</h4>
+              <Link to="/progressive-web-apps/">
+                <h4>Progressive Web Apps</h4>
+              </Link>
               <Border />
               <p>
                 A high-quality Progressive Web App has incredible benefits,

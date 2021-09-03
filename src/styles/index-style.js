@@ -96,15 +96,15 @@ export const SectionThreeContainer = styled.div`
   }
   @media only screen and (min-width: 830px) {
     padding: 45px 0;
-    h3{
+    h3 {
       font-size: 28px;
     }
   }
 `
 
 export const UxContainer = styled.div`
-height: 100px;
-width: 100px;
+  height: 100px;
+  width: 100px;
 `
 
 export const SectionThree = styled.div`
@@ -147,7 +147,17 @@ export const Card = styled.div`
   }
 `
 
-export const CardImage = styled.div``
+export const CardImage = styled.div`
+  @media only screen and (min-width: 830px) {
+    img {
+      cursor: pointer;
+      &:hover {
+        transition: transform 0.5s ease-in-out;
+        transform: scale(1.1);
+      }
+    }
+  }
+`
 
 export const CardText = styled.div`
   padding: 2em 1.5em 0.1em 1.5em;

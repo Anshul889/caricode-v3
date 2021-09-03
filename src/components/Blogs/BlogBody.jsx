@@ -17,6 +17,8 @@ import { useTransition, animated } from 'react-spring'
 import Lottie from 'react-lottie'
 import animationData from '../Lotties/Search/search-file.json'
 import Bloguiux from '../Lotties/Blog/Bloguiux'
+import BlogFeatures from './BlogFeatures'
+import PageFeatures from './PageFeatures'
 
 const getImages = graphql`
   {
@@ -208,6 +210,8 @@ const BlogBody = () => {
             </div>
           </div>
         </div>
+        <BlogFeatures />
+        <PageFeatures />
       </div>
       <div className={styles.dwhyonline}></div>
       <div className={styles.whyonline}>
@@ -467,7 +471,7 @@ const BlogBody = () => {
                   config={config.molasses}
                   delay={800}
                 >
-                  {props => (
+                  {(props) => (
                     <svg
                       aria-hidden="true"
                       focusable="false"
@@ -908,7 +912,7 @@ const BlogBody = () => {
         config={config.slow}
         delay={12000}
       >
-        {props => (
+        {(props) => (
           <div className={styles.mfeatureupper} style={props}>
             {!submitted && !loading && (
               <div className={styles.featureselected}>
@@ -917,7 +921,7 @@ const BlogBody = () => {
                   autoComplete="email"
                   placeholder="Email"
                   onClick={() => setInputfield(true)}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 {inputField ? (
                   <button
@@ -969,7 +973,7 @@ const BlogBody = () => {
         config={config.slow}
         delay={12000}
       >
-        {props => (
+        {(props) => (
           <div className={styles.dfeatureupper} style={props}>
             {!submitted && !loading && (
               <div className={styles.featureselected}>
@@ -978,7 +982,7 @@ const BlogBody = () => {
                   autoComplete="email"
                   placeholder="Email"
                   onClick={() => setInputfield(true)}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 {inputField ? (
                   <button
