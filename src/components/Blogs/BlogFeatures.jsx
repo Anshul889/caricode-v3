@@ -6,6 +6,7 @@ import {
   Container,
   Description,
   Filter,
+  Numbers,
   Sort,
   Stats,
   Title,
@@ -46,13 +47,13 @@ const getImages = graphql`
 
 const BlogFeatures = () => {
   const data = useStaticQuery(getImages)
-  const [posts, setPosts] = useState([
+  let initialPosts = [
     {
       id: 1,
       title: 'First Post',
       excerpt:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      date: '6',
+      date: 6,
       likes: 23,
       bookmark: false,
       src: data.image5.childImageSharp.fluid,
@@ -65,7 +66,7 @@ const BlogFeatures = () => {
       title: 'Second Post',
       excerpt:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      date: '4',
+      date: 4,
       likes: 55,
       bookmark: false,
       comments: 190,
@@ -78,7 +79,7 @@ const BlogFeatures = () => {
       title: 'Third Post',
       excerpt:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      date: '2',
+      date: 2,
       likes: 6,
       bookmark: false,
       comments: 243,
@@ -86,7 +87,125 @@ const BlogFeatures = () => {
       author: 'Caricode',
       category: 'Marketing',
     },
-  ])
+  ]
+  const [posts, setPosts] = useState(initialPosts)
+  const [sortBy, setActiveSort] = useState('none')
+
+  const [filter, setFilter] = useState('none')
+
+  const sortNew = () => {
+    let sortedAsc = [...initialPosts].sort(function (a, b) {
+      var x = a.date
+      var y = b.date
+      if (x > y) {
+        return 1
+      }
+      if (x < y) {
+        return -1
+      }
+      return 0
+    })
+    setPosts(sortedAsc)
+    setActiveSort('sortNew')
+    setFilter('none')
+  }
+
+  const sortOld = () => {
+    let sortedDsc = [...initialPosts].sort(function (a, b) {
+      var x = a.date
+      var y = b.date
+      if (x > y) {
+        return -1
+      }
+      if (x < y) {
+        return 1
+      }
+      return 0
+    })
+    setPosts(sortedDsc)
+    setActiveSort('sortOld')
+    setFilter('none')
+  }
+
+  const sortAscLikes = () => {
+    let sortedAscLikes = [...initialPosts].sort(function (a, b) {
+      var x = a.likes
+      var y = b.likes
+      if (x > y) {
+        return 1
+      }
+      if (x < y) {
+        return -1
+      }
+      return 0
+    })
+    setPosts(sortedAscLikes)
+    setActiveSort('sortAscLikes')
+    setFilter('none')
+  }
+
+  const sortDscLikes = () => {
+    let sortedDscLikes = [...initialPosts].sort(function (a, b) {
+      var x = a.likes
+      var y = b.likes
+      if (x > y) {
+        return -1
+      }
+      if (x < y) {
+        return 1
+      }
+      return 0
+    })
+    setPosts(sortedDscLikes)
+    setActiveSort('sortDscLikes')
+    setFilter('none')
+  }
+
+  const sortAscComments = () => {
+    let sortedAscComments = [...initialPosts].sort(function (a, b) {
+      var x = a.comments
+      var y = b.comments
+      if (x > y) {
+        return 1
+      }
+      if (x < y) {
+        return -1
+      }
+      return 0
+    })
+    setPosts(sortedAscComments)
+    setActiveSort('sortAscComments')
+    setFilter('none')
+  }
+
+  const sortDscComments = () => {
+    let sortedDscComments = [...initialPosts].sort(function (a, b) {
+      var x = a.comments
+      var y = b.comments
+      if (x > y) {
+        return -1
+      }
+      if (x < y) {
+        return 1
+      }
+      return 0
+    })
+    setPosts(sortedDscComments)
+    setActiveSort('sortDscComments')
+    setFilter('none')
+  }
+
+  const filterCategory = (category) => {
+    let filtered = [...initialPosts.filter((post) => post.category == category)]
+    setPosts(filtered)
+    setFilter(category)
+    setActiveSort('none')
+  }
+
+  const removeFilter = () => {
+    setFilter('none')
+    setPosts(initialPosts)
+  }
 
   return (
     <Container>
@@ -98,17 +217,73 @@ const BlogFeatures = () => {
       <Sort>
         <h3>Sort</h3>
         <Buttons>
-          <Button secondary>New</Button>
-          <Button secondary>Likes</Button>
-          <Button secondary>Comments</Button>
+          {/* sort by date */}
+          {sortBy !== 'sortNew' && sortBy !== 'sortOld' && (
+            <Button onClick={() => sortNew()} secondary>
+              Date
+            </Button>
+          )}
+          {sortBy === 'sortNew' && (
+            <Button onClick={() => sortOld()}>Date &#8593;</Button>
+          )}
+          {sortBy === 'sortOld' && (
+            <Button onClick={() => sortNew()}>Date &#8595;</Button>
+          )}
+
+          {/* sort by likes */}
+
+          {sortBy !== 'sortAscLikes' && sortBy !== 'sortDscLikes' && (
+            <Button onClick={() => sortDscLikes()} secondary>
+              Likes
+            </Button>
+          )}
+          {sortBy === 'sortDscLikes' && (
+            <Button onClick={() => sortAscLikes()}>Likes &#8593;</Button>
+          )}
+          {sortBy === 'sortAscLikes' && (
+            <Button onClick={() => sortDscLikes()}>Likes &#8595;</Button>
+          )}
+
+          {sortBy !== 'sortAscComments' && sortBy !== 'sortDscComments' && (
+            <Button onClick={() => sortDscComments()} secondary>
+              Comments
+            </Button>
+          )}
+          {sortBy === 'sortDscComments' && (
+            <Button onClick={() => sortAscComments()}>Comments &#8593;</Button>
+          )}
+          {sortBy === 'sortAscComments' && (
+            <Button onClick={() => sortDscComments()}>Comments &#8595;</Button>
+          )}
         </Buttons>
       </Sort>
       <Filter>
         <h3>Filter</h3>
         <Buttons>
-          <Button secondary>Tech</Button>
-          <Button secondary>Design</Button>
-          <Button secondary>Marketing</Button>
+          {filter !== 'Tech' && (
+            <Button onClick={() => filterCategory('Tech')} secondary>
+              Tech
+            </Button>
+          )}
+          {filter === 'Tech' && (
+            <Button onClick={() => removeFilter()}>Tech</Button>
+          )}
+           {filter !== 'Design' && (
+            <Button onClick={() => filterCategory('Design')} secondary>
+              Design
+            </Button>
+          )}
+          {filter === 'Design' && (
+            <Button onClick={() => removeFilter()}>Design</Button>
+          )}
+           {filter !== 'Marketing' && (
+            <Button onClick={() => filterCategory('Marketing')} secondary>
+              Marketing
+            </Button>
+          )}
+          {filter === 'Marketing' && (
+            <Button onClick={() => removeFilter()}>Marketing</Button>
+          )}
         </Buttons>
       </Filter>
 
@@ -130,6 +305,10 @@ const BlogFeatures = () => {
                 <span>{post.category}</span>
               </Title>
               <p>{post.excerpt}</p>
+              <Numbers>
+                <div>{post.likes} likes</div>
+                <div>{post.comments} comments</div>
+              </Numbers>
             </BlogCard>
           )
         })}

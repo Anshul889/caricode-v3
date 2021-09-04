@@ -48,7 +48,7 @@ export const BlogCard = styled(Card)`
   margin: 0px;
   p {
     text-align: start;
-    margin-top: 15px;
+    margin: 15px auto;
   }
   h3 {
     width: 90%;
@@ -93,4 +93,12 @@ export const Title = styled.div`
 export const Features = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+`
+
+export const Numbers = styled.div`
+display: grid;
+grid-template-columns: max-content max-content;
+column-gap: 10px;
+width: 90%;
+margin: 0 auto 10px auto ;
 `
