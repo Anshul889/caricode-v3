@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Container,
   Content,
@@ -17,7 +17,7 @@ import { Link } from 'gatsby'
 const BaseTechnologies = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Base Technologies'}
         description="At CariCode, we build all our web applications with React JS, a
         scalable technology developed and maintained by Facebook."

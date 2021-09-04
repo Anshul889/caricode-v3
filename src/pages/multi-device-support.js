@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Container,
   Content,
@@ -11,19 +11,9 @@ import {
   Recommended,
   SecondItem,
 } from '../styles/page-style'
-import {
-  RadialChart,
-} from 'react-vis'
+import { RadialChart } from 'react-vis'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-
-const databounce = [
-  { x: 0, y: 0 },
-  { x: 3, y: 32 },
-  { x: 5, y: 90 },
-  { x: 6, y: 106 },
-  { x: 10, y: 123 },
-]
 
 const MultiDeviceSupport = () => {
   const [myData, setData] = useState([
@@ -44,7 +34,7 @@ const MultiDeviceSupport = () => {
   })
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Multi Device Support'}
         description="At CariCode we develop your website so it can be accessed seamlessly
        across different devices: phones, phablets, tablets,

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Container,
   Content,
@@ -27,7 +27,7 @@ const databounce = [
 const WebPerformance = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Web Performance'}
         description="Performance plays a significant role in the
         success of any online venture, as high performing sites engage and

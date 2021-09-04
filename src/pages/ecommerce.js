@@ -1,7 +1,5 @@
 import React from 'react'
 import * as styles from '../styles/ecommerce.module.css'
-import { useStaticQuery, graphql } from 'gatsby'
-import Image from 'gatsby-image'
 import EcommerceHero from '../components/Banners/Ecommerce/EcommerceHero'
 import EcommerceTwoSelect from '../components/EcommerceSelect/EcommerceTwoSelect'
 import Layout from '../components/Layout/Layout'

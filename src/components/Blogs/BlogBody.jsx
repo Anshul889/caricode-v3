@@ -96,10 +96,6 @@ const BlogBody = () => {
     { x: new Date('November 1 2020').getTime(), y: 32000 },
     { x: new Date('December 1 2020').getTime(), y: 32000 },
   ]
-  const mysearchData = [
-    { angle: 1, label: 'Other' },
-    { angle: 9, label: 'Search Engine' },
-  ]
 
   const speedData = [
     { x: 2, y: 9.6 },

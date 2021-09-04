@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import Layout from '../components/Layout/Layout'
 import question from '../images/question.svg'
 import user from '../images/user-white.svg'
@@ -117,7 +117,7 @@ const LandingPages = () => {
 
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'We build landing pages'}
         description="Get a landing page that actually works"
         pathname="/landing-pages/"

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Container,
   Content,
@@ -17,7 +17,7 @@ import { Link } from 'gatsby'
 const ProgressiveWebApps = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Progressive Web Apps'}
         description="Transitioning your business from a website to a Progressive Web App offers major benefits, most importantly, superior performance and increased conversions. Our Progressive Web Apps are responsive, fast, and connection-independent."
         pathname="/progressive-web-apps/"

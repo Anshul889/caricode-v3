@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Container,
   Content,
@@ -38,7 +38,7 @@ const TwoImages = styled(OneImage)`
 const CleanDesign = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Clean Design'}
         description="48% of people determine the
         credibility of a business by its website design. Mobile users are

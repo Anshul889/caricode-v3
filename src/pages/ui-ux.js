@@ -9,8 +9,7 @@ import Icons from '../components/Lotties/Icons/Icons'
 import Informative from '../components/Lotties/Informative/Informative'
 import Olympics from '../components/Lotties/Olympics/Olympics'
 import TabMotion from '../components/Lotties/TabMotion/TabMotion'
-import { Facebook } from 'react-content-loader'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Airbnb,
   Animation,
@@ -62,44 +61,16 @@ import Upvote from '../components/Lotties/Upvote/Upvote'
 import Star from '../components/Lotties/Star/Star'
 import DFailed from '../components/Lotties/DFailed/DFailed'
 import UiKit from '../components/UiKit/UiKit'
-import { graphql, useStaticQuery } from 'gatsby'
 import AirbnbLottie from '../components/Lotties/Airbnb/AirbnbLottie'
 import DuoLingoLottie from '../components/Lotties/Duolingo/Duolingo'
 import PinterestLottie from '../components/Lotties/Pinterest/Pinterest'
 import LoaderLottie from '../components/Lotties/Loader/Loader'
 import DragLottie from '../components/Lotties/Drag/Drag'
 
-const getImages = graphql`
-  {
-    image1: file(relativePath: { eq: "duolingo.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    headspace: file(relativePath: { eq: "headspace.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    airbnb: file(relativePath: { eq: "airbnb.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 const UiUx = () => {
-  const data = useStaticQuery(getImages)
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Blog Development and Best SEO practices'}
         description="At CariCode, we build blazing fast blogs to delight and retain users."
         pathname="/blogs/"
@@ -202,9 +173,9 @@ const UiUx = () => {
                   <h4>Feedback and status</h4>
                   <p>Ui animations make system errors more palatable.</p>
                 </div>
-                  <Drag>
-                    <DragLottie />
-                  </Drag>
+                <Drag>
+                  <DragLottie />
+                </Drag>
                 <div>
                   <p>
                     Motion of a card makes selection, positioning, and release

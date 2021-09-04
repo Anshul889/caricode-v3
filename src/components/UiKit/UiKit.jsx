@@ -48,113 +48,113 @@ const UiKit = () => {
         </p>
         <h4>Pick a theme</h4>
       </div>
-      {theme.color == 'white' && (
+      {theme.color === 'white' && (
         <div className={styles.colorpicker}>
           <div
             className={styles.color}
             style={{ backgroundColor: '#a4373a' }}
-            onClick={() => setTheme({ bg: '#a4373a', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#a4373a', color: 'white' })}
           ></div>
           <div
             className={styles.color}
             style={{ backgroundColor: 'white' }}
-            onClick={() => setTheme({ bg: 'white', color: 'black' })}
+            role="button" onClick={() => setTheme({ bg: 'white', color: 'black' })}
           ></div>
           <div
             className={styles.color}
             style={{ backgroundColor: '#7c759a' }}
-            onClick={() => setTheme({ bg: '#7c759a', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#7c759a', color: 'white' })}
           ></div>
           <div
             className={styles.color}
             style={{ backgroundColor: '#0078d4' }}
-            onClick={() => setTheme({ bg: '#0078d4', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#0078d4', color: 'white' })}
           ></div>
           <div
             className={styles.color}
             style={{ backgroundColor: '#008272' }}
-            onClick={() => setTheme({ bg: '#008272', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#008272', color: 'white' })}
           ></div>
           <div
             className={styles.color}
             style={{ backgroundColor: 'black' }}
-            onClick={() => setTheme({ bg: 'black', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: 'black', color: 'white' })}
           ></div>
         </div>
       )}
-      {theme.color == 'black' && (
+      {theme.color === 'black' && (
         <div className={styles.colorpicker}>
           <div
             className={styles.lightcolor}
             style={{ backgroundColor: '#a4373a' }}
-            onClick={() => setTheme({ bg: '#a4373a', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#a4373a', color: 'white' })}
           ></div>
           <div
             className={styles.lightcolor}
             style={{ backgroundColor: 'white' }}
-            onClick={() => setTheme({ bg: 'white', color: 'black' })}
+            role="button" onClick={() => setTheme({ bg: 'white', color: 'black' })}
           ></div>
           <div
             className={styles.lightcolor}
             style={{ backgroundColor: '#7c759a' }}
-            onClick={() => setTheme({ bg: '#7c759a', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#7c759a', color: 'white' })}
           ></div>
           <div
             className={styles.lightcolor}
             style={{ backgroundColor: '#0078d4' }}
-            onClick={() => setTheme({ bg: '#0078d4', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#0078d4', color: 'white' })}
           ></div>
           <div
             className={styles.lightcolor}
             style={{ backgroundColor: '#008272' }}
-            onClick={() => setTheme({ bg: '#008272', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: '#008272', color: 'white' })}
           ></div>
           <div
             className={styles.lightcolor}
             style={{ backgroundColor: 'black' }}
-            onClick={() => setTheme({ bg: 'black', color: 'white' })}
+            role="button" onClick={() => setTheme({ bg: 'black', color: 'white' })}
           ></div>
         </div>
       )}
       <div className={styles.components}>
         <div>
           <div className={styles.inputcomponent}>
-            {theme.bg == '#a4373a' && (
+            {theme.bg === '#a4373a' && (
               <input
                 className={styles.redinput}
                 type="text"
                 placeholder="Highlights"
               />
             )}
-            {theme.bg == 'white' && (
+            {theme.bg === 'white' && (
               <input
                 className={styles.whiteinput}
                 type="text"
                 placeholder="Highlights"
               />
             )}
-            {theme.bg == 'black' && (
+            {theme.bg === 'black' && (
               <input
                 className={styles.blackinput}
                 type="text"
                 placeholder="Highlights"
               />
             )}
-            {theme.bg == '#008272' && (
+            {theme.bg === '#008272' && (
               <input
                 className={styles.greeninput}
                 type="text"
                 placeholder="Highlights"
               />
             )}
-            {theme.bg == '#0078d4' && (
+            {theme.bg === '#0078d4' && (
               <input
                 className={styles.blueinput}
                 type="text"
                 placeholder="Highlights"
               />
             )}
-            {theme.bg == '#7c759a' && (
+            {theme.bg === '#7c759a' && (
               <input
                 className={styles.purpleinput}
                 type="text"
@@ -166,38 +166,38 @@ const UiKit = () => {
             <button style={{ backgroundColor: theme.color, color: theme.bg }}>
               Primary
             </button>
-            {theme.bg == 'white' && (
+            {theme.bg === 'white' && (
               <button style={{ backgroundColor: '#edebe9', color: 'black' }}>
                 Secondary
               </button>
             )}
-            {theme.bg == '#a4373a' && (
+            {theme.bg === '#a4373a' && (
               <button style={{ backgroundColor: '#c34b4f', color: 'white' }}>
                 Secondary
               </button>
             )}
-            {theme.bg == '#7c759a' && (
+            {theme.bg === '#7c759a' && (
               <button style={{ backgroundColor: '#b4b0c4', color: 'white' }}>
                 Secondary
               </button>
             )}
-            {theme.bg == '#0078d4' && (
+            {theme.bg === '#0078d4' && (
               <button style={{ backgroundColor: '#3dabff', color: 'white' }}>
                 Secondary
               </button>
             )}
-            {theme.bg == '#008272' && (
+            {theme.bg === '#008272' && (
               <button style={{ backgroundColor: '#00e6cb', color: 'white' }}>
                 Secondary
               </button>
             )}
-            {theme.bg == 'black' && (
+            {theme.bg === 'black' && (
               <button style={{ backgroundColor: '#333333', color: 'white' }}>
                 Secondary
               </button>
             )}
           </div>
-          {theme.color == 'white' && (
+          {theme.color === 'white' && (
             <div className={styles.dark}>
               <form>
                 <div className={styles.radioitem}>
@@ -230,7 +230,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.color == 'black' && (
+          {theme.color === 'black' && (
             <div className={styles.light}>
               <form>
                 <div className={styles.radioitem}>
@@ -263,7 +263,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == '#a4373a' && (
+          {theme.bg === '#a4373a' && (
             <div>
               <form>
                 <label className={styles.redswitch}>
@@ -273,7 +273,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == '#7c759a' && (
+          {theme.bg === '#7c759a' && (
             <div>
               <form>
                 <label className={styles.purpleswitch}>
@@ -283,7 +283,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == '#0078d4' && (
+          {theme.bg === '#0078d4' && (
             <div>
               <form>
                 <label className={styles.blueswitch}>
@@ -293,7 +293,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == '#008272' && (
+          {theme.bg === '#008272' && (
             <div>
               <form>
                 <label className={styles.greenswitch}>
@@ -303,7 +303,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == 'white' && (
+          {theme.bg === 'white' && (
             <div>
               <form>
                 <label className={styles.whiteswitch}>
@@ -313,7 +313,7 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == 'black' && (
+          {theme.bg === 'black' && (
             <div>
               <form>
                 <label className={styles.blackswitch}>
@@ -323,110 +323,110 @@ const UiKit = () => {
               </form>
             </div>
           )}
-          {theme.bg == '#a4373a' && (
+          {theme.bg === '#a4373a' && (
             <div className={styles.icons}>
               <div className={styles.icon}>
-                <img src={facered} />
+                <img alt="" src={facered} />
               </div>
               <div className={styles.icon}>
-                <img src={twitterred} />
+                <img alt="" src={twitterred} />
               </div>
               <div className={styles.icon}>
-                <img src={linkedred} />
+                <img alt="" src={linkedred} />
               </div>
               <div className={styles.icon}>
-                <img src={instared} />
+                <img alt="" src={instared} />
               </div>
             </div>
           )}
-          {theme.bg == 'white' && (
+          {theme.bg === 'white' && (
             <div className={styles.icons}>
               <div className={styles.lighticon}>
-                <img src={facewhite} />
+                <img alt="" src={facewhite} />
               </div>
               <div className={styles.lighticon}>
-                <img src={twitterwhite} />
+                <img alt="" src={twitterwhite} />
               </div>
               <div className={styles.lighticon}>
-                <img src={linkedwhite} />
+                <img alt="" src={linkedwhite} />
               </div>
               <div className={styles.lighticon}>
-                <img src={instawhite} />
+                <img alt="" src={instawhite} />
               </div>
             </div>
           )}
-          {theme.bg == '#7c759a' && (
+          {theme.bg === '#7c759a' && (
             <div className={styles.icons}>
               <div className={styles.icon}>
-                <img src={facepurple} />
+                <img alt="" src={facepurple} />
               </div>
               <div className={styles.icon}>
-                <img src={twitterpurple} />
+                <img alt="" src={twitterpurple} />
               </div>
               <div className={styles.icon}>
-                <img src={linkedpurple} />
+                <img alt="" src={linkedpurple} />
               </div>
               <div className={styles.icon}>
-                <img src={instapurple} />
+                <img alt="" src={instapurple} />
               </div>
             </div>
           )}
-          {theme.bg == '#0078d4' && (
+          {theme.bg === '#0078d4' && (
             <div className={styles.icons}>
               <div className={styles.icon}>
-                <img src={faceblue} />
+                <img alt="" src={faceblue} />
               </div>
               <div className={styles.icon}>
-                <img src={twitterblue} />
+                <img alt="" src={twitterblue} />
               </div>
               <div className={styles.icon}>
-                <img src={linkedblue} />
+                <img alt="" src={linkedblue} />
               </div>
               <div className={styles.icon}>
-                <img src={instablue} />
+                <img alt="" src={instablue} />
               </div>
             </div>
           )}
-          {theme.bg == '#008272' && (
+          {theme.bg === '#008272' && (
             <div className={styles.icons}>
               <div className={styles.icon}>
-                <img src={facegreen} />
+                <img alt="" src={facegreen} />
               </div>
               <div className={styles.icon}>
-                <img src={twittergreen} />
+                <img alt="" src={twittergreen} />
               </div>
               <div className={styles.icon}>
-                <img src={linkedgreen} />
+                <img alt="" src={linkedgreen} />
               </div>
               <div className={styles.icon}>
-                <img src={instagreen} />
+                <img alt="" src={instagreen} />
               </div>
             </div>
           )}
-          {theme.bg == 'black' && (
+          {theme.bg === 'black' && (
             <div className={styles.icons}>
               <div className={styles.icon}>
-                <img src={faceblack} />
+                <img alt="" src={faceblack} />
               </div>
               <div className={styles.icon}>
-                <img src={twitterblack} />
+                <img alt="" src={twitterblack} />
               </div>
               <div className={styles.icon}>
-                <img src={linkedblack} />
+                <img alt="" src={linkedblack} />
               </div>
               <div className={styles.icon}>
-                <img src={instablack} />
+                <img alt="" src={instablack} />
               </div>
             </div>
           )}
         </div>
         <div className={styles.desktopcomponents}>
-          {theme.bg == '#a4373a' && <Redanimations />}
-          {theme.bg == '#008272' && <Greenanimations />}
-          {theme.bg == '#0078d4' && <Blueanimations />}
-          {theme.bg == 'black' && <Blackanimations />}
-          {theme.bg == '#7c759a' && <Purpleanimations />}
-          {theme.bg == 'white' && <Whiteanimations />}
+          {theme.bg === '#a4373a' && <Redanimations />}
+          {theme.bg === '#008272' && <Greenanimations />}
+          {theme.bg === '#0078d4' && <Blueanimations />}
+          {theme.bg === 'black' && <Blackanimations />}
+          {theme.bg === '#7c759a' && <Purpleanimations />}
+          {theme.bg === 'white' && <Whiteanimations />}
         </div>
       </div>
     </div>

@@ -17,7 +17,7 @@ import SalesLottie from '../components/Lotties/Sales/SalesLottie'
 import StarSmall from '../components/Lotties/Star/Starsmall'
 
 import UpvoteSmall from '../components/Lotties/Upvote/UpvoteSmall'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Animation,
   Card,
@@ -36,7 +36,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <Banner />
       <SectionTwo>
         <InnerStyles>

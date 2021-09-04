@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import { main } from '../styles/blogs.module.css'
 import BlogHero from '../components/Banners/Blogs/BlogHero'
 import BlogBody from '../components/Blogs/BlogBody'
@@ -8,7 +8,7 @@ import BlogBody from '../components/Blogs/BlogBody'
 const Blogs = () => {
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Blog Development and Best SEO practices'}
         description="At CariCode, we build blazing fast blogs to delight and retain users."
         pathname="/blogs/"

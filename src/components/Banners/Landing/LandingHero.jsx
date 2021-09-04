@@ -1,6 +1,6 @@
 import React from 'react'
 import * as styles from './LandingHero.module.css'
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import { graphql, useStaticQuery} from 'gatsby'
 import Image from 'gatsby-image'
 
 const getImages = graphql`

@@ -2,11 +2,11 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import sg from '../images/sg.png'
 import google from '../images/google.svg'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { useStaticQuery, graphql} from 'gatsby'
 import 'react-vis/dist/style.css'
 import Img from 'gatsby-image'
 import VisibilitySensor from 'react-visibility-sensor'
-import { Spring, config } from 'react-spring/renderprops'
+import { Spring } from 'react-spring/renderprops'
 import {
   HorizontalBarSeries,
   XAxis,
@@ -15,14 +15,13 @@ import {
   LineSeries,
   DiscreteColorLegend,
 } from 'react-vis'
-import SEO from '../components/Seo/Seo'
+import Seo from '../components/Seo/Seo'
 import {
   Container,
   CostEfectiveH,
   CostEffectiveP,
   FirstHeader,
   FirstHeaderHeading,
-  Inner,
   InnerStyles,
   LoyaltyAnimation,
   LoyaltyH,
@@ -122,7 +121,7 @@ const WebApplications = () => {
   ]
   return (
     <Layout>
-      <SEO
+      <Seo
         title={'Blog Development and Best SEO practices'}
         description="At CariCode, we build blazing fast blogs to delight and retain users."
         pathname="/web-appications/"
