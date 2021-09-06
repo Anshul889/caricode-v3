@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-  dhero,
   dinner,
   dashboard,
   mhero,
@@ -8,6 +7,7 @@ import {
 } from '../../../styles/blogs.module.css'
 import Lottie from 'react-lottie'
 import animationData from '../../Lotties/Dashboard/dashboard.json'
+import { Dashboard, DContainer, DHero, HeroText, MAnimation, MHero } from './style'
 
 const defaultOptions = {
   loop: true,
@@ -21,9 +21,9 @@ const defaultOptions = {
 const BlogHero = () => {
   return (
     <div>
-      <div className={dhero}>
-        <div className={dinner}>
-          <div>
+      <DContainer>
+        <DHero>
+          <HeroText>
             <h1>
               Want more traffic
               <br /> to your website ?
@@ -32,19 +32,19 @@ const BlogHero = () => {
               LottieFiles provides all the tools that you need to create, edit,
               test and display Lottie animations.
             </p>
-          </div>
-          <div className={dashboard}>
+          </HeroText>
+          <Dashboard>
             <Lottie options={defaultOptions} isStopped={false} />
-          </div>
-        </div>
-      </div>
-      <div className={mhero}>
+          </Dashboard>
+        </DHero>
+      </DContainer>
+      <MHero>
         <h1>Want more traffic to your website ?</h1>
 
-        <div className={manimation}>
+        <MAnimation>
           <Lottie options={defaultOptions} isStopped={false} />
-        </div>
-      </div>
+        </MAnimation>
+      </MHero>
     </div>
   )
 }
