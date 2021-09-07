@@ -35,4 +35,15 @@ export const Button = styled.button`
       padding: 0.375rem
       width: 200px;
     `};
+    ${(props) =>
+    props.filters &&
+    css`
+      display: block;
+      background: white;
+      color: black;
+      border: 1px solid rgba(104, 104, 104, 0.15);
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 400;
+    `};
 `

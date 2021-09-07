@@ -5,6 +5,7 @@ import {
   Buttons,
   Container,
   Description,
+  Excerpt,
   Filter,
   Numbers,
   Sort,
@@ -219,7 +220,7 @@ const BlogFeatures = () => {
         <Buttons>
           {/* sort by date */}
           {sortBy !== 'sortNew' && sortBy !== 'sortOld' && (
-            <Button onClick={() => sortNew()} secondary>
+            <Button onClick={() => sortNew()} filters>
               Date
             </Button>
           )}
@@ -233,7 +234,7 @@ const BlogFeatures = () => {
           {/* sort by likes */}
 
           {sortBy !== 'sortAscLikes' && sortBy !== 'sortDscLikes' && (
-            <Button onClick={() => sortDscLikes()} secondary>
+            <Button onClick={() => sortDscLikes()} filters>
               Likes
             </Button>
           )}
@@ -245,7 +246,7 @@ const BlogFeatures = () => {
           )}
 
           {sortBy !== 'sortAscComments' && sortBy !== 'sortDscComments' && (
-            <Button onClick={() => sortDscComments()} secondary>
+            <Button onClick={() => sortDscComments()} filters>
               Comments
             </Button>
           )}
@@ -261,7 +262,7 @@ const BlogFeatures = () => {
         <h3>Filter</h3>
         <Buttons>
           {filter !== 'Tech' && (
-            <Button onClick={() => filterCategory('Tech')} secondary>
+            <Button onClick={() => filterCategory('Tech')} filters>
               Tech
             </Button>
           )}
@@ -269,7 +270,7 @@ const BlogFeatures = () => {
             <Button onClick={() => removeFilter()}>Tech</Button>
           )}
            {filter !== 'Design' && (
-            <Button onClick={() => filterCategory('Design')} secondary>
+            <Button onClick={() => filterCategory('Design')} filters>
               Design
             </Button>
           )}
@@ -277,7 +278,7 @@ const BlogFeatures = () => {
             <Button onClick={() => removeFilter()}>Design</Button>
           )}
            {filter !== 'Marketing' && (
-            <Button onClick={() => filterCategory('Marketing')} secondary>
+            <Button onClick={() => filterCategory('Marketing')} filters>
               Marketing
             </Button>
           )}
@@ -292,6 +293,7 @@ const BlogFeatures = () => {
           return (
             <BlogCard>
               <Image fluid={post.src} />
+              <div>
               <Stats>
                 <img src={thumbs} />
                 <img src={comments} />
@@ -304,11 +306,12 @@ const BlogFeatures = () => {
                 <span>{post.date} days ago</span>
                 <span>{post.category}</span>
               </Title>
-              <p>{post.excerpt}</p>
+              <Excerpt>{post.excerpt}</Excerpt>
               <Numbers>
                 <div>{post.likes} likes</div>
                 <div>{post.comments} comments</div>
               </Numbers>
+              </div>
             </BlogCard>
           )
         })}
