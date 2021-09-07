@@ -6,46 +6,76 @@ export const Container = styled.div`
   background-color: white;
   margin: 90px auto;
   padding: 30px 0;
+  width: 90%;
 `
 export const Description = styled.div`
-  width: 90%;
+  width: 100%;
   margin: 30px auto;
+  @media screen and (min-width: 768px) {
+    width: 90%;
+  }
 `
 
 export const Buttons = styled.div`
-  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 10px;
+  font-size: 12px;
+  display: inline-grid;
+  margin-left: 20px;
   @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 10px;
+    display: grid;
+    font-size: 16px;
+    margin-left: 0px;
   }
 `
 
 export const Sort = styled.div`
-  width: 350px;
-  margin-left: 5%;
-  display: inline-block;
   button {
     border-radius: 30px;
-    padding: 6px 24px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  h3 {
+    display: inline-block;
+  }
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    margin-left: 5%;
+    display: inline-block;
+    h3 {
+      display: block;
+    }
+    button {
+      border-radius: 30px;
+      padding: 6px 24px;
+      font-size: 16px;
+    }
   }
 `
 
 export const Filter = styled(Sort)`
-  margin-left: 20px;
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
 `
 
 export const BlogCards = styled(Cards)`
+  display: grid;
   margin: 30px auto;
   grid-template-rows: auto;
-  column-gap: 40px;
+  row-gap: 20px;
   max-width: 1200px;
-  width: 90%;
   transform: none;
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    column-gap: 40px;
+  }
 `
 
 export const BlogCard = styled(Card)`
   padding-top: 0px;
   margin: 0px;
+  width: 100%;
   p {
     text-align: start;
     margin: 15px auto;
@@ -54,9 +84,9 @@ export const BlogCard = styled(Card)`
     width: 90%;
     margin: 10px auto;
   }
-  span{
-    &:nth-child(3){
-      border : 1px solid #444;
+  span {
+    &:nth-child(3) {
+      border: 1px solid #444;
       border-radius: 30px;
       padding: 3px 10px;
       font-size: 12px;
@@ -64,7 +94,6 @@ export const BlogCard = styled(Card)`
   }
   @media screen and (min-width: 768px) {
     grid-template-rows: auto max-content max-content;
-    width: 100%;
   }
 `
 
@@ -96,9 +125,9 @@ export const Features = styled.div`
 `
 
 export const Numbers = styled.div`
-display: grid;
-grid-template-columns: max-content max-content;
-column-gap: 10px;
-width: 90%;
-margin: 0 auto 10px auto ;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 10px;
+  width: 90%;
+  margin: 0 auto 10px auto;
 `

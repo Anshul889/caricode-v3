@@ -1,16 +1,10 @@
 import React from 'react'
-import {
-  dinner,
-  dashboard,
-  mhero,
-  manimation,
-} from '../../../styles/blogs.module.css'
 import Lottie from 'react-lottie'
 import animationData from '../../Lotties/Dashboard/dashboard.json'
 import { Dashboard, DContainer, DHero, HeroText, MAnimation, MHero } from './style'
 
 const defaultOptions = {
-  loop: true,
+  loop: false,
   autoplay: true,
   animationData: animationData,
   rendererSettings: {

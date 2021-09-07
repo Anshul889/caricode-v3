@@ -1,17 +1,8 @@
 import React, { useState } from 'react'
 import { Spring, config } from 'react-spring/renderprops'
-import check from '../../images/check.svg'
-import cross from '../../images/cross.svg'
+
 import { useStaticQuery, graphql } from 'gatsby'
 import * as styles from '../../styles/blogs.module.css'
-import Image from 'gatsby-image'
-import {
-  LineSeries,
-  FlexibleWidthXYPlot,
-  XAxis,
-  YAxis,
-  VerticalBarSeries,
-} from 'react-vis'
 import axios from 'axios'
 import { useTransition, animated } from 'react-spring'
 import Lottie from 'react-lottie'
@@ -201,7 +192,7 @@ const BlogBody = () => {
                 structure.
               </p>
             </div>
-            <div>
+            <div className={styles.uiuxanimation}>
               <Bloguiux />
             </div>
           </div>
@@ -210,7 +201,7 @@ const BlogBody = () => {
         <PageFeatures />
       </div>
       <div className={styles.dwhyonline}></div>
-      <div className={styles.whyonline}>
+      {/* <div className={styles.whyonline}>
         <div className={styles.ctrposition}>
           <div class={styles.inner}>
             <h4>95% of users don’t scroll past the 5th result</h4>
@@ -393,12 +384,11 @@ const BlogBody = () => {
               content
             </p>
           </div>
-        </div>
-      </div>
+         */}
       {/* <div className={styles.dslide}>
         <BlogSlide />
       </div> */}
-      <div className={styles.howblog}>
+      {/* <div className={styles.howblog}>
         <div className={styles.snippets}>
           <div className={styles.inner}>
             <h4>Rich Snippets</h4>
@@ -899,7 +889,7 @@ const BlogBody = () => {
             </FlexibleWidthXYPlot>
           </div>
         </div>
-      </div>
+      </div> */}
       <Spring
         from={{ bottom: -1 }}
         to={{

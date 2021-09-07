@@ -54,6 +54,13 @@ export const MHero = styled.div`
   height: calc(100vh - 56px - 56px);
   width: 100%;
   overflow: hidden;
+  background: rgb(194, 114, 110);
+  background: linear-gradient(
+    45deg,
+    rgba(194, 114, 110, 1) 0%,
+    rgba(142, 116, 202, 1) 100%
+  );
+  color: white;
   h1 {
     font-size: 36px;
     text-transform: none;

@@ -311,6 +311,67 @@ img.pwaappicon {
   display: none;
 }
 
+.trafficexperience {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 45px auto;
+  max-width: 1200px;
+  row-gap: 30px;
+}
+.webtraffic {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: rgb(142, 148, 248);
+  background: linear-gradient(
+    45deg,
+    rgba(142, 148, 248, 1) 0%,
+    rgba(188, 156, 186, 1) 100%
+  );
+  color: white;
+}
+
+.webtraffic h3 {
+  margin: 60px 30px;
+  font-size: 24px;
+}
+
+.richexperiences {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: rgb(142, 148, 248);
+  background: linear-gradient(
+    45deg,
+    rgba(142, 148, 248, 1) 0%,
+    rgba(188, 156, 186, 1) 100%
+  );
+  color: white;
+}
+
+.richexperiences h3 {
+  margin: 60px 30px;
+  font-size: 24px;
+}
+
+.uiux {
+  width: 90%;
+  margin: 0 auto;
+  background: rgb(194, 114, 110);
+  background: linear-gradient(
+    43deg,
+    rgba(194, 114, 110, 0.850577731092437) 0%,
+    rgba(179, 113, 157, 0.738532913165266) 46%,
+    rgba(142, 116, 202, 0.8841911764705882) 100%
+  );
+  color: white;
+}
+
+.uiinner {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
 .featureselected {
   background-color: white;
   width: 95%;
@@ -354,10 +415,6 @@ img.pwaappicon {
 }
 
 .dwhyonline {
-  display: none;
-}
-
-.dbody {
   display: none;
 }
 
@@ -448,6 +505,13 @@ img.pwaappicon {
     width: 90%;
     margin: 0 auto;
     padding: 0;
+    background: rgb(194, 114, 110);
+    background: linear-gradient(
+      90deg,
+      rgba(194, 114, 110, 0.850577731092437) 0%,
+      rgba(179, 113, 157, 0.738532913165266) 46%,
+      rgba(142, 116, 202, 0.8841911764705882) 100%
+    );
   }
 
   .finner {
@@ -457,6 +521,8 @@ img.pwaappicon {
     padding: 60px 120px;
     height: 450px;
     grid-template-rows: 150px 150px 150px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .finner h2 {
@@ -616,11 +682,9 @@ img.pwaappicon {
     display: block;
   }
   .trafficexperience {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 90%;
     margin: 90px auto;
-    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0px;
     column-gap: 20px;
   }
   .webtraffic {
@@ -664,16 +728,14 @@ img.pwaappicon {
     background-color: white;
   }
 
-  .uiinner{
+  .uiinner {
     display: grid;
     grid-template-columns: 1fr 0.35fr;
-    width: 90%;
     padding: 40px;
-    margin: 0 auto;
     column-gap: 60px;
   }
 
-  .uiux h2{
+  .uiux h2 {
     margin: 20px;
   }
 }
