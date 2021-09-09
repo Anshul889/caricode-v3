@@ -4,7 +4,12 @@ import { Button } from '../components/Button/Button'
 export const Container = styled.div``
 
 export const FirstHeader = styled.div`
-  background-color: rgb(94, 173, 187);
+  background: rgb(164, 128, 255);
+  background: linear-gradient(
+    54deg,
+    rgba(164, 128, 255, 1) 0%,
+    rgba(255, 143, 131, 1) 100%
+  );
   color: white;
   padding: 38px 0;
   content-visibility: auto;
@@ -45,7 +50,7 @@ export const Why = styled.div`
   padding: 38px 0;
   @media screen and (min-width: 600px) {
     &:nth-child(-n + 3) {
-      border-right: 2px solid rgba(144, 144, 144, 0.25);
+      border-right: 1px solid rgba(144, 144, 144, 0.25);
     }
     &:nth-child(1) {
       padding-right: 30px;
@@ -107,7 +112,6 @@ export const ReferralH = styled.h4``
 export const ReferralP = styled.p``
 
 export const SecondHeader = styled.div`
-  background-color: #484459;
   color: white;
   padding: 38px 0;
 `
@@ -120,7 +124,11 @@ export const SecondHeaderH = styled.h4`
 `
 
 export const HowContainer = styled.div`
-  background-color: #484459;
+  background: linear-gradient(
+    45deg,
+    rgba(194, 114, 110, 1) 0%,
+    rgba(142, 116, 202, 1) 100%
+  );
   color: white;
 `
 

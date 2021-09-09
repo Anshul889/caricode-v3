@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout/Layout'
 import sg from '../images/sg.png'
 import google from '../images/google.svg'
-import { useStaticQuery, graphql} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import 'react-vis/dist/style.css'
 import Img from 'gatsby-image'
 import VisibilitySensor from 'react-visibility-sensor'
@@ -269,13 +269,15 @@ const WebApplications = () => {
             </Why>
           </WhyInner>
         </WhyContainer>
-        <SecondHeader>
-          <SecondHeaderH>
-            At CariCode we implement all the following features which are
-            critical to customer retention taking your web app to the next level
-          </SecondHeaderH>
-        </SecondHeader>
+
         <HowContainer>
+          <SecondHeader>
+            <SecondHeaderH>
+              At CariCode we implement all the following features which are
+              critical to customer retention taking your web app to the next
+              level
+            </SecondHeaderH>
+          </SecondHeader>
           <HowInner>
             <CustomerExperience>
               <InnerStyles>

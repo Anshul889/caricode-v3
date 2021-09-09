@@ -20,7 +20,7 @@ export const DesktopNavigation = styled.div`
   z-index: 1009;
   font-weight: 400;
   font-size: 15px;
-  color: #7c759a;
+  color: #ff8f83;
   @media (max-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
@@ -106,7 +106,7 @@ export const MItem = styled(GatsbyLink)`
   font-size: 0.6rem;
   letter-spacing: 0.0075rem;
   text-decoration: none;
-  color: #7c759a;
+  color: #ff8f83;
   filter: grayscale(100%);
   opacity: 0.5;
 `;

@@ -45,7 +45,7 @@ export const AppAnimations = styled.div`
   @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     align-items: start;
