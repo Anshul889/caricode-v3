@@ -10,6 +10,7 @@ import {
 } from './style'
 import Lottie from 'react-lottie'
 import animationData from './website-development.json'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const defaultOptions = {
   loop: true,
@@ -24,9 +25,6 @@ const Banner = () => {
   return (
     <Container>
       <Grid>
-        <Animation>
-          <Lottie options={defaultOptions} isStopped={false} />
-        </Animation>
         <BannerText>
           <Heading>We Build, Deploy and Manage Progressive Web Apps</Heading>
           <TagLine>
@@ -46,6 +44,9 @@ const Banner = () => {
             Get Started
           </GetStarted>
         </BannerText>
+        <Animation>
+          <StaticImage src="./turo.jpg" />
+        </Animation>
       </Grid>
     </Container>
   )

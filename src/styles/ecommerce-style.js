@@ -52,7 +52,7 @@ export const CarouselItem = styled.div`
   @media screen and (min-width: 768px) {
     .gatsby-image-wrapper:hover {
       transition: transform 0.3s ease-in-out;
-      transform: scale(1.1);
+      transform: scale(1.03);
     }
   }
 `
