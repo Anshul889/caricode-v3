@@ -48,6 +48,12 @@ export const HeroText = styled.div``
 export const Dashboard = styled.div`
   display: grid;
   place-content: center;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  .gatsby-image-wrapper {
+    border-radius: 10px;
+  }
 `
 
 export const MHero = styled.div`
@@ -82,4 +88,7 @@ export const MAnimation = styled.div`
   margin-bottom: 20vh;
   margin-left: auto;
   margin-right: auto;
+  .gatsby-image-wrapper {
+    border-radius: 10px;
+  }
 `

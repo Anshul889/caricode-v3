@@ -1,16 +1,13 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import Lottie from 'react-lottie'
-import animationData from '../../Lotties/Dashboard/dashboard.json'
-import { Dashboard, DContainer, DHero, HeroText, MAnimation, MHero } from './style'
-
-const defaultOptions = {
-  loop: false,
-  autoplay: true,
-  animationData: animationData,
-  rendererSettings: {
-    preserveAspectRatio: 'xMidYMid slice',
-  },
-}
+import {
+  Dashboard,
+  DContainer,
+  DHero,
+  HeroText,
+  MAnimation,
+  MHero,
+} from './style'
 
 const BlogHero = () => {
   return (
@@ -28,15 +25,14 @@ const BlogHero = () => {
             </p>
           </HeroText>
           <Dashboard>
-            <Lottie options={defaultOptions} isStopped={false} />
+            <StaticImage src="./blog.jpg" />
           </Dashboard>
         </DHero>
       </DContainer>
       <MHero>
         <h1>Want more traffic to your website ?</h1>
-
         <MAnimation>
-          <Lottie options={defaultOptions} isStopped={false} />
+          <StaticImage src="./blog.jpg" />
         </MAnimation>
       </MHero>
     </div>
