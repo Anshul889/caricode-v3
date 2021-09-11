@@ -13,6 +13,9 @@ export const Container = styled.div`
     padding-top: 70px;
     display: grid;
   }
+  @media screen and (min-width: 1500px) {
+    height: 45vw;
+  }
 `
 
 export const Grid = styled.div`
@@ -20,6 +23,10 @@ export const Grid = styled.div`
   grid-template-columns: 1fr;
   row-gap: 20px;
   padding-top: 20px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 70px;
+    display: grid;
+  }
   @media screen and (min-width: 800px) {
     transform: translateY(50px);
     grid-template-columns: repeat(12, 1fr);
@@ -29,9 +36,7 @@ export const Grid = styled.div`
     place-self: center;
     width: 95%;
     transform: translateX(50px);
-  }
-  @media screen and (min-width: 1600px) {
-    height: auto;
+    height: 40vw;
   }
 `
 
@@ -51,8 +56,6 @@ export const Animation = styled.div`
   }
 
   @media screen and (min-width: 1600px) {
-    height: 450px;
-    transform: scale(1);
     padding-top: 0px;
   }
 `
