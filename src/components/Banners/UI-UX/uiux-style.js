@@ -12,8 +12,7 @@ export const Desktop = styled.div`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: 1200px;
-    margin: 0 auto;
-    width: 98%;
+    width: 100%;
     height: 470px;
   }
   @media only screen and (min-width: 1024px) {
@@ -26,6 +25,7 @@ export const HeroText = styled.div`
     align-self: center;
     grid-column: 1 / span 6;
     grid-row: 1 / span 1;
+    margin-left: 2%;
     h1 {
       font-size: 54px;
       text-transform: none;
