@@ -59,6 +59,7 @@ export const Principles = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 15px;
     width: 97%;
+    display:none;
   }
   @media screen and (min-width: 1024px) {
     grid-column-gap: 30px;
@@ -127,6 +128,7 @@ export const Performance = styled.div`
   }
 
   @media screen and (min-width: 768px) {
+    display: none;
     h2 {
       font-size: 48px;
       line-height: 50px;
