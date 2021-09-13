@@ -18,8 +18,12 @@ export const InnerStyles = styled.div`
   margin: 0 auto;
   @media only screen and (min-width: 830px) {
     padding-top: 0px;
-    grid-template-columns: 1fr 1.1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
+  @media only screen and (min-width: 1024px) {
     width: 90%;
+    grid-template-columns: 1fr 1.1fr 1fr;
   }
 `
 
@@ -52,16 +56,31 @@ export const Item = styled.div`
     border-bottom: none;
     border-right: 1px solid rgba(104, 104, 104, 0.15);
     padding-bottom: 40px;
+    p{
+      width: 95%;
+    }
     &:nth-child(1) {
-      padding-right: 10px;
+      padding-right: 0px;
       padding-top: 30px;
       grid-template-rows: 240px max-content 155px max-content;
     }
     &:nth-child(3) {
       border-right: none;
-      padding-left: 20px;
+      padding-left: 0px;
       padding-top: 30px;
       grid-template-rows: 239px max-content 155px max-content;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    p{
+      width: 90%;
+    }
+    &:nth-child(1) {
+      padding-right: 10px;
+    }
+    &:nth-child(3) {
+      padding-left: 20px;
     }
   }
 `
@@ -105,6 +124,10 @@ export const SectionThreeContainer = styled.div`
 export const UxContainer = styled.div`
   height: 100px;
   width: 100px;
+  @media only screen and (min-width: 830px) and (max-width: 1025px) {
+    height: 75px;
+    width: 75px;
+  }
 `
 
 export const SectionThree = styled.div`
@@ -113,12 +136,15 @@ export const SectionThree = styled.div`
   row-gap: 30px;
   padding-bottom: 40px;
   @media only screen and (min-width: 830px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
     column-gap: 25px;
     padding-top: 10px;
+  }
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 `
 
