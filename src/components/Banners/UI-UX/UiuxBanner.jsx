@@ -30,12 +30,7 @@ const UiuxBanner = () => {
           <p>We'll bring cool and trendy animations to your website</p>
         </HeroText>
         <DAnim>
-          <Lottie
-            options={defaultOptions}
-            height={650}
-            width={750}
-            isStopped={false}
-          />
+          <Lottie options={defaultOptions} isStopped={false} />
         </DAnim>
       </Desktop>
 
