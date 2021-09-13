@@ -139,6 +139,10 @@ export const Performance = styled.div`
 
 export const Olydiv = styled.div`
   @media screen and (min-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1024px) {
     width: 50%;
     margin: 0 auto;
   }
@@ -228,6 +232,12 @@ export const SecondHeader = styled.div`
     text-align: center;
     font-size: 17px;
   }
+  @media screen and (min-width: 768px) {
+    width: 97%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%auto;
+  }
 `
 
 export const ShowcaseOne = styled.div`
@@ -235,6 +245,12 @@ export const ShowcaseOne = styled.div`
   grid-template-columns: 440px 2fr;
   padding-top: 40px;
   column-gap: 30px;
+  @media screen and (min-width: 768px) {
+    column-gap: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    column-gap: 30px;
+  }
 `
 
 export const ItemOne = styled.div`
@@ -267,6 +283,12 @@ export const ItemTwo = styled.div`
   padding: 5%;
   border-radius: 30px;
   grid-template-rows: 287px 179px;
+  @media screen and (min-width: 768px) {
+    grid-template-rows: 304px 179px;
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-rows: 287px 179px;
+  }
 `
 
 export const TwoAnimation = styled.div`
@@ -281,6 +303,12 @@ export const ShowcaseTwo = styled.div`
   grid-template-columns: 1fr 1fr;
   padding-top: 40px;
   column-gap: 30px;
+  @media screen and (min-width: 768px) {
+    column-gap: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    column-gap: 30px;
+  }
 `
 
 export const ItemThree = styled.div`
