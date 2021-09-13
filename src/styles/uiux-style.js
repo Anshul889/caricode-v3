@@ -393,6 +393,7 @@ export const SmallItem = styled.div`
   background-color: white;
   border-radius: 10px;
   will-change: transform;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     grid-column: 2 / span 1;
   }
@@ -400,7 +401,6 @@ export const SmallItem = styled.div`
 
 export const Pinterest = styled(SmallItem)`
   background-color: #f2304d;
-  overflow: hidden;
 `
 
 export const Airbnb = styled.div`
