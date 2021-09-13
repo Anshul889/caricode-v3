@@ -23,7 +23,7 @@ const defaultOptionsm = {
 
 const UiuxBanner = () => {
   return (
-    <div>
+    <div style={{overflow: 'hidden'}}>
       <Desktop>
         <HeroText>
           <h1>User Interface brought to life with motion</h1>
