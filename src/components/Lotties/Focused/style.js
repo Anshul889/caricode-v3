@@ -7,7 +7,10 @@ export const Popup = styled.div`
   grid-row: 1 /1;
   grid-column: 1 /2;
   border-radius: 4px;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1024px) {
     width: 90%;
     margin: 0 auto;
   }
@@ -58,5 +61,11 @@ export const Notification = styled.div`
     100% {
       transform: translateY(65px);
     }
+  }
+  @media screen and (min-width: 730px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
   }
 `

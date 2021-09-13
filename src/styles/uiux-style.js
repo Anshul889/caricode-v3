@@ -57,7 +57,12 @@ export const Principles = styled.div`
   background-color: #f5f5f5;
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    width: 97%;
+  }
+  @media screen and (min-width: 1024px) {
     grid-column-gap: 30px;
+    width: 90%;
   }
 `
 
@@ -79,8 +84,23 @@ export const Principle = styled.div`
   }
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 80px 150px;
+    grid-template-rows: 200px 70px 155px;
     padding-bottom: 5%;
+    padding-top: 2%;
+    p {
+      margin-top: 0;
+      text-align: start;
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    grid-template-rows: 200px 80px 150px;
+    padding-top: 5%;
+    p {
+      margin-top: 24px;
+      text-align: center;
+      width: 90%;
+    }
   }
 `
 

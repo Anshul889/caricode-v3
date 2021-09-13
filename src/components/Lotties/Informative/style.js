@@ -74,6 +74,33 @@ export const ThirdItem = styled(Item)`
     }
   }
   @media screen and (min-width: 768px) {
+    animation: moveleftt 7s ease-in-out infinite forwards;
+    @keyframes moveleftt {
+      0% {
+        transform: translateX(0px);
+      }
+      40% {
+        transform: translateX(0px);
+      }
+
+      60% {
+        transform: translateX(-75px);
+      }
+
+      70% {
+        transform: translateX(-75px);
+      }
+
+      85% {
+        transform: translateX(0px);
+      }
+
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
     animation: moveleftd 7s ease-in-out infinite forwards;
     @keyframes moveleftd {
       0% {
