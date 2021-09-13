@@ -348,7 +348,7 @@ export const Everywhere = styled(Performance)`
 `
 
 export const EvwhInner = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 0.8fr;
   grid-template-rows: 1fr 1fr;
   width: 90%;
@@ -358,6 +358,23 @@ export const EvwhInner = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-rows: 225px 225px max-content 225px max-content;
+  } */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 225px 225px max-content 225px max-content;
+  width: 90%;
+  margin: 30px auto;
+  max-width: 1200px;
+  grid-gap: 30px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 0.8fr;
+    grid-template-rows: 1fr 1fr;
+    width: 97%;
+    grid-gap: 15px;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%;
+    grid-gap: 30px;
   }
 `
 
@@ -382,6 +399,7 @@ export const SmallItem = styled.div`
 
 export const Pinterest = styled(SmallItem)`
   background-color: #f2304d;
+ overflow: hidden;
 `
 
 export const Airbnb = styled.div`
@@ -417,6 +435,9 @@ export const SmallItemText = styled.div`
   line-height: 25px;
   @media screen and (min-width: 768px) {
     grid-column: 3 / span 1;
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1024px) {
     margin-top: 50px;
   }
 `
