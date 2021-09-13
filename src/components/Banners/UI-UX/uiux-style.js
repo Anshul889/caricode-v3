@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const Banner = styled.div`
-overflow: hidden;
--webkit-overflow: hidden;
-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  will-change: transform;
 `
 
 export const Desktop = styled.div`
   display: none;
-  @media only screen and (min-width: 760px){
+  @media only screen and (min-width: 760px) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: 1200px;
@@ -16,7 +16,7 @@ export const Desktop = styled.div`
     width: 98%;
     height: 470px;
   }
-  @media only screen and (min-width: 1024px){
+  @media only screen and (min-width: 1024px) {
     height: 597px;
   }
 `
@@ -24,7 +24,7 @@ export const Desktop = styled.div`
 export const HeroText = styled.div`
   @media only screen and (min-width: 760px) {
     align-self: center;
-    grid-column: 1/ span 6;
+    grid-column: 1 / span 6;
     grid-row: 1 / span 1;
     h1 {
       font-size: 54px;
@@ -39,10 +39,10 @@ export const HeroText = styled.div`
     }
   }
   @media only screen and (min-width: 1024px) {
-    grid-column: 1/ span 6;
-   h1{
-     font-size: 64px;
-   }
+    grid-column: 1 / span 6;
+    h1 {
+      font-size: 64px;
+    }
   }
 `
 
@@ -55,7 +55,7 @@ export const DAnim = styled.div`
     grid-row: 1 / span 1;
   }
   @media only screen and (min-width: 1024px) {
-    transform: scale(1.30) translateX(-10px);
+    transform: scale(1.3) translateX(-10px);
   }
 `
 
