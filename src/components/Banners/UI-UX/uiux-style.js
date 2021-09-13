@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const Banner = styled.div`
+overflow: hidden;
+-webkit-overflow: hidden;
+width: 100%;
+`
+
 export const Desktop = styled.div`
   display: none;
   @media only screen and (min-width: 760px){

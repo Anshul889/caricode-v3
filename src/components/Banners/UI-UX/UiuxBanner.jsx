@@ -2,7 +2,7 @@ import React from 'react'
 import Lottie from 'react-lottie'
 import animationData from './ui.json'
 import animationDatam from './mui.json'
-import { DAnim, Desktop, HeroText, MAnim, Mobile } from './uiux-style'
+import { Banner, DAnim, Desktop, HeroText, MAnim, Mobile } from './uiux-style'
 
 const defaultOptions = {
   loop: true,
@@ -23,7 +23,7 @@ const defaultOptionsm = {
 
 const UiuxBanner = () => {
   return (
-    <div style={{overflow: 'hidden'}}>
+    <Banner>
       <Desktop>
         <HeroText>
           <h1>User Interface brought to life with motion</h1>
@@ -42,7 +42,7 @@ const UiuxBanner = () => {
           <Lottie options={defaultOptionsm} isStopped={false} />
         </MAnim>
       </Mobile>
-    </div>
+    </Banner>
   )
 }
 
