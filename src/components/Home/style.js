@@ -7,11 +7,13 @@ export const Container = styled.div`
   padding-bottom: 45px;
   background-color: #292728;
   color: white;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 800px) {
+    display: grid;
+    padding-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {
     padding-top: 70px;
-    display: grid;
+    padding-bottom: 45px;
   }
   @media screen and (min-width: 1500px) {
     height: 45vw;
@@ -23,10 +25,6 @@ export const Grid = styled.div`
   grid-template-columns: 1fr;
   row-gap: 20px;
   padding-top: 20px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 70px;
-    display: grid;
-  }
   @media screen and (min-width: 800px) {
     transform: translateY(50px);
     grid-template-columns: repeat(12, 1fr);
@@ -44,14 +42,15 @@ export const Animation = styled.div`
   height: 300px;
   padding-top: 10px;
   z-index: 1;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     height: 600px;
     grid-column: 5 / span 9;
     grid-row: 1 / span 1;
     padding-top: 0px;
+    transform: translateX(30px);
   }
   @media screen and (min-width: 1200px) {
-    transform: translateY(-80px);
+    transform: translate3d(0px, -100px, 0px);
     padding-top: 10px;
   }
 
@@ -64,15 +63,17 @@ export const BannerText = styled.div`
   width: 90%;
   margin: 0 auto;
   z-index: 2;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     display: grid;
     place-content: center;
     text-align: start;
     grid-column: 1 / span 6;
     grid-row: 1 / span 1;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     grid-column: 1 / span 6;
+    width: 90%;
   }
 `
 
