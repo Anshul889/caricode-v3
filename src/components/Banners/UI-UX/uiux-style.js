@@ -49,8 +49,7 @@ export const HeroText = styled.div`
 export const DAnim = styled.div`
   @media only screen and (min-width: 760px) {
     place-self: center;
-    transform: translateX(5%);
-    transform: scale(1.2);
+    transform: scale(1.15) translateX(-5%);
     grid-column: 7 / span 7;
     grid-row: 1 / span 1;
   }
