@@ -36,22 +36,27 @@ export const WhyContainer = styled.div`
 `
 
 export const WhyInner = styled.div`
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1080px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%;
   }
 `
 
 export const Why = styled.div`
   border-bottom: 1px solid rgba(144, 144, 144, 0.25);
   padding: 38px 0;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     &:nth-child(-n + 3) {
       border-right: 1px solid rgba(144, 144, 144, 0.25);
     }
+  }
+  @media screen and (min-width: 1024px) {
     &:nth-child(1) {
       padding-right: 30px;
       padding-top: 40px;
@@ -135,10 +140,14 @@ export const HowContainer = styled.div`
 export const HowInner = styled.div`
   @media screen and (min-width: 600px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 90%;
     max-width: 1080px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 `
 
@@ -195,7 +204,10 @@ export const EmailImage = styled.div`
   border-radius: 4px;
   padding: 0px 15px;
   margin-bottom: 38px;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
+    height: 164px;
+  }
+  @media screen and (min-width: 1024px) {
     height: 162px;
   }
 `
@@ -206,6 +218,14 @@ export const EmailImg = styled.img`
 
 export const LoyaltyImage = styled.div`
   margin-bottom: 38px;
+  overflow: hidden;
+  border-radius: 4px;
+  @media screen and (min-width: 830px) {
+    height: 164px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 162px;
+  }
 `
 
 export const Auth = styled.div`
@@ -217,7 +237,10 @@ export const Auth = styled.div`
   background-color: white;
   height: 44.8vw;
   border-radius: 4px;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
+    height: 164px;
+  }
+  @media screen and (min-width: 1024px) {
     height: 162px;
   }
 `
@@ -241,8 +264,12 @@ export const HowRefer = styled.div`
   text-align: center;
   border-radius: 4px;
   margin-bottom: 38px;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
+    height: 112px;
     padding: 26px 0;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 110px;
   }
 `
 
