@@ -418,7 +418,7 @@ img.pwaappicon {
   display: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .main p {
     font-size: 17px;
   }
@@ -502,25 +502,19 @@ img.pwaappicon {
 
   .firstheader {
     max-width: 1200px;
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
     padding: 0;
-    background: rgb(194, 114, 110);
-    background: linear-gradient(
-      90deg,
-      rgba(194, 114, 110, 0.850577731092437) 0%,
-      rgba(179, 113, 157, 0.738532913165266) 46%,
-      rgba(142, 116, 202, 0.8841911764705882) 100%
-    );
+    background-color: white;
   }
 
   .finner {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
-    padding: 60px 120px;
+    padding: 60px 40px;
     height: 450px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-rows: 150px 150px 170px;
     width: 90%;
     margin: 0 auto;
   }
@@ -682,10 +676,11 @@ img.pwaappicon {
     display: block;
   }
   .trafficexperience {
-    margin: 90px auto;
+    margin: 30px auto;
     grid-template-columns: 1fr 1fr;
     row-gap: 0px;
     column-gap: 20px;
+    width: 96%;
   }
   .webtraffic {
     display: grid;
@@ -722,8 +717,8 @@ img.pwaappicon {
   }
 
   .uiux {
-    width: 90%;
-    margin: 90px auto;
+    width: 96%;
+    margin: 30px auto;
     max-width: 1200px;
     background-color: white;
   }
@@ -736,6 +731,23 @@ img.pwaappicon {
   }
 
   .uiux h2 {
-    margin: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .firstheader{
+    width: 90%;
+  }
+  .finner{
+    padding: 60px 120px;
+  }
+  .trafficexperience{
+    width: 90%;
+    margin: 90px auto;
+  }
+  .uiux{
+    width: 90%;
+    margin: 90px auto;
   }
 }

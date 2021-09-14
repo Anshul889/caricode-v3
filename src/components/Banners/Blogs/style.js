@@ -4,11 +4,15 @@ export const DContainer = styled.div`
   display: none;
   @media screen and (min-width: 768px) {
     display: grid;
-    height: 700px;
+    height: 500px;
     place-content: center;
     color: white;
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%;
+    height: 700px;
   }
 `
 
@@ -22,11 +26,11 @@ export const DHero = styled.div`
     rgba(232, 170, 163, 1) 100%
   );
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  column-gap: 30px;
+  column-gap: 15px;
 
   h1 {
     font-size: 48px;
@@ -40,6 +44,10 @@ export const DHero = styled.div`
   p {
     margin-left: 7%;
     margin-bottom: 25%;
+  }
+  @media screen and (min-width: 1024px) {
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 `
 
