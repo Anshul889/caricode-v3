@@ -8,7 +8,13 @@ export const Container = styled.div`
   padding: 15px 0;
   width: 90%;
   @media screen and (min-width: 768px) {
+    margin: 30px auto;
+    padding: 15px 0;
+    width: 96%;
+  }
+  @media screen and (min-width: 1024px) {
     margin: 90px auto;
+    width: 90%;
     padding: 30px 0;
   }
 `
@@ -69,9 +75,14 @@ export const BlogCards = styled(Cards)`
   max-width: 1200px;
   transform: none;
   height: 400px;
-  @media screen and (min-width: 768px) {
-    height: auto;
+  @media screen and (min-width: 830px) {
+    width: 96%;
+    column-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 1024px) {
     width: 90%;
+    height: auto;
     column-gap: 40px;
   }
 `
@@ -100,7 +111,7 @@ export const BlogCard = styled(Card)`
       font-size: 12px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 830px) {
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto max-content;
@@ -110,7 +121,7 @@ export const BlogCard = styled(Card)`
 
 export const Stats = styled.div`
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     display: grid;
     width: 90%;
     grid-template-columns: max-content max-content max-content 1fr;
