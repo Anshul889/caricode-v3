@@ -13,8 +13,9 @@ const defaultOptions = {
 }
 
 const Container = styled.div`
+  height: 225px;
   @media screen and (min-width: 768px) {
-    height: 180px
+    height: 180px;
   }
 
   @media screen and (min-width: 1024px) {

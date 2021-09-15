@@ -52,7 +52,7 @@ export const Item = styled.div`
   }
 
   @media only screen and (min-width: 830px) {
-    grid-template-rows: 250px max-content 155px max-content;
+    grid-template-rows: 230px max-content 185px max-content;
     border-bottom: none;
     border-right: 1px solid rgba(104, 104, 104, 0.15);
     padding-bottom: 40px;
@@ -62,13 +62,13 @@ export const Item = styled.div`
     &:nth-child(1) {
       padding-right: 0px;
       padding-top: 30px;
-      grid-template-rows: 240px max-content 155px max-content;
+      grid-template-rows: 220px max-content 185px max-content;
     }
     &:nth-child(3) {
       border-right: none;
       padding-left: 0px;
       padding-top: 30px;
-      grid-template-rows: 239px max-content 155px max-content;
+      grid-template-rows: 219px max-content 185px max-content;
     }
   }
 
