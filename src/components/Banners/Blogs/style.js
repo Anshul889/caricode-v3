@@ -78,7 +78,6 @@ export const MHero = styled.div`
     font-size: 36px;
     text-transform: none;
     line-height: 42px;
-    letter-spacing: 0.4px;
     width: 70%;
     margin-left: 7%;
     margin-top: 40px;

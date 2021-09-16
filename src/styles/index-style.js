@@ -56,7 +56,7 @@ export const Item = styled.div`
     border-bottom: none;
     border-right: 1px solid rgba(104, 104, 104, 0.15);
     padding-bottom: 40px;
-    p{
+    p {
       width: 95%;
     }
     &:nth-child(1) {
@@ -73,7 +73,7 @@ export const Item = styled.div`
   }
 
   @media only screen and (min-width: 1024px) {
-    p{
+    p {
       width: 90%;
     }
     &:nth-child(1) {
@@ -107,6 +107,7 @@ export const SalesAnimation = styled.div`
 
 export const SectionThreeContainer = styled.div`
   background-color: #f6f6f6;
+  padding-top: 10px;
   h3 {
     padding: 20px 0;
     width: 90%;

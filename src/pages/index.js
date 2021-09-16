@@ -111,7 +111,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/web-performance">
-                <h4>Web Performance</h4>
+                <h4 style={{color: '#444'}}>Web Performance</h4>
               </Link>
               <Border />
               <p>
@@ -135,7 +135,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/multi-device-support">
-                <h4>Multi Device Support</h4>
+                <h4 style={{color: '#444'}}>Multi Device Support</h4>
               </Link>
               <Border />
               <p>
@@ -158,7 +158,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/base-technologies/">
-                <h4>Base Technologies</h4>
+                <h4 style={{color: '#444'}}>Base Technologies</h4>
               </Link>
               <Border />
               <p>
@@ -187,7 +187,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/clean-design/">
-                <h4>Clean Design</h4>
+                <h4 style={{color: '#444'}}>Clean Design</h4>
               </Link>
               <Border />
               <p>
@@ -210,7 +210,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/custom-functionality/">
-                <h4>Custom Functionality</h4>
+                <h4 style={{color: '#444'}}>Custom Functionality</h4>
               </Link>
               <Border />
               <p>
@@ -233,7 +233,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/progressive-web-apps/">
-                <h4>Progressive Web Apps</h4>
+                <h4 style={{color: '#444'}}>Progressive Web Apps</h4>
               </Link>
               <Border />
               <p>

@@ -5,7 +5,10 @@ body {
   background-color: white;
   color: #444;
   margin: 0;
-  overflow-x: hidden; /* Hide scrollbars */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* Hide scrollbars */
 }
 
 h1,
@@ -29,7 +32,6 @@ h4 {
   font-size: 17.6px !important;
   font-weight: 400;
   line-height: 26.4px;
-  letter-spacing: 1.52px;
   text-align: center;
 }
 
