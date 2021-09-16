@@ -53,11 +53,14 @@ export const Sort = styled.div`
   }
   @media screen and (min-width: 768px) {
     width: 350px;
-    margin-left: 5%;
+    margin-left: 2.5%;
     display: inline-block;
     h3 {
       display: block;
     }
+  }
+  @media screen and (min-width: 1024px) {
+    margin-left: 5%;
   }
 `
 
@@ -146,6 +149,7 @@ export const Title = styled.div`
 
 export const Excerpt = styled.p`
   display: none;
+  color: #444;
   @media screen and (min-width: 768px) {
     display: block;
   }

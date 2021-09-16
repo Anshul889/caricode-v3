@@ -303,7 +303,7 @@ const BlogFeatures = () => {
               <h3>{post.title}</h3>
               <Title>
                 <span>{post.author}</span>
-                <span>{post.date} days ago</span>
+                <span>{post.date}d ago</span>
                 <span>{post.category}</span>
               </Title>
               <Excerpt>{post.excerpt}</Excerpt>

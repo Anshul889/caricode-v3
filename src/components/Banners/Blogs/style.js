@@ -25,7 +25,7 @@ export const DHero = styled.div`
     rgba(232, 170, 163, 1) 100%
   );
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.6fr 1fr;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;

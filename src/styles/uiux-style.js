@@ -368,7 +368,7 @@ export const EvwhInner = styled.div`
   grid-gap: 30px;
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 0.8fr;
-    grid-template-rows: 180px 180px;
+    grid-template-rows: 190px 190px;
     width: 97%;
     grid-gap: 15px;
   }
