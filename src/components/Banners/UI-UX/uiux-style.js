@@ -17,6 +17,7 @@ export const Desktop = styled.div`
   }
   @media only screen and (min-width: 1024px) {
     height: 597px;
+    margin: 0 auto;
   }
 `
 
@@ -54,7 +55,14 @@ export const DAnim = styled.div`
     grid-row: 1 / span 1;
   }
   @media only screen and (min-width: 1024px) {
-    transform: scale(1.3) translateX(-10px);
+    transform: scale(1.35) translateX(-40px);
+    margin: 0 auto;
+  }
+  @media only screen and (min-width: 1200px) {
+    transform: scale(1.35) translateX(-10px);
+  }
+  @media only screen and (min-width: 1400px) {
+    transform: scale(1.35) translateX(20px);
   }
 `
 
