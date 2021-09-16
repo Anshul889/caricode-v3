@@ -15,7 +15,6 @@ export const AppHero = styled.div`
 export const Title = styled.h1`
   font-size: 36px;
   text-transform: none;
-  font-weight: 800;
   line-height: 42px;
   letter-spacing: 0.4px;
   text-align: center;
@@ -74,7 +73,6 @@ export const FeatureP = styled.p`
   font-size: 22px;
   text-align: center;
   margin: 0 auto;
-  font-weight: 700;
   @media screen and (min-width: 1024px) {
   }
 `
@@ -160,7 +158,6 @@ export const SecondFeatureP = styled.p`
   font-size: 22px;
   text-align: center;
   margin: 0 auto;
-  font-weight: 700;
   @media screen and (min-width: 1024px) {
   }
 `

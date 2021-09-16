@@ -33,7 +33,6 @@ export const DHero = styled.div`
   h1 {
     font-size: 48px;
     text-transform: none;
-    font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1px;
     margin-left: 7%;
@@ -78,7 +77,6 @@ export const MHero = styled.div`
   h1 {
     font-size: 36px;
     text-transform: none;
-    font-weight: 800;
     line-height: 42px;
     letter-spacing: 0.4px;
     width: 70%;

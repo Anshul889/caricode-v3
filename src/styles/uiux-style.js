@@ -22,7 +22,6 @@ export const PrinciplesHeading = styled.div`
   h2 {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 800;
     letter-spacing: 0.1px;
     line-height: 40px;
     margin: 0.96em 0 24px 0;
@@ -110,7 +109,6 @@ export const Animation = styled.div``
 export const Performance = styled.div`
   h2 {
     text-align: center;
-    font-weight: 800;
     letter-spacing: 0.1px;
     line-height: 40px;
     margin: 64px auto 24px auto;
@@ -217,7 +215,6 @@ export const SecondHeader = styled.div`
   margin: 0 auto;
   h2 {
     text-align: center;
-    font-weight: 800;
     letter-spacing: 0.1px;
     line-height: 50px;
     margin: 0.96em 0 24px 0;
@@ -432,7 +429,6 @@ export const Headspace = styled.div`
 
 export const SmallItemText = styled.div`
   font-size: 18px;
-  font-weight: 800;
   letter-spacing: 0.9px;
   line-height: 25px;
   @media screen and (min-width: 768px) {
