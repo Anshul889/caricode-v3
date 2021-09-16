@@ -73,9 +73,8 @@ export const Mobile = styled.div`
   h1 {
     font-size: 36px;
     text-transform: none;
-    font-weight: 800;
     line-height: 42px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
     width: 70%;
     margin-left: 7%;
     margin-top: 40px;

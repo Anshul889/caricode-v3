@@ -5,7 +5,6 @@
 .dapphero h1 {
   font-size: 36px;
   text-transform: none;
-  font-weight: 800;
   line-height: 42px;
   letter-spacing: 0.4px;
   text-align: center;
@@ -443,7 +442,6 @@
 
   .appanimations p {
     font-size: 21.84px;
-    font-weight: 800;
     margin-bottom: 0;
   }
 

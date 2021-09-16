@@ -46,7 +46,7 @@ export const AppAnimations = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  p{
+  p {
     color: #444;
   }
   @media screen and (min-width: 830px) {
@@ -101,7 +101,6 @@ export const MobileAnimation = styled.div`
   grid-column: 1 / span 1;
   z-index: 10;
   @media screen and (min-width: 830px) {
-
   }
   @media screen and (min-width: 1024px) {
     height: auto;
@@ -126,7 +125,6 @@ export const PlaceholderImage = styled.img`
   width: 77%;
   margin: 20px auto;
   @media screen and (min-width: 1024px) {
-    
   }
 `
 
