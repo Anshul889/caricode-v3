@@ -75,8 +75,8 @@ export const Mobile = styled.div`
     text-transform: none;
     font-weight: 800;
     line-height: 42px;
-    letter-spacing: -0.4px;
-    width: 60%;
+    letter-spacing: 0.4px;
+    width: 70%;
     margin-left: 7%;
     margin-top: 40px;
   }

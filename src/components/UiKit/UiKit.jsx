@@ -41,7 +41,7 @@ const UiKit = () => {
     >
       <div className={styles.headline}>
         <h2>Ui Kits</h2>
-        <p className={styles.titlep}>
+        <p className={styles.titlep} style={{color: theme.color}}>
           A consistent look and feel can be applied to all the components on a
           page. For now, this means sharing a color scheme across the entire
           page.

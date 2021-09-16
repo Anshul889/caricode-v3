@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const DContainer = styled.div`
-
+  display: none;
   @media screen and (min-width: 768px) {
     display: grid;
     height: 500px;
@@ -80,8 +80,8 @@ export const MHero = styled.div`
     text-transform: none;
     font-weight: 800;
     line-height: 42px;
-    letter-spacing: -0.4px;
-    width: 60%;
+    letter-spacing: 0.4px;
+    width: 70%;
     margin-left: 7%;
     margin-top: 40px;
     margin-bottom: 20vh;

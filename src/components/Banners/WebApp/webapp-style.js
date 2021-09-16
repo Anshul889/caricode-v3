@@ -17,7 +17,7 @@ export const Title = styled.h1`
   text-transform: none;
   font-weight: 800;
   line-height: 42px;
-  letter-spacing: -0.4px;
+  letter-spacing: 0.4px;
   text-align: center;
   width: 80%;
   margin: 10px auto;
@@ -46,6 +46,9 @@ export const AppAnimations = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
+  p{
+    color: #444;
+  }
   @media screen and (min-width: 830px) {
     width: 70%;
     margin: 0 auto;

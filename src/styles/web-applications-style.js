@@ -138,6 +138,9 @@ export const HowContainer = styled.div`
 `
 
 export const HowInner = styled.div`
+  p{
+    color: white;
+  }
   @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
