@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 export const DContainer = styled.div`
-  display: none;
+
   @media screen and (min-width: 768px) {
     display: grid;
     height: 500px;
     place-content: center;
-    color: white;
     width: 96%;
     margin: 0 auto;
   }
@@ -31,7 +30,6 @@ export const DHero = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   column-gap: 15px;
-
   h1 {
     font-size: 48px;
     text-transform: none;
@@ -40,10 +38,12 @@ export const DHero = styled.div`
     letter-spacing: 1px;
     margin-left: 7%;
     margin-top: 25%;
+    color: white;
   }
   p {
     margin-left: 7%;
     margin-bottom: 25%;
+    color: white;
   }
   @media screen and (min-width: 1024px) {
     column-gap: 30px;

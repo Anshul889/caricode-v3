@@ -23,10 +23,10 @@ export const PrinciplesHeading = styled.div`
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1px;
     line-height: 40px;
     margin: 0.96em 0 24px 0;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
     font-size: 36px;
   }
@@ -111,7 +111,7 @@ export const Performance = styled.div`
   h2 {
     text-align: center;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1px;
     line-height: 40px;
     margin: 64px auto 24px auto;
     text-transform: none;
@@ -217,12 +217,11 @@ export const SecondHeader = styled.div`
   margin: 0 auto;
   h2 {
     text-align: center;
-    text-transform: uppercase;
     font-weight: 800;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.1px;
     line-height: 50px;
     margin: 0.96em 0 24px 0;
-    text-transform: uppercase;
+    text-transform: none;
     text-align: center;
     font-size: 48px;
   }

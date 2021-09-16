@@ -32,7 +32,7 @@ export const HeroText = styled.div`
       text-transform: none;
       font-weight: 700;
       line-height: 1.2;
-      letter-spacing: 1px;
+      letter-spacing: 0.1px;
     }
 
     p {

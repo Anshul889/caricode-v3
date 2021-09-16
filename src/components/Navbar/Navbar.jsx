@@ -33,27 +33,27 @@ const Navbar = () => {
         </MobileContact>
         <Left>
           <DItem>
-            <Link activeStyle={{ color: "#ff8f83" }} to="/blogs">
+            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/blogs">
               Blogs
             </Link>
           </DItem>
           <DItem>
-            <Link activeStyle={{ color: "#ff8f83" }} to="/landing-pages/">
+            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/landing-pages/">
               Landing Pages
             </Link>
           </DItem>
           <DItem>
-            <Link activeStyle={{ color: "#ff8f83" }} to="/ui-ux/">
+            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/ui-ux/">
               UI/UX
             </Link>
           </DItem>
           <DItem>
-            <Link activeStyle={{ color: "#ff8f83" }} to="/web-applications/">
+            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/web-applications/">
               Applications
             </Link>
           </DItem>
           <DItem>
-            <Link activeStyle={{ color: "#ff8f83" }} to="/ecommerce/">
+            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/ecommerce/">
               Ecommerce
             </Link>
           </DItem>

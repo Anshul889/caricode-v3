@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Averta";
+  src: url("../fonts/AvertaStd-Bold.ttf");
+}
+
+@font-face {
+  font-family: "AvertaReg";
+  src: url("../fonts/AvertaStd-Regular.ttf");
+}
