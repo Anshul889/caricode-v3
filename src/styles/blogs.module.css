@@ -745,6 +745,14 @@ img.pwaappicon {
   }
   .finner{
     padding: 60px 30px;
+    grid-template-rows: 120px 160px 160px;
+    height: 460px;
+  }
+  .searchanimation {
+    grid-row: 1 / span 3;
+  }
+  .stats{
+    grid-column: 2 / span 1;
   }
   .trafficexperience{
     width: 90%;
