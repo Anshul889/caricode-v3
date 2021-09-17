@@ -372,7 +372,7 @@ const LandingPages = () => {
             <div className={styles.oddimage}>
               <Image fluid={data.image2.childImageSharp.fluid} />
             </div>
-            <VisibilitySensor>
+            <VisibilitySensor offset={{ top: -3000, bottom: 200 }}>
               {({ isVisible }) => (
                 <Spring
                   from={{ transform: 'translateX(-10%)' }}
@@ -388,9 +388,13 @@ const LandingPages = () => {
                       <p>
                         The paradox of choice reveals that less is more. Too
                         many options will often hinder people from making a
-                        choice. If your landing page design is focused on a
-                        single purpose, you’re helping your customers make the
-                        right decisions and you will increase conversion rates.
+                        choice.
+                        <span className={styles.contenttext}>
+                          {' '}
+                          If your landing page design is focused on a single
+                          purpose, you’re helping your customers make the right
+                          decisions and you will increase conversion rates.
+                        </span>
                       </p>
                     </div>
                   )}
@@ -405,7 +409,7 @@ const LandingPages = () => {
             <div className={styles.colorbg2}>
               <h3>High quality visuals</h3>
             </div>
-            <VisibilitySensor>
+            <VisibilitySensor offset={{ top: -3000, bottom: 200 }}>
               {({ isVisible }) => (
                 <Spring
                   from={{ transform: 'translateX(10%)' }}
@@ -420,10 +424,12 @@ const LandingPages = () => {
                     <div className={styles.evencontent} style={props}>
                       <p>
                         The design of a website is what drives our first
-                        impression 94% of the time. Because it only takes us
-                        fractions of a second to take it all in. We
-                        subconsciously decide whether we want to stick around or
-                        not in the blink of an eye.
+                        impression 94% of the time.
+                        <span className={styles.contenttext}>
+                          Because it only takes us fractions of a second to take
+                          it all in. We subconsciously decide whether we want to
+                          stick around or not in the blink of an eye.
+                        </span>
                       </p>
                     </div>
                   )}
@@ -438,7 +444,7 @@ const LandingPages = () => {
             <div className={styles.oddimage}>
               <Image fluid={data.lp3.childImageSharp.fluid} />
             </div>
-            <VisibilitySensor>
+            <VisibilitySensor offset={{ top: -3000, bottom: 200 }}>
               {({ isVisible }) => (
                 <Spring
                   from={{ transform: 'translateX(-10%)' }}
@@ -453,9 +459,13 @@ const LandingPages = () => {
                     <div className={styles.oddcontent} style={props}>
                       <p>
                         People don’t go looking for testimonials. Instead, they
-                        want to see them when making a critical decision. That
-                        means testimonials should be everywhere. They should be
-                        one of the first things people see on your homepage.
+                        want to see them when making a critical decision.{' '}
+                        <span className={styles.contenttext}>
+                          {' '}
+                          That means testimonials should be everywhere. They
+                          should be one of the first things people see on your
+                          homepage.
+                        </span>
                       </p>
                     </div>
                   )}
@@ -470,7 +480,7 @@ const LandingPages = () => {
             <div className={styles.colorbg2}>
               <h3>Lead Magnet</h3>
             </div>
-            <VisibilitySensor>
+            <VisibilitySensor offset={{ top: -3000, bottom: 200 }}>
               {({ isVisible }) => (
                 <Spring
                   from={{ transform: 'translateX(10%)' }}

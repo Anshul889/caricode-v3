@@ -22,6 +22,7 @@ const LandingHero = () => {
       <div className={styles.bannerimage}>
         <Image
           fluid={data.image3.childImageSharp.fluid}
+          style={{ objectFit: "contain", height: "100%", width: "100%" }}
           className={styles.image}
         />
       </div>
