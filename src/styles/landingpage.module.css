@@ -177,6 +177,10 @@
   border-radius: 50%;
 }
 
+.testimonial1 p {
+  color: white;
+}
+
 .products {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -255,6 +259,7 @@
   margin: 0 auto;
   width: 90%;
   text-align: center;
+  color: white;
 }
 
 .questionimg {
@@ -608,7 +613,7 @@
     border-radius: 4px;
     width: 55%;
   }
-  .evencontent h3{
+  .evencontent h3 {
     text-align: center;
   }
   .evenimage {
@@ -705,13 +710,13 @@
   .slow {
     width: 100px;
   }
-  .contenttext{
+  .contenttext {
     display: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .contenttext{
+  .contenttext {
     display: inline;
   }
   .oddcontent {
