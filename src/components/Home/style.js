@@ -89,6 +89,7 @@ export const Heading = styled.h1`
 
 export const TagLine = styled.p`
   text-align: center;
+  color: white;
   @media screen and (min-width: 600px) {
     font-size: 23px;
   }

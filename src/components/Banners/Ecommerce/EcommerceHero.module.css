@@ -1,4 +1,4 @@
-.upperbanner{
+.upperbanner {
   height: 60vh;
   animation-name: backchange;
   background-color: white;
@@ -8,10 +8,10 @@
 }
 
 @keyframes backchange {
-  0%{
+  0% {
     background-color: white;
   }
-  100%{
+  100% {
     background-color: #7c759a;
   }
 }
@@ -29,11 +29,19 @@
   animation-fill-mode: forwards;
 }
 
+.bannercontent p {
+  color: black;
+  animation-name: colorchange;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes colorchange {
-  0%{
+  0% {
     color: black;
   }
-  100%{
+  100% {
     color: white;
   }
 }
@@ -50,7 +58,7 @@
   transform: translateY(-50px);
 }
 
-.getmbutton{
+.getmbutton {
   display: block;
   animation-name: buttonopac;
   animation-duration: 1s;
@@ -60,26 +68,26 @@
 }
 
 @keyframes buttonopac {
-  0%{
+  0% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-.getdbutton{
+.getdbutton {
   display: none;
 }
 
 @media screen and (min-width: 600px) {
- .banner{
-  clip-path: polygon(100% 0, 100% 100%, 0 92%, 0 0);;
- }
- .getmbutton{
-   display: none;
- }
- .getdbutton{
-   display: block;
- }
+  .banner {
+    clip-path: polygon(100% 0, 100% 100%, 0 92%, 0 0);
+  }
+  .getmbutton {
+    display: none;
+  }
+  .getdbutton {
+    display: block;
+  }
 }

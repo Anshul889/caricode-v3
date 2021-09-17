@@ -30,6 +30,11 @@ export const Carousel = styled.div`
   grid-template-columns: 66% 66% 66% 66% 66% 66% 5px;
   overflow: scroll;
   grid-gap: 30px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  ::-webkit-scrollbar {
+    display: none;
+  }
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     max-width: 1080px;
@@ -46,8 +51,9 @@ export const CarouselItem = styled.div`
   .gatsby-image-wrapper {
     border-radius: 4px;
   }
-  ::-webkit-scrollbar {
-    display: none;
+
+  p {
+    color: white;
   }
   @media screen and (min-width: 768px) {
     .gatsby-image-wrapper:hover {
@@ -90,10 +96,15 @@ export const Card = styled.div`
   h4 {
     padding-top: 20px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 830px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 75px 100px 205px;
+    p {
+      margin: 15px auto;
+    }
+  }
+  @media screen and (min-width: 1024px) {
     p {
       margin: 35px auto;
     }

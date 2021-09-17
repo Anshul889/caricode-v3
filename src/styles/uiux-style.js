@@ -431,6 +431,7 @@ export const SmallItemText = styled.div`
   font-size: 18px;
   letter-spacing: 0.9px;
   line-height: 25px;
+  font-family: 'Averta', sans-serif;
   @media screen and (min-width: 768px) {
     grid-column: 3 / span 1;
     margin-top: 10px;
