@@ -563,7 +563,7 @@ const LandingPages = () => {
         </Spring>
       </div>
       <div className={styles.landingThree}>
-        <h3>Features We'll provide</h3>
+        <h3>Features We'll provide - make it look like home page</h3>
         <div className={styles.border}></div>
         <div className={styles.howcontainer}>
           <div className={styles.howinner}>

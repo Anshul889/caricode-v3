@@ -141,10 +141,9 @@ const BlogBody = () => {
             Organic search <br /> is the golden ticket
           </h2>
           <p>
-            Lottie is an open source animation file format that’s tiny, high
-            quality, interactive, and can be manipulated at runtime. The top 500
-            apps on the App store now use Lottie to engage users and enhance
-            conversions.
+            For every enganging blog post, thats one more indexed page on your
+            website which more opurtunity to drive traffic to your website to
+            drive organic search.
           </p>
           <div className={styles.stats}>
             <h1>93%</h1>
@@ -154,7 +153,7 @@ const BlogBody = () => {
             </p>
             <h1>70%</h1>
             <p className={styles.secondp}>
-              of marketers find seo better than ppc
+              of marketers find SEO better than PPC
             </p>
           </div>
         </div>
@@ -182,7 +181,7 @@ const BlogBody = () => {
         <div className={styles.uiux}>
           <div className={styles.uiinner}>
             <div>
-              <h2>Paragraph on ui/ux</h2>
+              <h2>Transform your blog with a cutting edge ui/ux</h2>
               <p>
                 UX design has a direct and powerful impact on your SEO rankings
                 through the various metrics that search engines use to track

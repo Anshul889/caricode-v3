@@ -273,9 +273,7 @@ const WebApplications = () => {
         <HowContainer>
           <SecondHeader>
             <SecondHeaderH>
-              At CariCode we implement all the following features which are
-              critical to customer retention taking your web app to the next
-              level
+              Features that will take your webapp to the next level
             </SecondHeaderH>
           </SecondHeader>
           <HowInner>
@@ -284,7 +282,7 @@ const WebApplications = () => {
                 <CustomerImage>
                   <CustomerImg src={google} alt="" />
                 </CustomerImage>
-                <HowH>Improve customer experience</HowH>
+                <HowH>Customer experience</HowH>
                 <HowP>
                   Delight users with a fast, responsive and visually stable
                   website built with React and Google Cloud Platform. At
@@ -321,9 +319,7 @@ const WebApplications = () => {
                   Reward your customers for continuing to shop with you. Give
                   them the option to sign up for a loyalty program. However you
                   want to structure the program is fine, just make sure the
-                  rules are clear. Common programs include one point for every
-                  dollar spent, points earned for sharing on social media, or
-                  points earned for referring friends.
+                  rules are clear.
                 </HowP>
               </InnerStyles>
             </EmailAuto>

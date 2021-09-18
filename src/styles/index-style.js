@@ -113,6 +113,7 @@ export const SectionThreeContainer = styled.div`
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
+    text-transform: capitalize;
   }
   @media only screen and (min-width: 830px) {
     padding: 45px 0;

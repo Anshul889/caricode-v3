@@ -180,7 +180,7 @@ export const HowH = styled.h4`
   text-transform: uppercase;
   text-align: center;
   @media screen and (min-width: 600px) {
-    height: 64px;
+    height: 44px;
   }
 `
 

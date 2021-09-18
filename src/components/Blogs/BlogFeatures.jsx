@@ -212,8 +212,7 @@ const BlogFeatures = () => {
     <Container>
       <h2>Main section of blog Features</h2>
       <Description>
-        Filters and sorting. Make it easy for you followers to filter and sort
-        through blog posts
+        Make it easy for you followers to filter and sort through blog posts
       </Description>
       <Sort>
         <h3>Sort</h3>
@@ -269,7 +268,7 @@ const BlogFeatures = () => {
           {filter === 'Tech' && (
             <Button onClick={() => removeFilter()}>Tech</Button>
           )}
-           {filter !== 'Design' && (
+          {filter !== 'Design' && (
             <Button onClick={() => filterCategory('Design')} filters>
               Design
             </Button>
@@ -277,7 +276,7 @@ const BlogFeatures = () => {
           {filter === 'Design' && (
             <Button onClick={() => removeFilter()}>Design</Button>
           )}
-           {filter !== 'Marketing' && (
+          {filter !== 'Marketing' && (
             <Button onClick={() => filterCategory('Marketing')} filters>
               Marketing
             </Button>
@@ -294,23 +293,23 @@ const BlogFeatures = () => {
             <BlogCard>
               <Image fluid={post.src} />
               <div>
-              <Stats>
-                <img src={thumbs} />
-                <img src={comments} />
-                <img src={share} />
-                <img src={bookmark} />
-              </Stats>
-              <h3>{post.title}</h3>
-              <Title>
-                <span>{post.author}</span>
-                <span>{post.date}d ago</span>
-                <span>{post.category}</span>
-              </Title>
-              <Excerpt>{post.excerpt}</Excerpt>
-              <Numbers>
-                <div>{post.likes} likes</div>
-                <div>{post.comments} comments</div>
-              </Numbers>
+                <Stats>
+                  <img src={thumbs} />
+                  <img src={comments} />
+                  <img src={share} />
+                  <img src={bookmark} />
+                </Stats>
+                <h3>{post.title}</h3>
+                <Title>
+                  <span>{post.author}</span>
+                  <span>{post.date}d ago</span>
+                  <span>{post.category}</span>
+                </Title>
+                <Excerpt>{post.excerpt}</Excerpt>
+                <Numbers>
+                  <div>{post.likes} likes</div>
+                  <div>{post.comments} comments</div>
+                </Numbers>
               </div>
             </BlogCard>
           )

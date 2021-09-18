@@ -20,8 +20,7 @@ const BlogHero = () => {
               <br /> to your website ?
             </h1>
             <p>
-              LottieFiles provides all the tools that you need to create, edit,
-              test and display Lottie animations.
+              Blogs are critical to drive traffic, promote your product and services and build trust with your potential customers.
             </p>
           </HeroText>
           <Dashboard>

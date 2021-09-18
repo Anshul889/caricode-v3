@@ -50,7 +50,7 @@ const IndexPage = () => {
               <NotificationSmall />
             </IconAnimations>
             <h4>User Experience</h4>
-            <p>Gold standard animations to suit your brand</p>
+            <p>Gold standard animations to suit your brand.</p>
             <Button
               onClick={() => {
                 navigate('/ui-ux/')
@@ -66,8 +66,7 @@ const IndexPage = () => {
             </Animation>
             <h4>Web Applications</h4>
             <p>
-              Create amazing experiences for the web in record time—without
-              thinking once about servers or devops.
+              Create an amazing digital experience for your customers. 
             </p>
             <Button
               onClick={() => {
@@ -84,9 +83,7 @@ const IndexPage = () => {
             </SalesAnimation>
             <h4>Ecommerce</h4>
             <p>
-              We build ecommerce apps that deliver an amazing experience to your
-              customers. Our apps are backed by robust, scalable technology to
-              deliver customer engagement and return on your investment
+              Digitally transform your enterprise.
             </p>
             <Button
               onClick={() => {
