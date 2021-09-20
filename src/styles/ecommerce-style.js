@@ -5,7 +5,11 @@ export const CarouselContainer = styled.div`
   margin: 0 auto;
   padding: 45px 0;
   clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 95%);
-  background-color: rgb(94, 173, 187);
+  background: linear-gradient(
+    54deg,
+    rgba(164, 128, 255, 1) 0%,
+    rgba(255, 143, 131, 1) 100%
+  );
   transform: translateY(-73px);
   color: white;
   h2 {
@@ -83,7 +87,7 @@ export const Heading = styled.h2`
   text-align: center;
   @media screen and (min-width: 768px) {
     grid-column: 1 / span 3;
-    text-align: center!important;
+    text-align: center !important;
   }
 `
 

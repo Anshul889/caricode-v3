@@ -13,7 +13,7 @@
   row-gap: 0px;
   padding-bottom: 20px;
   width: 100%;
-  padding-top: 58px;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
@@ -149,7 +149,7 @@
   }
   .formupper {
     clip-path: polygon(100% 2.5%, 100% 100%, 0 100%, 0 0);
-    padding-top: 35px;
+    padding-top: 5px;
   }
 
   .nothing {
