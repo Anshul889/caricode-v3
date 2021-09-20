@@ -82,7 +82,7 @@ export const Heading = styled.h1`
   text-transform: none;
   letter-spacing: 0.5px;
   text-align: center;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     font-size: 40px;
   }
 `

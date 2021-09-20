@@ -19,10 +19,10 @@ const Ecommerce = () => {
     <Layout>
       <EcommerceHero />
       <CarouselContainer>
-        <h4>
+        <h2>
           Deliver an amazing ecommerce experience to your customers. A small
           selection of our work
-        </h4>
+        </h2>
         <Carousel>
           <CarouselItem>
             <a href="https://luxxette.web.app" target="_blank" rel="noreferrer">

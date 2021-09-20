@@ -26,6 +26,7 @@ h6 {
 h1 {
   font-size: 30.4px;
   line-height: 45.6px;
+  text-transform: capitalize;
 }
 
 h4 {

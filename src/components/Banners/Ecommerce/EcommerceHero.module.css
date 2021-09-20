@@ -37,6 +37,13 @@
   animation-fill-mode: forwards;
 }
 
+.bannercontent h1 {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+  margin-top: 10px;
+}
+
 @keyframes colorchange {
   0% {
     color: black;
@@ -89,5 +96,8 @@
   }
   .getdbutton {
     display: block;
+  }
+  .bannercontent h1 {
+    font-size: 40px;
   }
 }

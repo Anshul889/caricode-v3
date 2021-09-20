@@ -8,18 +8,20 @@ export const CarouselContainer = styled.div`
   background-color: rgb(94, 173, 187);
   transform: translateY(-73px);
   color: white;
-  h4 {
+  h2 {
     padding-top: 15px;
     margin: 0 auto;
     width: 90%;
     max-width: 1200px;
     margin-bottom: 28px;
+    text-transform: capitalize;
+    text-align: center;
   }
   @media screen and (min-width: 768px) {
     padding: 55px 0;
     transform: translateY(-80px);
     clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%);
-    h4 {
+    h2 {
       margin-bottom: 38px;
     }
   }
@@ -75,9 +77,13 @@ export const Cards = styled.div`
   }
 `
 
-export const Heading = styled.h4`
+export const Heading = styled.h2`
+  text-transform: capitalize;
+  max-width: 1200px;
+  text-align: center;
   @media screen and (min-width: 768px) {
     grid-column: 1 / span 3;
+    text-align: center!important;
   }
 `
 

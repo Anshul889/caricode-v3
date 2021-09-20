@@ -6,7 +6,7 @@ const EcommerceHero = () => {
     <div className={styles.upperbanner}>
       <div className={styles.banner}>
         <div className={styles.bannercontent}>
-          <h2>Build, deploy and manage your online business</h2>
+          <h1>Build, deploy and manage your online business</h1>
           <p>
             Digitally transform your enterprise. We create ecommerce web
             applications backed by robust, scalable technology to deliver

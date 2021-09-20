@@ -572,7 +572,12 @@
     grid-template-columns: 1.15fr 1fr;
   }
   .colorbg1 {
-    background-color: #4ba4b4;
+    background: linear-gradient(
+      153deg,
+      rgba(164, 128, 255, 0.7570378493194152) 35%,
+      rgba(255, 143, 131, 0.7346288857339811) 100%
+    );
+
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -621,7 +626,11 @@
     grid-row: 1;
   }
   .colorbg2 {
-    background-color: #8693bc;
+    background: linear-gradient(
+      60deg,
+      rgba(164, 128, 255, 0.7570378493194152) 0%,
+      rgba(255, 143, 131, 0.7346288857339811) 71%
+    );
     display: grid;
     grid-template-columns: 1fr;
   }
