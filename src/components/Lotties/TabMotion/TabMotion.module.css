@@ -69,30 +69,30 @@
 
 @keyframes tabmove {
   0% {
-    transform: translateX(2px);
+    transform: translateX(5px);
   }
 
   5% {
-    transform: translateX(2px);
+    transform: translateX(5px);
   }
 
   9% {
-    transform: translateX(75px);
+    transform: translateX(85px);
     width: 64px;
   }
 
   60% {
-    transform: translateX(75px);
+    transform: translateX(85px);
     width: 64px;
   }
 
   63% {
-    transform: translateX(2px);
+    transform: translateX(5px);
     width: 56px;
   }
 
   100% {
-    transform: translateX(2px);
+    transform: translateX(5px);
     width: 56px;
   }
 }

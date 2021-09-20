@@ -94,7 +94,7 @@ export const Principle = styled.div`
     }
   }
   @media screen and (min-width: 1024px) {
-    grid-template-rows: 200px 80px 150px;
+    grid-template-rows: 200px 64px 170px;
     padding-top: 5%;
     p {
       margin-top: 24px;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Popup = styled.div`
   background-color: #008272;
@@ -11,7 +11,7 @@ export const Popup = styled.div`
     width: 100%;
   }
   @media screen and (min-width: 1024px) {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 `
@@ -20,12 +20,16 @@ export const Focus = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 65px 65px;
-  margin: 30px 0;
+  margin: 30px auto;
   overflow: hidden;
   height: 130px;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     margin: 0;
     transform: translateY(30px);
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0 auto;
+    width: 96%;
   }
 `
 
@@ -48,11 +52,11 @@ export const Notification = styled.div`
       transform: translateY(65px);
     }
     15% {
-      transform: translateY(16px);
+      transform: translateY(17px);
     }
 
     60% {
-      transform: translateY(16px);
+      transform: translateY(17px);
     }
 
     75% {
@@ -64,8 +68,9 @@ export const Notification = styled.div`
   }
   @media screen and (min-width: 730px) {
     font-size: 12px;
+    width: 66%;
   }
   @media screen and (min-width: 1024px) {
-    font-size: 14px;
+    font-size: 13px;
   }
 `
