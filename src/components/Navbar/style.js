@@ -31,6 +31,7 @@ export const DesktopNavigation = styled.div`
 
 export const Logo = styled(GatsbyLink)`
   font-size: 16px;
+  font-family: 'Averta';
   @media (max-width: 768px) {
     font-size: 18px;
     grid-column: 2 / span 1;

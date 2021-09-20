@@ -616,7 +616,7 @@ const LandingPages = () => {
               <StaticImage src="../images/image5.jpg" />
             </CardImage>
             <Cardtext>
-              <h4 style={{ color: '#444' }}>Maintable code</h4>
+              <h4 style={{ color: '#444' }}>Maintainable code</h4>
               <Border />
               <p>
                 Screen sizes are always changing, so it's important that your

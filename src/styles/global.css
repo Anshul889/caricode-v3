@@ -49,8 +49,9 @@ ul {
 }
 
 li {
-  font-size: 19.6px;
+  font-size: 14.6px;
   font-weight: 300;
+  line-height: 20px;
 }
 
 a {

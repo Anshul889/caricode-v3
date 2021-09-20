@@ -158,8 +158,14 @@ export const Excerpt = styled.p`
 export const Features = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
+  margin: 40px auto;
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    width: 96%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%;
   }
 `
 

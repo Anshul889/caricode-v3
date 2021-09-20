@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
+import styled from 'styled-components'
 import animationData from './bar-graph.json'
 
 const defaultOptions = {
@@ -11,14 +12,20 @@ const defaultOptions = {
   },
 }
 
+const Container = styled.div`
+ @media screen and (min-width: 768px) {
+  height: 400px;
+ }
+`
+
 const InfographicLottie = () => {
   return (
-    <div>
+    <Container>
       <Lottie
         options={defaultOptions}
         isStopped={false}
       />
-    </div>
+    </Container>
   )
 }
 
