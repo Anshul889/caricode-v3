@@ -77,6 +77,12 @@ const getImages = graphql`
 //   height: 200px;
 // `
 
+const Cardtext = styled(CardText)`
+@media screen and (max-width: 768px) {
+  padding-bottom: 32px;
+}
+`
+
 const LandingThree = styled(SectionThreeContainer)`
   margin-top: 800px;
   margin-bottom: 120px;
@@ -595,7 +601,7 @@ const LandingPages = () => {
             <CardImage>
               <StaticImage src="../images/css.jpg" />
             </CardImage>
-            <CardText>
+            <Cardtext>
               <h4 style={{ color: '#444' }}>Pixel Perfect CSS</h4>
               <Border />
               <p>
@@ -603,26 +609,26 @@ const LandingPages = () => {
                 online venture, as highly performing sites engage and retain
                 users better than poorly performing ones.
               </p>
-            </CardText>
+            </Cardtext>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/image5.jpg" />
             </CardImage>
-            <CardText>
+            <Cardtext>
               <h4 style={{ color: '#444' }}>Maintable code</h4>
               <Border />
               <p>
                 Screen sizes are always changing, so it's important that your
                 site can adapt to any screen size, today or in the future.
               </p>
-            </CardText>
+            </Cardtext>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/interactive.jpg" />
             </CardImage>
-            <CardText>
+            <Cardtext>
               <h4 style={{ color: '#444' }}>Interactive and Fun to use</h4>
 
               <Border />
@@ -631,39 +637,39 @@ const LandingPages = () => {
                 maintained by Facebook. Used by all major technology firms,
                 Uber, Twitter, Netlfix and Airbnb.
               </p>
-            </CardText>
+            </Cardtext>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/image3.jpg" />
             </CardImage>
-            <CardText>
+            <Cardtext>
               <h4 style={{ color: '#444' }}>Site Speed</h4>
               <Border />
               <p>
                 Mobile users are very goal-oriented. They expect to be able to
                 get what they need, immediately, and on their own terms.
               </p>
-            </CardText>
+            </Cardtext>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/image7.jpg" />
             </CardImage>
-            <CardText>
+            <Cardtext>
               <h4 style={{ color: '#444' }}>Seo Friendly</h4>
               <Border />
               <p>
                 Custom Navigation for the Web and Mobile, Authentications, Blog,
                 Offline support, Easily manage your content
               </p>
-            </CardText>
+            </Cardtext>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/results.jpg" />
             </CardImage>
-            <CardText>
+            <Cardtext>
               <h4 style={{ color: '#444' }}>Results</h4>
 
               <Border />
@@ -672,7 +678,7 @@ const LandingPages = () => {
                 making it easy to delight your users, grow engagement and
                 increase conversions.
               </p>
-            </CardText>
+            </Cardtext>
           </Card>
         </SectionThree>
       </LandingThree>
