@@ -81,7 +81,7 @@ const LandingThree = styled(SectionThreeContainer)`
   margin-top: 800px;
   margin-bottom: 120px;
   @media screen and (min-width: 768px) {
-    margin: 20px 0
+    margin: 0
   }
 `
 
