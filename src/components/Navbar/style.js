@@ -106,9 +106,9 @@ export const MItem = styled(GatsbyLink)`
   font-size: 0.6rem;
   letter-spacing: 0.0075rem;
   text-decoration: none;
-  color: #ff8f83;
+  color: #444;
   filter: grayscale(100%);
-  opacity: 0.5;
+  opacity: 0.3;
 `;
 
 export const MItemImg = styled.img`
