@@ -37,6 +37,8 @@ import Lottie from 'react-lottie'
 import animationData from '../components/Lotties/Landing/landing.json'
 import Border from '../components/Border/Border'
 import { StaticImage } from 'gatsby-plugin-image'
+import styled from 'styled-components'
+import Css from '../components/Lotties/Css/Css'
 
 const getImages = graphql`
   {
@@ -68,6 +70,18 @@ const getImages = graphql`
         }
       }
     }
+  }
+`
+
+// const CardAnimation = styled.div`
+//   height: 200px;
+// `
+
+const LandingThree = styled(SectionThreeContainer)`
+  margin-top: 800px;
+  margin-bottom: 120px;
+  @media screen and (min-width: 768px) {
+    margin: 20px 0
   }
 `
 
@@ -571,7 +585,7 @@ const LandingPages = () => {
           )}
         </Spring>
       </div>
-      <SectionThreeContainer>
+      <LandingThree>
         <h3>Features we'll provide</h3>
         <div style={{ width: '90%', margin: '0 auto', maxWidth: '1200px' }}>
           <Border />
@@ -579,7 +593,7 @@ const LandingPages = () => {
         <SectionThree>
           <Card>
             <CardImage>
-              <StaticImage src="../images/image3.jpg" />
+              <StaticImage src="../images/css.jpg" />
             </CardImage>
             <CardText>
               <h4 style={{ color: '#444' }}>Pixel Perfect CSS</h4>
@@ -593,7 +607,7 @@ const LandingPages = () => {
           </Card>
           <Card>
             <CardImage>
-              <StaticImage src="../images/image4.jpg" />
+              <StaticImage src="../images/image5.jpg" />
             </CardImage>
             <CardText>
               <h4 style={{ color: '#444' }}>Maintable code</h4>
@@ -606,7 +620,7 @@ const LandingPages = () => {
           </Card>
           <Card>
             <CardImage>
-              <StaticImage src="../images/image5.jpg" />
+              <StaticImage src="../images/interactive.jpg" />
             </CardImage>
             <CardText>
               <h4 style={{ color: '#444' }}>Interactive and Fun to use</h4>
@@ -621,9 +635,7 @@ const LandingPages = () => {
           </Card>
           <Card>
             <CardImage>
-              <StaticImage
-                src="../images/image6.jpg"
-              />
+              <StaticImage src="../images/image3.jpg" />
             </CardImage>
             <CardText>
               <h4 style={{ color: '#444' }}>Site Speed</h4>
@@ -649,7 +661,7 @@ const LandingPages = () => {
           </Card>
           <Card>
             <CardImage>
-              <StaticImage src="../images/image8.jpg" />
+              <StaticImage src="../images/results.jpg" />
             </CardImage>
             <CardText>
               <h4 style={{ color: '#444' }}>Results</h4>
@@ -663,7 +675,7 @@ const LandingPages = () => {
             </CardText>
           </Card>
         </SectionThree>
-      </SectionThreeContainer>
+      </LandingThree>
       {/* <div className={styles.landingThree}>
         <h3>Features We'll provide - make it look like home page</h3>
         <div className={styles.border}></div>
