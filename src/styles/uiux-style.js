@@ -141,7 +141,7 @@ export const Olydiv = styled.div`
     width: 80%;
     margin: 0 auto;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     width: 50%;
     margin: 0 auto;
   }
@@ -268,6 +268,7 @@ export const OneAnimation = styled.div`
 export const ItemText = styled.div`
   h3 {
     text-align: center;
+    text-transform: uppercase;
   }
   p {
   }

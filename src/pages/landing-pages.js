@@ -24,10 +24,19 @@ import { config, Spring } from 'react-spring/renderprops'
 import axios from 'axios'
 import cross from '../images/cross.svg'
 import check from '../images/check.svg'
+import {
+  Card,
+  CardImage,
+  CardText,
+  SectionThree,
+  SectionThreeContainer,
+} from '../styles/index-style'
 import { useTransition, animated } from 'react-spring'
 import LandingHero from '../components/Banners/Landing/LandingHero'
 import Lottie from 'react-lottie'
 import animationData from '../components/Lotties/Landing/landing.json'
+import Border from '../components/Border/Border'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const getImages = graphql`
   {
@@ -562,7 +571,100 @@ const LandingPages = () => {
           )}
         </Spring>
       </div>
-      <div className={styles.landingThree}>
+      <SectionThreeContainer>
+        <h3>Features we'll provide</h3>
+        <div style={{ width: '90%', margin: '0 auto', maxWidth: '1200px' }}>
+          <Border />
+        </div>
+        <SectionThree>
+          <Card>
+            <CardImage>
+              <StaticImage src="../images/image3.jpg" />
+            </CardImage>
+            <CardText>
+              <h4 style={{ color: '#444' }}>Pixel Perfect CSS</h4>
+              <Border />
+              <p>
+                Performance plays a significant role in the success of any
+                online venture, as highly performing sites engage and retain
+                users better than poorly performing ones.
+              </p>
+            </CardText>
+          </Card>
+          <Card>
+            <CardImage>
+              <StaticImage src="../images/image4.jpg" />
+            </CardImage>
+            <CardText>
+              <h4 style={{ color: '#444' }}>Maintable code</h4>
+              <Border />
+              <p>
+                Screen sizes are always changing, so it's important that your
+                site can adapt to any screen size, today or in the future.
+              </p>
+            </CardText>
+          </Card>
+          <Card>
+            <CardImage>
+              <StaticImage src="../images/image5.jpg" />
+            </CardImage>
+            <CardText>
+              <h4 style={{ color: '#444' }}>Interactive and Fun to use</h4>
+
+              <Border />
+              <p>
+                Built with React JS, a scalable technology developed and
+                maintained by Facebook. Used by all major technology firms,
+                Uber, Twitter, Netlfix and Airbnb.
+              </p>
+            </CardText>
+          </Card>
+          <Card>
+            <CardImage>
+              <StaticImage
+                src="../images/image6.jpg"
+              />
+            </CardImage>
+            <CardText>
+              <h4 style={{ color: '#444' }}>Site Speed</h4>
+              <Border />
+              <p>
+                Mobile users are very goal-oriented. They expect to be able to
+                get what they need, immediately, and on their own terms.
+              </p>
+            </CardText>
+          </Card>
+          <Card>
+            <CardImage>
+              <StaticImage src="../images/image7.jpg" />
+            </CardImage>
+            <CardText>
+              <h4 style={{ color: '#444' }}>Seo Friendly</h4>
+              <Border />
+              <p>
+                Custom Navigation for the Web and Mobile, Authentications, Blog,
+                Offline support, Easily manage your content
+              </p>
+            </CardText>
+          </Card>
+          <Card>
+            <CardImage>
+              <StaticImage src="../images/image8.jpg" />
+            </CardImage>
+            <CardText>
+              <h4 style={{ color: '#444' }}>Results</h4>
+
+              <Border />
+              <p>
+                A high-quality Progressive Web App has incredible benefits,
+                making it easy to delight your users, grow engagement and
+                increase conversions.
+              </p>
+            </CardText>
+          </Card>
+        </SectionThree>
+      </SectionThreeContainer>
+      {/* <div className={styles.landingThree}>
         <h3>Features We'll provide - make it look like home page</h3>
         <div className={styles.border}></div>
         <div className={styles.howcontainer}>
@@ -1237,7 +1339,7 @@ const LandingPages = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
       <Spring
         from={{ bottom: -1 }}
         to={{
