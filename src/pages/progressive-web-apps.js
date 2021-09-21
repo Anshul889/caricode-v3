@@ -105,8 +105,8 @@ const ProgressiveWebApps = () => {
             <h4>
               A number of companies have succeeded with Progressive Web Apps:
             </h4>
-            <dt>Twitter</dt>
-            <dd>
+            <h4>Twitter</h4>
+            <p>
               The Twitter Lite Progressive Web App became the default mobile web
               experience for all users globally in April 2017, which resulted
               in:
@@ -115,28 +115,28 @@ const ProgressiveWebApps = () => {
                 <li>75% increase in Tweets sent</li>
                 <li>20% decrease in bounce rate</li>
               </ul>
-            </dd>
+            </p>
 
-            <dt>Flipkart</dt>
-            <dd>
+            <h4>Flipkart</h4>
+            <p>
               Flipkart, India’s largest e-commerce site, decided to combine
               their web presence and native app into a Progressive Web
               Application, resulting in a 70% increase in conversions.
-            </dd>
-            <dt>Wego</dt>
-            <dd>
+            </p>
+            <h4>Wego</h4>
+            <p>
               After building a PWA, the travel company Wego noticed a 26%
               increase in the number of users, a 95% increase in conversions on
               Android, and a 50% increase on iOS.
-            </dd>
-            <dt>BookMyShow</dt>
-            <dd>
+            </p>
+            <h4>BookMyShow</h4>
+            <p>
               BookMyShow India’s largest ticketing firm, with 50+ million
               monthly visitors, developed an improved version of their mobile
               website using a Progressive Web App (PWA), delivering an 80+%
               increase in conversions, which means more users purchasing
               tickets.
-            </dd>
+            </p>
           </Content>
           <Recommended>
             <Rec>

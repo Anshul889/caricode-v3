@@ -114,27 +114,27 @@ const CleanDesign = () => {
           <Recommended>
             <Rec>
               <FirstItem>
-                <Link to="/multi-device-support">
+                <Link to="/custom-functionality/">
                   <StaticImage src="../images/image5.jpg" />
                 </Link>
                 <h3>
-                  <Link to="/clean-design">Clean Design</Link>
-                </h3>
-                <p>
-                  Mobile users are very goal-oriented. They expect to be able to
-                  get what they need, immediately, and on their own terms.
-                </p>
-              </FirstItem>
-              <SecondItem>
-                <Link to="/customised-functionality">
-                  <StaticImage src="../images/image6.jpg" />
-                </Link>
-                <h3>
-                  <Link to="/custom-functionality">Custom Functionality</Link>
+                  <Link to="/custom-functionality/">Custom Functionality</Link>
                 </h3>
                 <p>
                   Custom Navigation for the Web and Mobile, Authentications,
                   Blog, Offline support, Easily manage your content
+                </p>
+              </FirstItem>
+              <SecondItem>
+                <Link to="/progressive-web-apps/">
+                  <StaticImage src="../images/image6.jpg" />
+                </Link>
+                <h3>
+                  <Link to="/progressive-web-apps/">Progressive Web Apps</Link>
+                </h3>
+                <p>
+                  Mobile users are very goal-oriented. They expect to be able to
+                  get what they need, immediately, and on their own terms.
                 </p>
               </SecondItem>
             </Rec>

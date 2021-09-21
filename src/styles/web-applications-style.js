@@ -121,11 +121,16 @@ export const SecondHeader = styled.div`
   padding: 38px 0;
 `
 
-export const SecondHeaderH = styled.h4`
+export const SecondHeaderH = styled.h3`
   width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
   text-transform: none;
   max-width: 800px;
+  @media screen and (min-width: 830px) {
+    margin: 20px auto;
+    font-size: 28px;
+    text-align: center;
+  }
 `
 
 export const HowContainer = styled.div`
@@ -138,7 +143,7 @@ export const HowContainer = styled.div`
 `
 
 export const HowInner = styled.div`
-  p{
+  p {
     color: white;
   }
   @media screen and (min-width: 600px) {
@@ -179,7 +184,7 @@ export const HowH = styled.h4`
   line-height: 1.5;
   text-transform: uppercase;
   text-align: center;
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 830px) {
     height: 44px;
   }
 `

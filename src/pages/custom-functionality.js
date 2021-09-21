@@ -38,7 +38,7 @@ const CustomFunctionality = () => {
               customised to suit your needs.
             </p>
             <h4>Two of our key features are detailed below:</h4>
-            <dt>Blogs</dt>
+            <h4>Blogs</h4>
             <p>
               1. Blogging Helps Your Business to Compete: blogging is important
               to let consumers know how you are different.
@@ -72,7 +72,7 @@ const CustomFunctionality = () => {
               7. A Business Blog Can Generate Leads: The blog layout we offer is
               optimized for actions that are important to your business.
             </p>
-            <dt>Offline Support</dt>
+            <h4>Offline Support</h4>
             <p>
               Offline support and reliable performance is a critical feature of
               all the websites we built. Progressive Web Apps offer the most

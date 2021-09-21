@@ -13,6 +13,12 @@ import {
 } from '../styles/page-style'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
+
+const Table = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+`
 
 const BaseTechnologies = () => {
   return (
@@ -34,7 +40,9 @@ const BaseTechnologies = () => {
               At CariCode, we build all our web applications with React JS, a
               scalable technology developed and maintained by Facebook.
             </p>
-            <h4>Advantages of Reactjs versus a CMS system like Wordpress</h4>
+            <p style={{ fontWeight: 'bold' }}>
+              Advantages of Reactjs versus a CMS system like Wordpress
+            </p>
             <p>
               <b>Design:</b> With Wordpress you are constrained in the design
               and the way you organize your website. That is why all Wordpress
@@ -101,37 +109,41 @@ const BaseTechnologies = () => {
               on plugins. A lot of plugins. With a React JS sites, you can get
               lean and mean, with a tool that does exactly what you need it to
             </p>
-            <h4>
+            <p style={{ fontWeight: 'bold' }}>
               React JS is Used by all major technology firms including Uber,
               Twitter, Netflix and Airbnb.
-            </h4>
+            </p>
             <h4>Examples of Companies Using React</h4>
-            <dt>Netflix</dt>
-            <dd>
-              There are two reasons why Netflix decided to go into React:
-              performance, code simplicity and modularity. You can read about
-              that in details on Netflix Techblog.
-            </dd>
-            <dt>
-              Atlassian - the creators of Jira, BitBucket, HipChat and many more
-            </dt>
-            <dd>
-              HipChat is one of the most popular team-communication tools in the
-              World. Its team has been recently rebuilding their web version to
-              React. Atlassian developers were deciding between Angular, Ember
-              and React. After prototyping HipChat client in all of these
-              technologies, they picked React. They summed up the main benefits
-              of React in their blogpost using phrase from Tom Ochino’s talk
-            </dd>
-            <dt>Khan Academy</dt>
-            <dd>
-              Many parts of Khan Academy are working on React right now. Joel
-              Burget, who was a developer in Khan Academy, shared his experience
-              about migrating from Backbone to React. He mentions one of the
-              most the best features of React - it manages how the elements on
-              the page must change in the efficient way. React avoids
-              unnecessary re-renders.
-            </dd>
+            <Table>
+              <h4>Netflix</h4>
+              <p>
+                There are two reasons why Netflix decided to go into React:
+                performance, code simplicity and modularity. You can read about
+                that in details on Netflix Techblog.
+              </p>
+              <h4>
+                Atlassian - the creators of Jira, BitBucket, HipChat and many
+                more
+              </h4>
+              <p>
+                HipChat is one of the most popular team-communication tools in
+                the World. Its team has been recently rebuilding their web
+                version to React. Atlassian developers were deciding between
+                Angular, Ember and React. After prototyping HipChat client in
+                all of these technologies, they picked React. They summed up the
+                main benefits of React in their blogpost using phrase from Tom
+                Ochino’s talk
+              </p>
+              <h4>Khan Academy</h4>
+              <p>
+                Many parts of Khan Academy are working on React right now. Joel
+                Burget, who was a developer in Khan Academy, shared his
+                experience about migrating from Backbone to React. He mentions
+                one of the most the best features of React - it manages how the
+                elements on the page must change in the efficient way. React
+                avoids unnecessary re-renders.
+              </p>
+            </Table>
           </Content>
           <Recommended>
             <Rec>

@@ -4,7 +4,7 @@ export const DContainer = styled.div`
   display: none;
   @media screen and (min-width: 768px) {
     display: grid;
-    height: 500px;
+    height: 540px;
     place-content: center;
     width: 96%;
     margin: 0 auto;
@@ -43,6 +43,10 @@ export const DHero = styled.div`
     margin-left: 7%;
     margin-bottom: 25%;
     color: white;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: 1024px) {
     column-gap: 30px;
