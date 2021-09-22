@@ -71,10 +71,11 @@ const UiUx = () => {
   return (
     <Layout>
       <Seo
-        title={'Blog Development and Best SEO practices'}
-        description="At CariCode, we build blazing fast blogs to delight and retain users."
-        pathname="/blogs/"
-        image="/images/image4.jpg"
+        title={'UI/UX'}
+        description="User Interface brought to life with Motion"
+        pathname="/ui-ux/"
+        image="/images/image3.jpg"
+        thumbnail="images/image3.png"
         date={'2020-01-30'}
       />
       <UiuxBanner />

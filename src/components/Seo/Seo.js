@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-const SEO = ({ title, description, image, pathname, article, date }) => (
+const SEO = ({ title, description, image, pathname, article, date, thumbnail }) => (
   <StaticQuery
     query={query}
     render={({
@@ -24,6 +24,7 @@ const SEO = ({ title, description, image, pathname, article, date }) => (
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname || '/'}`,
         date: date || defaultDate,
+        thumbnail: `${siteUrl}${thumbnail}`,
       }
       return (
         <>
@@ -39,7 +40,15 @@ const SEO = ({ title, description, image, pathname, article, date }) => (
             {seo.description && (
               <meta property="og:description" content={seo.description} />
             )}
-            {seo.image && <meta property="og:image" content={seo.image} />}
+             {seo.image && <meta property="og:image" content={seo.image} />}
+            {seo.image &&  <meta property="og:image:type" content="image/jpg" />}
+            {seo.image && <meta property="og:image:width" content="1200" />}
+            {seo.image && <meta property="og:image:height" content="630" />}
+
+            {seo.image && <meta property="og:image" content={seo.thumbnail} />}
+            {seo.image && <meta property="og:image:type" content="image/png" />}
+            {seo.image && <meta property="og:image:width" content="300" />}
+            {seo.image && <meta property="og:image:height" content="300" />}F
             <meta name="twitter:card" content="summary_large_image" />
             {twitterUsername && (
               <meta name="twitter:creator" content={twitterUsername} />
