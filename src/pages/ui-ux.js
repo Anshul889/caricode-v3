@@ -75,7 +75,7 @@ const UiUx = () => {
         description="User Interface brought to life with Motion"
         pathname="/ui-ux/"
         image="/images/image3.jpg"
-        thumbnail="images/image3.png"
+        thumbnail="/images/image3.png"
         date={'2020-01-30'}
       />
       <UiuxBanner />
