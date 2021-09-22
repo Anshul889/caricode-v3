@@ -164,7 +164,7 @@
   margin: 0 auto;
   padding: 10px;
   z-index: 1000;
-  background-color: #4ba4b4;
+  background-color: transparent;
   position: relative;
   display: block;
   text-align: center;
@@ -200,7 +200,7 @@
   border-radius: 14px;
   border: 1px solid #ffffffa8;
   padding: 20px 0;
-  background-color: #6e678e;
+  background-color: transparent;
 }
 
 .freecourse {

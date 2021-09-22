@@ -162,27 +162,27 @@ const LandingPages = () => {
         <ParallaxLayer
           offset={0}
           speed={0}
-          style={{ backgroundColor: '#484459' }}
+          style={{ background: 'linear-gradient(51deg, rgba(150,117,233,1) 0%, rgba(214,120,110,0.9839286056219363) 100%)' }}
         />
         <ParallaxLayer
           offset={1}
           speed={0}
-          style={{ backgroundColor: '#5eadbb' }}
+          style={{ backgroundColor: '#114b7b' }}
         />
         <ParallaxLayer
           offset={2}
           speed={0}
-          style={{ backgroundColor: '#757575' }}
+          style={{ backgroundColor: '#fd5646' }}
         />
         <ParallaxLayer
           offset={3}
           speed={0}
-          style={{ backgroundColor: '#5eadbb' }}
+          style={{ background: 'linear-gradient(51deg, rgba(105,61,193,1) 0%, rgba(195,54,140,1) 100%)' }}
         />
         <ParallaxLayer
           offset={4}
           speed={0}
-          style={{ backgroundColor: '#7b749a' }}
+          style={{ background: 'linear-gradient(-135deg, #590a0d 0%, #10071c 100%)' }}
         />
         <ParallaxLayer offset={0} speed={0} factor={5} />
 
