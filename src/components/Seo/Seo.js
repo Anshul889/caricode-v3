@@ -32,6 +32,9 @@ const SEO = ({ title, description, image, pathname, article, date, thumbnail }) 
             <meta name="description" content={seo.description} />
             <meta name="google-site-verification" content="opp2HWyDP3HJBpq5OIkU7hy7-gX3gwrBeilxFoQO0Ng" />
             <meta name="image" content={seo.image} />
+            <meta name="thumbnail" content={seo.thumbnail}/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:site_name" content="Caricode" />
             {seo.url && <meta property="og:url" content={seo.url} />}
             {(article ? true : null) && (
               <meta property="og:type" content="article" />
