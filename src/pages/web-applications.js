@@ -93,6 +93,13 @@ const getImages = graphql`
         }
       }
     }
+    image4: file(relativePath: { eq: "harddrive.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
@@ -472,6 +479,21 @@ const WebApplications = () => {
                   allow an individual or organization to provide information on
                   specific fields and furthermore specify which fields are
                   mandatory to fill in and the ones that are optional.
+                </HowP>
+                {/* Store and serve user-generated content with ease as your app grows from prototype to production-ready. */}
+              </InnerStyles>
+            </EmailAuto>
+            <EmailAuto>
+              <InnerStyles>
+                <LoyaltyImage>
+                  <Img
+                    fluid={data.image4.childImageSharp.fluid}
+                    style={{ borderRadius: '4px' }}
+                  />
+                </LoyaltyImage>
+                <HowH>Cloud Storage</HowH>
+                <HowP>
+                Store and serve user-generated content with ease as your app grows from prototype to production-ready.
                 </HowP>
               </InnerStyles>
             </EmailAuto>
