@@ -18,11 +18,11 @@ const CustomFunctionality = () => {
   return (
     <Layout>
       <Seo
-        title={'Customised Functionality'}
+        title={'Custom Functionality'}
         description="At CariCode we develop your website so it can be accessed seamlessly
        across different devices: phones, qphablets, tablets,
        laptops, desktops, and more."
-        pathname="/customised-functionality"
+        pathname="/custom-functionality"
         image="/images/image3.jpg"
         article={true}
         date={'2020-01-30'}
