@@ -5,7 +5,7 @@ module.exports = {
       'We design, build, deploy and manage web applications. Powered by Google Cloud.',
     url: 'https://www.caricode.co', // No trailing slash allowed!
     image: '/images/image3.jpg', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@caricode',
+    twitterUsername: '@AnshulManaktala',
     date: '2020-01-28',
     title: 'Caricode',
   },

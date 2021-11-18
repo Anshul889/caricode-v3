@@ -198,3 +198,12 @@ export const CardText = styled.div`
     grid-template-rows: 40px 21px 146px 100px;
   }
 `
+
+export const CardTextLP = styled(CardText)`
+  @media only screen and (min-width: 830px) {
+    grid-template-rows: 40px 21px 116px;
+  }
+  @media only screen and (min-width: 1024px) {
+    grid-template-rows: 40px 21px 146px;
+  }
+`

@@ -77,17 +77,23 @@ const getImages = graphql`
 //   height: 200px;
 // `
 
-const Cardtext = styled(CardText)`
-@media screen and (max-width: 768px) {
-  padding-bottom: 32px;
-}
+const CardtextLP = styled(CardText)`
+  @media screen and (max-width: 768px) {
+    padding-bottom: 32px;
+  }
+  @media only screen and (min-width: 830px) {
+    grid-template-rows: 40px 21px 116px 30px;
+  }
+  @media only screen and (min-width: 1024px) {
+    grid-template-rows: 40px 21px 146px 20px;
+  }
 `
 
 const LandingThree = styled(SectionThreeContainer)`
   margin-top: 800px;
   margin-bottom: 120px;
   @media screen and (min-width: 768px) {
-    margin: 0
+    margin: 0;
   }
 `
 
@@ -162,7 +168,10 @@ const LandingPages = () => {
         <ParallaxLayer
           offset={0}
           speed={0}
-          style={{ background: 'linear-gradient(51deg, rgba(150,117,233,1) 0%, rgba(214,120,110,0.9839286056219363) 100%)' }}
+          style={{
+            background:
+              'linear-gradient(51deg, rgba(150,117,233,1) 0%, rgba(214,120,110,0.9839286056219363) 100%)',
+          }}
         />
         <ParallaxLayer
           offset={1}
@@ -177,12 +186,17 @@ const LandingPages = () => {
         <ParallaxLayer
           offset={3}
           speed={0}
-          style={{ background: 'linear-gradient(51deg, rgba(105,61,193,1) 0%, rgba(195,54,140,1) 100%)' }}
+          style={{
+            background:
+              'linear-gradient(51deg, rgba(105,61,193,1) 0%, rgba(195,54,140,1) 100%)',
+          }}
         />
         <ParallaxLayer
           offset={4}
           speed={0}
-          style={{ background: 'linear-gradient(-135deg, #590a0d 0%, #10071c 100%)' }}
+          style={{
+            background: 'linear-gradient(-135deg, #590a0d 0%, #10071c 100%)',
+          }}
         />
         <ParallaxLayer offset={0} speed={0} factor={5} />
 
@@ -601,7 +615,7 @@ const LandingPages = () => {
             <CardImage>
               <StaticImage src="../images/css.jpg" />
             </CardImage>
-            <Cardtext>
+            <CardtextLP>
               <h4 style={{ color: '#444' }}>Pixel Perfect CSS</h4>
               <Border />
               <p>
@@ -609,26 +623,26 @@ const LandingPages = () => {
                 online venture, as highly performing sites engage and retain
                 users better than poorly performing ones.
               </p>
-            </Cardtext>
+            </CardtextLP>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/image5.jpg" />
             </CardImage>
-            <Cardtext>
+            <CardtextLP>
               <h4 style={{ color: '#444' }}>Maintainable code</h4>
               <Border />
               <p>
                 Screen sizes are always changing, so it's important that your
                 site can adapt to any screen size, today or in the future.
               </p>
-            </Cardtext>
+            </CardtextLP>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/interactive.jpg" />
             </CardImage>
-            <Cardtext>
+            <CardtextLP>
               <h4 style={{ color: '#444' }}>Interactive and Fun to use</h4>
 
               <Border />
@@ -637,39 +651,39 @@ const LandingPages = () => {
                 maintained by Facebook. Used by all major technology firms,
                 Uber, Twitter, Netlfix and Airbnb.
               </p>
-            </Cardtext>
+            </CardtextLP>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/image3.jpg" />
             </CardImage>
-            <Cardtext>
+            <CardtextLP>
               <h4 style={{ color: '#444' }}>Site Speed</h4>
               <Border />
               <p>
                 Mobile users are very goal-oriented. They expect to be able to
                 get what they need, immediately, and on their own terms.
               </p>
-            </Cardtext>
+            </CardtextLP>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/image7.jpg" />
             </CardImage>
-            <Cardtext>
+            <CardtextLP>
               <h4 style={{ color: '#444' }}>Seo Friendly</h4>
               <Border />
               <p>
                 Custom Navigation for the Web and Mobile, Authentications, Blog,
                 Offline support, Easily manage your content
               </p>
-            </Cardtext>
+            </CardtextLP>
           </Card>
           <Card>
             <CardImage>
               <StaticImage src="../images/results.jpg" />
             </CardImage>
-            <Cardtext>
+            <CardtextLP>
               <h4 style={{ color: '#444' }}>Results</h4>
 
               <Border />
@@ -678,7 +692,7 @@ const LandingPages = () => {
                 making it easy to delight your users, grow engagement and
                 increase conversions.
               </p>
-            </Cardtext>
+            </CardtextLP>
           </Card>
         </SectionThree>
       </LandingThree>
