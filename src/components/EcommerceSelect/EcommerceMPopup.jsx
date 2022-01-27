@@ -10,7 +10,7 @@ const EcommerceMPopup = ({numberFeatures}) => {
           <div className={styles.featureselected}>
             <div className={styles.mfeatures}>Features : {numberFeatures}</div>
             <div className={styles.mtotal}>
-              Total: Rs{numberFeatures * 900}/mo
+              Total: ${numberFeatures * 10}/mo
             </div>
             <div
               onClick={() => window.scrollTo({ top: 9000, behavior: 'smooth' })}

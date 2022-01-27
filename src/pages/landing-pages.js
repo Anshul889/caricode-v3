@@ -22,8 +22,6 @@ import watch from '../images/watch.svg'
 import VisibilitySensor from 'react-visibility-sensor'
 import { config, Spring } from 'react-spring/renderprops'
 import axios from 'axios'
-import cross from '../images/cross.svg'
-import check from '../images/check.svg'
 import {
   Card,
   CardImage,
@@ -38,7 +36,6 @@ import animationData from '../components/Lotties/Landing/landing.json'
 import Border from '../components/Border/Border'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
-import Css from '../components/Lotties/Css/Css'
 
 const getImages = graphql`
   {
