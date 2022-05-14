@@ -5,6 +5,7 @@ import { emaillist, socialfeatures, seofeatures } from './ecommercefeatures'
 import EcommerceItem from './EcommerceItem'
 import EcommercePopup from './EcommercePopup'
 import EcommerceMPopup from './EcommerceMPopup'
+import Spinner from '../Lotties/Spinner/Spinner'
 
 const EcommerceTwoSelect = () => {
   const [selectedFeatures, setFeature] = useState([])
@@ -147,15 +148,7 @@ const EcommerceTwoSelect = () => {
         </label>
       </div>
       {loading && (
-        <p
-          style={{
-            width: '90%',
-            margin: '0 auto',
-            maxWidth: '1080px',
-          }}
-        >
-          Loading...
-        </p>
+        <Spinner />
       )}
       {submitted && (
         <p
