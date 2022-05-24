@@ -26,14 +26,14 @@ const EcommerceTwoSelect = () => {
       selectedFeatures.forEach((x) => messageArray.push(x.name))
       let myStr = ``
       for (let i = 0; i < messageArray.length; i++) {
-        myStr += `${i + 1}. ${messageArray[i]}\n`
+        myStr += `${i + 1}. ${messageArray[i]}\n<br>`
       }
       const response = await axios.post(
         `https://us-central1-ecom-shopify.cloudfunctions.net/app/api/caricode`,
         {
           name,
           email,
-          message:`Featrues selected:\n ${myStr}` ,
+          message:`Features selected:\n<br> ${myStr}` ,
         }
       )
       if (response.data === 'Submitted') {
