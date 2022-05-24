@@ -24,12 +24,16 @@ const EcommerceTwoSelect = () => {
       setLoading(true)
       setInputfield(false)
       selectedFeatures.forEach((x) => messageArray.push(x.name))
+      let myStr = ``
+      for (let i = 0; i < messageArray.length; i++) {
+        myStr += `${i + 1}. ${messageArray[i]}\n`
+      }
       const response = await axios.post(
         `https://us-central1-ecom-shopify.cloudfunctions.net/app/api/caricode`,
         {
           name,
           email,
-          message: messageArray.join(' and '),
+          message:`Featrues selected:\n ${myStr}` ,
         }
       )
       if (response.data === 'Submitted') {
@@ -147,9 +151,7 @@ const EcommerceTwoSelect = () => {
           />
         </label>
       </div>
-      {loading && (
-        <Spinner />
-      )}
+      {loading && <Spinner />}
       {submitted && (
         <p
           style={{
