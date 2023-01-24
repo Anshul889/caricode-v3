@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout/Layout'
 import sg from '../images/sg.png'
-import google from '../images/google.svg'
+import nextjs from '../images/nextjs.svg'
 import { useStaticQuery, graphql } from 'gatsby'
 import 'react-vis/dist/style.css'
 import Img from 'gatsby-image'
@@ -287,14 +287,13 @@ const WebApplications = () => {
             <CustomerExperience>
               <InnerStyles>
                 <CustomerImage>
-                  <CustomerImg src={google} alt="" />
+                  <CustomerImg src={nextjs} alt="" />
                 </CustomerImage>
                 <HowH>Customer experience</HowH>
                 <HowP>
                   Delight users with a fast, responsive and visually stable
-                  website built with React and Google Cloud Platform. At
-                  Caricode all our web app are built so that your customes get
-                  what they want quickly.
+                  website built with NextJS. At Caricode all our web apps are
+                  built so that your customers get what they want quickly.
                 </HowP>
               </InnerStyles>
             </CustomerExperience>
@@ -493,7 +492,8 @@ const WebApplications = () => {
                 </LoyaltyImage>
                 <HowH>Cloud Storage</HowH>
                 <HowP>
-                Store and serve user-generated content with ease as your app grows from prototype to production-ready.
+                  Store and serve user-generated content with ease as your app
+                  grows from prototype to production-ready.
                 </HowP>
               </InnerStyles>
             </EmailAuto>
