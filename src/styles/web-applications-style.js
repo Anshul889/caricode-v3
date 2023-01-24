@@ -166,15 +166,20 @@ export const CustomerExperience = styled.div`
 export const CustomerImage = styled.div`
   background-color: white;
   border-radius: 4px;
-  padding: 45px 15px;
+  padding: 10px 15px;
   margin-bottom: 38px;
   @media screen and (min-width: 600px) {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
 `
 
-export const CustomerImg = styled.img``
+export const CustomerImg = styled.img`
+  margin: 0 50px;
+  @media screen and (max-width: 600px) {
+    margin: 0 31px;
+  }
+`
 
 export const HowH = styled.h4`
   font-size: 17.6px;
