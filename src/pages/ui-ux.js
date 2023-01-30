@@ -232,8 +232,10 @@ const UiUx = () => {
                 <ItemText>
                   <h3>BRAND EXPRESSION</h3>
                   <p>
-                    Motion is used to express a brand’s personality and style.
-                    Need a few lines on animated logos.
+                    Motion helps with branding by creating
+                    positive associations, fostering customer loyalty, and
+                    differentiating the brand from competitors through
+                    memorable, enjoyable interactions
                   </p>
                 </ItemText>
               </ItemTwo>
