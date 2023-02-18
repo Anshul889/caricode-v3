@@ -2,11 +2,11 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.caricode.co`,
     description:
-      'We design, build, deploy and manage web applications. Powered by Google Cloud.',
+      'Looking for professional web development services in Mumbai? Our agency specializes in designing and building custom websites that are optimized for speed, functionality, and user experience. From responsive design to e-commerce solutions, we can help you establish a strong online presence and grow your business. Contact us today for a free consultation!',
     url: 'https://www.caricode.co', // No trailing slash allowed!
     image: '/images/image3.jpg', // Path to your image you placed in the 'static' folder
     twitterUsername: '@AnshulManaktala',
-    date: '2020-01-28',
+    date: '2023-01-28',
     title: 'Caricode',
   },
   plugins: [
