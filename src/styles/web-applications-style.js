@@ -164,6 +164,8 @@ export const CustomerExperience = styled.div`
 `
 
 export const CustomerImage = styled.div`
+display: grid;
+place-items: center;
   background-color: white;
   border-radius: 4px;
   padding: 10px 15px;
@@ -177,7 +179,7 @@ export const CustomerImage = styled.div`
 export const CustomerImg = styled.img`
   margin: 0 50px;
   @media screen and (max-width: 600px) {
-    margin: 0 31px;
+    margin: 0 auto;
   }
 `
 

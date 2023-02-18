@@ -86,7 +86,7 @@ const getImages = graphql`
         }
       }
     }
-    image3: file(relativePath: { eq: "functions.png" }) {
+    image3: file(relativePath: { eq: "security.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 800, quality: 100) {
           ...GatsbyImageSharpFluid
@@ -404,7 +404,7 @@ const WebApplications = () => {
                     target="_blank"
                     rel="noreferrer"
                     style={{
-                      color: 'rgb(18, 147, 154)',
+                      color: 'rgb(22, 243, 255);',
                       textDecoration: 'underline',
                     }}
                   >
@@ -447,11 +447,7 @@ const WebApplications = () => {
                 </LoyaltyImage>
                 <HowH>Security</HowH>
                 <HowP>
-                  In many cases, application logic is best controlled on the
-                  server to avoid tampering on the client side. Cloud Functions
-                  is fully insulated from the client, so you can be sure its
-                  functions are private and secure and can’t be reverse
-                  engineered.
+                The apps come with built-in security features like automatic CSRF protection and XSS prevention. Other security best practices include using HTTPS, input validation, and limiting user permissions. It's also important to keep the framework and its dependencies up-to-date to address any potential security vulnerabilities. Additionally, Next.js offers integration with security tools and services for added protection.
                 </HowP>
               </InnerStyles>
             </EmailAuto>
