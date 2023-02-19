@@ -50,7 +50,11 @@ const IndexPage = () => {
               <NotificationSmall />
             </IconAnimations>
             <h4>User Experience</h4>
-            <p>Gold standard animations to suit your brand.</p>
+            <p>
+              Reinforce your brand's identity and values by incorporating brand
+              colors, logos, and messaging into the animation design, creating a
+              more memorable and cohesive user experience.
+            </p>
             <Button
               onClick={() => {
                 navigate('/ui-ux/')
@@ -66,7 +70,8 @@ const IndexPage = () => {
             </Animation>
             <h4>Web Applications</h4>
             <p>
-              Create an amazing digital experience for your customers. 
+              Engage and retain users with blazing fast web applications --
+              optimized for SEO, conversion, and revenue.
             </p>
             <Button
               onClick={() => {
@@ -83,7 +88,10 @@ const IndexPage = () => {
             </SalesAnimation>
             <h4>Ecommerce</h4>
             <p>
-              Digitally transform your enterprise.
+              Together with you, we build the technical infrastructure for
+              success. We will support you with system designa and
+              implementation to create the technical foundation to grow your
+              ecommerce business.
             </p>
             <Button
               onClick={() => {
@@ -108,7 +116,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/web-performance">
-                <h4 style={{color: '#444'}}>Web Performance</h4>
+                <h4 style={{ color: '#444' }}>Web Performance</h4>
               </Link>
               <Border />
               <p>
@@ -132,7 +140,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/multi-device-support">
-                <h4 style={{color: '#444'}}>Multi Device Support</h4>
+                <h4 style={{ color: '#444' }}>Multi Device Support</h4>
               </Link>
               <Border />
               <p>
@@ -155,7 +163,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/base-technologies/">
-                <h4 style={{color: '#444'}}>Base Technologies</h4>
+                <h4 style={{ color: '#444' }}>Base Technologies</h4>
               </Link>
               <Border />
               <p>
@@ -184,7 +192,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/clean-design/">
-                <h4 style={{color: '#444'}}>Clean Design</h4>
+                <h4 style={{ color: '#444' }}>Clean Design</h4>
               </Link>
               <Border />
               <p>
@@ -207,7 +215,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/custom-functionality/">
-                <h4 style={{color: '#444'}}>Custom Functionality</h4>
+                <h4 style={{ color: '#444' }}>Custom Functionality</h4>
               </Link>
               <Border />
               <p>
@@ -230,7 +238,7 @@ const IndexPage = () => {
             </CardImage>
             <CardText>
               <Link to="/progressive-web-apps/">
-                <h4 style={{color: '#444'}}>Progressive Web Apps</h4>
+                <h4 style={{ color: '#444' }}>Progressive Web Apps</h4>
               </Link>
               <Border />
               <p>
