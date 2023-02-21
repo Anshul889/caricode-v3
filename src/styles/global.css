@@ -91,6 +91,7 @@ input {
   text-decoration: none;
   width: 90%;
   margin: 0px;
+  font-size: 16px;
 }
 
 input:focus {
