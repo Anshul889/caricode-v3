@@ -24,6 +24,7 @@ const Contact = () => {
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        autocomplete="on"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="former">
