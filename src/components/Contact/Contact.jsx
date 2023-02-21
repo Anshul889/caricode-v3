@@ -29,11 +29,11 @@ const Contact = () => {
         <div className="former">
           <label id="name" onSelect={() => setInputfield(true)}>
             <div className="formitem">Name</div>
-            <input type="text" name="name" autoComplete="true"/>
+            <input type="text" name="name" autocomplete="on"/>
           </label>
           <label onSelect={() => setInputfield(true)}>
             <div className="formitem">Email</div>
-            <input type="email" name="email" autoComplete="true"/>
+            <input type="email" name="email" autocomplete="on"/>
           </label>
           <label className="textdiv" onSelect={() => setMessage(true)}>
             <div className="formitem">Message</div>
