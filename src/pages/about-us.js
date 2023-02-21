@@ -17,55 +17,6 @@ const AboutUs = () => {
         date={'2023-01-30'}
       />
       <div>
-        <Story>
-          <h2>Our Story</h2>
-          <p>
-            Our story began with a simple idea: to create beautiful, functional
-            websites that help businesses succeed online. As a team of
-            passionate web developers and designers, we knew that the internet
-            was a powerful tool for connecting people and driving growth, but we
-            also knew that many businesses were struggling to make the most of
-            it.
-          </p>
-          <p>
-            So, we set out to change that. We founded our company with the goal
-            of providing affordable, high-quality web development services to
-            businesses of all sizes, from startups to Fortune 500 companies.
-          </p>
-          <p>
-            We started small, taking on projects one by one and building our
-            reputation through word-of-mouth recommendations. But as our skills
-            and portfolio grew, so did our client base. Today, we are proud to
-            work with some of the biggest names in India and beyond, helping
-            them achieve their online goals and reach their audiences in new and
-            exciting ways.
-          </p>
-          <p>
-            But no matter how big or small the project, our approach has always
-            remained the same: we listen to our clients' needs and goals, and we
-            work with them to create customized solutions that meet their unique
-            requirements. We believe that every business is different, and we
-            take pride in our ability to tailor our services to fit their
-            individual needs.
-          </p>
-          <p>
-            Our team is made up of some of the most talented web developers and
-            designers in Mumbai, and we are constantly learning and evolving to
-            stay ahead of the curve. We keep up with the latest trends and
-            technologies, and we are always pushing ourselves to create
-            innovative solutions that help our clients stand out in a crowded
-            online marketplace.
-          </p>
-          <p>
-            At our core, we are passionate about what we do. We love creating
-            beautiful, functional websites that help businesses succeed online,
-            and we are committed to providing the highest level of service and
-            support to our clients. We believe that our success is only possible
-            because of our clients' success, and we are honored to be a part of
-            their journey.
-          </p>
-          <p>Thank you for choosing our web development company based in Mumbai. We look forward to working with you and helping you achieve your online goals!</p>
-        </Story>
         <PrinciplesHeading>
           <h2>Our Team</h2>
           <People>
@@ -132,6 +83,56 @@ const AboutUs = () => {
             </Person>
           </People>
         </PrinciplesHeading>
+        <Story>
+          <h2>Our Story</h2>
+          <p>
+            Our story began with a simple idea: to create beautiful, functional
+            websites that help businesses succeed online. As a team of
+            passionate web developers and designers, we knew that the internet
+            was a powerful tool for connecting people and driving growth, but we
+            also knew that many businesses were struggling to make the most of
+            it.
+          </p>
+          <p>
+            So, we set out to change that. We founded our company with the goal
+            of providing affordable, high-quality web development services to
+            businesses of all sizes.
+          </p>
+          <p>
+            We started small, taking on projects one by one and building our
+            reputation through word-of-mouth recommendations. But as our skills
+            and portfolio grew, so did our client base.
+          </p>
+          <p>
+            But no matter how big or small the project, our approach has always
+            remained the same: we listen to our clients' needs and goals, and we
+            work with them to create customized solutions that meet their unique
+            requirements. We believe that every business is different, and we
+            take pride in our ability to tailor our services to fit their
+            individual needs.
+          </p>
+          <p>
+            Our team is made up of some of the most talented web developers and
+            designers in Mumbai, and we are constantly learning and evolving to
+            stay ahead of the curve. We keep up with the latest trends and
+            technologies, and we are always pushing ourselves to create
+            innovative solutions that help our clients stand out in a crowded
+            online marketplace.
+          </p>
+          <p>
+            At our core, we are passionate about what we do. We love creating
+            beautiful, functional websites that help businesses succeed online,
+            and we are committed to providing the highest level of service and
+            support to our clients. We believe that our success is only possible
+            because of our clients' success, and we are honored to be a part of
+            their journey.
+          </p>
+          <p>
+            Thank you for choosing our web development company based in Mumbai.
+            We look forward to working with you and helping you achieve your
+            online goals!
+          </p>
+        </Story>
       </div>
     </Layout>
   )
