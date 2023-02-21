@@ -18,6 +18,13 @@ const contact = () => {
 
   return (
     <Layout>
+       <Seo
+        title={'Contact'}
+        description="Contact Page"
+        pathname="/web-appications/"
+        image="/images/image4.jpg"
+        date={'2023-01-30'}
+      />
       <Contact />
       <Address>
         Address: Wework, C - 20, G Block Rd, G Block BKC, Bandra Kurla Complex,

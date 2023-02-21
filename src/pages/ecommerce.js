@@ -17,6 +17,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 const Ecommerce = () => {
   return (
     <Layout>
+       <Seo
+        title={'Ecommerce'}
+        description="At CariCode, we build blazing fast web applications to delight and retain users."
+        pathname="/web-appications/"
+        image="/images/image4.jpg"
+        date={'2023-01-30'}
+      />
       <EcommerceHero />
       <CarouselContainer>
         <h2>

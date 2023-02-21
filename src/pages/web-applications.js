@@ -129,11 +129,11 @@ const WebApplications = () => {
   return (
     <Layout>
       <Seo
-        title={'Blog Development and Best SEO practices'}
-        description="At CariCode, we build blazing fast blogs to delight and retain users."
+        title={'Web Applications'}
+        description="At CariCode, we build blazing fast web applications to delight and retain users."
         pathname="/web-appications/"
         image="/images/image4.jpg"
-        date={'2020-01-30'}
+        date={'2023-01-30'}
       />
       <Container>
         <Webappbanner />
