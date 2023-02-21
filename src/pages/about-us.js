@@ -19,6 +19,52 @@ const AboutUs = () => {
       <div>
         <Story>
           <h2>Our Story</h2>
+          <p>
+            Our story began with a simple idea: to create beautiful, functional
+            websites that help businesses succeed online. As a team of
+            passionate web developers and designers, we knew that the internet
+            was a powerful tool for connecting people and driving growth, but we
+            also knew that many businesses were struggling to make the most of
+            it.
+          </p>
+          <p>
+            So, we set out to change that. We founded our company with the goal
+            of providing affordable, high-quality web development services to
+            businesses of all sizes, from startups to Fortune 500 companies.
+          </p>
+          <p>
+            We started small, taking on projects one by one and building our
+            reputation through word-of-mouth recommendations. But as our skills
+            and portfolio grew, so did our client base. Today, we are proud to
+            work with some of the biggest names in India and beyond, helping
+            them achieve their online goals and reach their audiences in new and
+            exciting ways.
+          </p>
+          <p>
+            But no matter how big or small the project, our approach has always
+            remained the same: we listen to our clients' needs and goals, and we
+            work with them to create customized solutions that meet their unique
+            requirements. We believe that every business is different, and we
+            take pride in our ability to tailor our services to fit their
+            individual needs.
+          </p>
+          <p>
+            Our team is made up of some of the most talented web developers and
+            designers in Mumbai, and we are constantly learning and evolving to
+            stay ahead of the curve. We keep up with the latest trends and
+            technologies, and we are always pushing ourselves to create
+            innovative solutions that help our clients stand out in a crowded
+            online marketplace.
+          </p>
+          <p>
+            At our core, we are passionate about what we do. We love creating
+            beautiful, functional websites that help businesses succeed online,
+            and we are committed to providing the highest level of service and
+            support to our clients. We believe that our success is only possible
+            because of our clients' success, and we are honored to be a part of
+            their journey.
+          </p>
+          <p>Thank you for choosing our web development company based in Mumbai. We look forward to working with you and helping you achieve your online goals!</p>
         </Story>
         <PrinciplesHeading>
           <h2>Our Team</h2>
@@ -33,9 +79,9 @@ const AboutUs = () => {
               <h4>Anshul Manaktala</h4>
               <h4>Full Stack Engineer</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
+                Full stack developer by day, pizza enthusiast by night 🍕
+                Constantly learning, creating, and debugging. When in doubt,
+                CTRL + ALT + DEL.
               </p>
             </Person>
             <Person>
@@ -48,13 +94,13 @@ const AboutUs = () => {
               <h4>Isha Sahota</h4>
               <h4>UI/UX Expert</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
+                UI/UX wizard, creating magic and sprinkling pixels to make the
+                web a better place. Known to obsess over tiny details and make
+                designs that pop! Also enjoys pizza and a good book. 🍕📚
               </p>
             </Person>
             <Person>
-            <ImageContainer>
+              <ImageContainer>
                 <StaticImage
                   src="../images/backend.jpg"
                   style={{ borderRadius: '50%' }}
@@ -63,13 +109,14 @@ const AboutUs = () => {
               <h4>Nitin Mander</h4>
               <h4>Backend Engineer</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
+                Backend engineer, keeping the internet running smoothly behind
+                the scenes 🚀 Coffee-fueled problem solver, always optimizing
+                and scaling systems. When not coding, probably playing video
+                games 🎮
               </p>
             </Person>
             <Person>
-            <ImageContainer>
+              <ImageContainer>
                 <StaticImage
                   src="../images/database.jpg"
                   style={{ borderRadius: '50%' }}
@@ -78,9 +125,9 @@ const AboutUs = () => {
               <h4>Atul Bahri</h4>
               <h4>Database Engineer</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation
+                Data enthusiast with a love for databases 🤓 Optimizing queries
+                and tweaking schemas to make the impossible possible. Also known
+                to enjoy hiking and a good craft beer 🍺
               </p>
             </Person>
           </People>
