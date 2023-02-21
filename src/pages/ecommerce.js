@@ -21,7 +21,7 @@ const Ecommerce = () => {
        <Seo
         title={'Ecommerce'}
         description="At CariCode, we build blazing fast web applications to delight and retain users."
-        pathname="/web-appications/"
+        pathname="/ecommerce/"
         image="/images/image4.jpg"
         date={'2023-01-30'}
       />

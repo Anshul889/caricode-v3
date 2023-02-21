@@ -16,7 +16,6 @@ import { Button } from "../Button/Button.js";
 import { Link } from "gatsby";
 import uiux from './images/phone-laptop.svg'
 import blog from './images/blog.svg'
-import landingpage from './images/landingpage.svg'
 import mobilenav from './images/mobile-nav.svg'
 import shopping from './images/shopping-cart-purple.svg'
 
@@ -81,9 +80,9 @@ const Navbar = () => {
           <MItemImg src={blog}></MItemImg>
           <MText>Blogs</MText>
         </MItem>
-				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/landing-pages/">
-          <MItemImg src={landingpage}></MItemImg>
-          <MText>Landing</MText>
+				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/about-us/">
+          <MItemImg src={blog}></MItemImg>
+          <MText>About</MText>
         </MItem>
       </MobileNav>
     </Container>
