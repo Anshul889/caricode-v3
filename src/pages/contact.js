@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Button } from "../components/Button/Button";
 import Contact from "../components/Contact/Contact";
 import Layout from "../components/Layout/Layout";
+import Seo from '../components/Seo/Seo'
 
 const contact = () => {
   const Address = styled.div`

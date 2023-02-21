@@ -12,6 +12,7 @@ import {
   Heading,
   Number,
 } from '../styles/ecommerce-style'
+import Seo from '../components/Seo/Seo'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const Ecommerce = () => {
