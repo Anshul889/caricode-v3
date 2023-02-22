@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Spring, config } from 'react-spring/renderprops'
 
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import * as styles from '../../styles/blogs.module.css'
 import axios from 'axios'
 import { useTransition, animated } from 'react-spring'
@@ -11,6 +11,7 @@ import Bloguiux from '../Lotties/Blog/Bloguiux'
 import BlogFeatures from './BlogFeatures'
 import PageFeatures from './PageFeatures'
 import BlogServices from './BlogServices'
+import { Button } from '../Button/Button'
 
 const getImages = graphql`
   {
@@ -891,7 +892,7 @@ const BlogBody = () => {
           </div>
         </div>
       </div> */}
-      <Spring
+      {/* <Spring
         from={{ bottom: -1 }}
         to={{
           bottom: 50,
@@ -1012,7 +1013,7 @@ const BlogBody = () => {
             )}
           </div>
         )}
-      </Spring>
+      </Spring> */}
     </div>
   )
 }

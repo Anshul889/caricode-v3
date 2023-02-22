@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container, ServicesContainer } from './style'
+import { Link } from 'gatsby'
+import { Button } from '../Button/Button'
 
 const BlogServices = () => {
   return (
@@ -34,6 +36,7 @@ const BlogServices = () => {
         today to learn more about our services and start building your dream
         blog.
       </p>
+      <Link to='/contact/' full><Button>Contact Us</Button></Link>
       </ServicesContainer>
     </Container>
   )
