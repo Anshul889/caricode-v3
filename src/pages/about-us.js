@@ -1,8 +1,7 @@
 import React from 'react'
 import SEO from '../components/Seo/Seo'
-import { Heading2 } from '../components/Contact/style'
 import Layout from '../components/Layout/Layout'
-import { Principles, PrinciplesHeading } from '../styles/uiux-style'
+import { PrinciplesHeading } from '../styles/uiux-style'
 import { ImageContainer, People, Person, Story } from '../styles/about-us'
 import { StaticImage } from 'gatsby-plugin-image'
 
