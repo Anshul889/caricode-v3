@@ -27,7 +27,7 @@ const AboutUs = () => {
               <ImageContainer>
                 <StaticImage
                   src="../images/full.jpg"
-                  style={{ borderRadius: '50%' }}
+                  style={{ borderRadius: '50%', overflow: 'hidden' }}
                 />
               </ImageContainer>
               <h4>Anshul Manaktala</h4>
