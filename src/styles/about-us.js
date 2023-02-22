@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const Story = styled.div`
+  width: 90%;
+  margin: 0 auto 75px auto;
+  max-width: 1080px;
   h2 {
     text-align: center;
     text-transform: uppercase;
