@@ -31,7 +31,7 @@ const BlogHero = () => {
       <MHero>
         <h1>Want more traffic to your website ?</h1>
         <MAnimation>
-          <StaticImage src="./blog.jpg" />
+          <StaticImage src="./blog.jpg" style={{borderRadius: '10px'}} />
         </MAnimation>
       </MHero>
     </div>
