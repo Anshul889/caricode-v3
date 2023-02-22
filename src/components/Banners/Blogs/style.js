@@ -62,7 +62,7 @@ export const Dashboard = styled.div`
   width: 90%;
   margin: 0 auto;
   border-radius: 10px;
-  .gatsby-image-wrapper {
+  img {
     border-radius: 10px;
   }
 `
