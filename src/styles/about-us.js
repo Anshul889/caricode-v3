@@ -28,7 +28,7 @@ export const Person = styled.div`
   background-color: white;
   border-radius: 30px;
   padding: 20px;
-  h4{
+  h4 {
     color: #444;
     margin-bottom: 7px;
     text-transform: none;
@@ -42,8 +42,11 @@ export const Person = styled.div`
 `
 
 export const ImageContainer = styled.div`
-width: 50%;
-margin: 15px auto;
-border-radius: 50%;
-overflow: hidden;
+  width: 50%;
+  margin: 15px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    border-radius: 50%;
+  }
 `
