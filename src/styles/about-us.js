@@ -44,5 +44,6 @@ export const Person = styled.div`
 export const ImageContainer = styled.div`
 width: 50%;
 margin: 15px auto;
-
+border-radius: 50%;
+overflow: hidden;
 `
