@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const Story = styled.div`
-  width: 90%;
-  margin: 0 auto;
   h2 {
     text-align: center;
     text-transform: uppercase;
@@ -30,7 +28,7 @@ export const Person = styled.div`
   background-color: white;
   border-radius: 30px;
   padding: 20px;
-  h4 {
+  h4{
     color: #444;
     margin-bottom: 7px;
     text-transform: none;
@@ -44,6 +42,7 @@ export const Person = styled.div`
 `
 
 export const ImageContainer = styled.div`
-  width: 50%;
-  margin: 15px auto;
+width: 50%;
+margin: 15px auto;
+
 `
