@@ -18,7 +18,6 @@ import uiux from './images/phone-laptop.svg'
 import blog from './images/blog.svg'
 import mobilenav from './images/mobile-nav.svg'
 import shopping from './images/shopping-cart-purple.svg'
-import aboutusimg from './images/address-card.svg'
 
 const Navbar = () => {
   return (
@@ -82,7 +81,7 @@ const Navbar = () => {
           <MText>Blogs</MText>
         </MItem>
 				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/about-us/">
-          <MItemImg src={aboutusimg}></MItemImg>
+          <MItemImg src={blog}></MItemImg>
           <MText>About</MText>
         </MItem>
       </MobileNav>
