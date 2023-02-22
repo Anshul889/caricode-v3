@@ -4,9 +4,10 @@ import { Cards, Card } from '../../styles/ecommerce-style'
 export const Container = styled.div`
   max-width: 1200px;
   background-color: white;
-  margin: 45px auto;
+  margin: 15px auto 10px auto;
   padding: 15px 0;
   width: 90%;
+
   @media screen and (min-width: 768px) {
     margin: 30px auto;
     padding: 15px 0;
@@ -20,9 +21,10 @@ export const Container = styled.div`
 `
 export const Description = styled.div`
   width: 100%;
-  margin: 30px auto;
+  margin: 30px auto 0px auto;
   @media screen and (min-width: 768px) {
     width: 90%;
+     margin: 30px auto;
   }
 `
 
@@ -32,6 +34,9 @@ export const Buttons = styled.div`
   font-size: 12px;
   display: inline-grid;
   margin-left: 20px;
+  ul {
+    color: #444 !important;
+  }
   button {
     border-radius: 30px;
   }
@@ -159,7 +164,7 @@ export const Features = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  margin: 40px auto;
+  margin: 40px auto 0px auto;
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
     width: 96%;
@@ -175,4 +180,14 @@ export const Numbers = styled.div`
   column-gap: 10px;
   width: 90%;
   margin: 0 auto 10px auto;
+`
+
+export const ServicesContainer = styled.div`
+  margin: 0 auto 75px auto;
+  p{
+    color: #444;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 90%;
+  }
 `

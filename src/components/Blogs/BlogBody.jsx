@@ -10,6 +10,7 @@ import animationData from '../Lotties/Search/search-file.json'
 import Bloguiux from '../Lotties/Blog/Bloguiux'
 import BlogFeatures from './BlogFeatures'
 import PageFeatures from './PageFeatures'
+import BlogServices from './BlogServices'
 
 const getImages = graphql`
   {
@@ -198,6 +199,7 @@ const BlogBody = () => {
         </div>
         <BlogFeatures />
         <PageFeatures />
+        <BlogServices />
       </div>
       <div className={styles.dwhyonline}></div>
       {/* <div className={styles.whyonline}>
