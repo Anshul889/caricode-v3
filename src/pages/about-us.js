@@ -38,7 +38,7 @@ const AboutUs = () => {
               <ImageContainer>
                 <StaticImage
                   src="../images/uiux.jpg"
-                  style={{ borderRadius: '50%' }}
+                  style={{ borderRadius: '50%', overflow: 'hidden' }}
                 />
               </ImageContainer>
               <h4>Isha Sahota</h4>
@@ -53,7 +53,7 @@ const AboutUs = () => {
               <ImageContainer>
                 <StaticImage
                   src="../images/backend.jpg"
-                  style={{ borderRadius: '50%' }}
+                  style={{ borderRadius: '50%', overflow: 'hidden' }}
                 />
               </ImageContainer>
               <h4>Nitin Mander</h4>
