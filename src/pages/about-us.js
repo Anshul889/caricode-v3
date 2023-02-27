@@ -3,7 +3,13 @@ import SEO from '../components/Seo/Seo'
 import { Heading2 } from '../components/Contact/style'
 import Layout from '../components/Layout/Layout'
 import { Principles, PrinciplesHeading } from '../styles/uiux-style'
-import { ImageContainer, People, Person, Story } from '../styles/about-us'
+import {
+  About,
+  ImageContainer,
+  People,
+  Person,
+  Story,
+} from '../styles/about-us'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const AboutUs = () => {
@@ -17,6 +23,16 @@ const AboutUs = () => {
         date={'2023-01-30'}
       />
       <div>
+        <About>
+          <h2>About us</h2>
+            <p>
+              We are a web development agency based in Worli, dedicated to
+              crafting beautiful and functional websites that help our clients
+              achieve their business goals. With a team of talented developers,
+              designers, and digital strategists, we offer customized solutions
+              tailored to each client's unique needs and requirements.
+            </p>
+        </About>
         <PrinciplesHeading>
           <h2>Our Team</h2>
           <People>

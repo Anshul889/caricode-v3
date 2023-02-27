@@ -1,5 +1,21 @@
 import styled from 'styled-components'
 
+export const About = styled.div`
+  width: 90%;
+  margin: 0 auto 45px auto;
+  max-width: 1080px;
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    line-height: 40px;
+    margin: 0.96em 0 24px 0;
+    text-transform: none;
+    text-align: center;
+    font-size: 36px;
+  }
+`
+
 export const Story = styled.div`
   width: 90%;
   margin: 0 auto 75px auto;
