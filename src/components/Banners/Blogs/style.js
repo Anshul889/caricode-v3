@@ -82,10 +82,8 @@ export const MHero = styled.div`
     font-size: 36px;
     text-transform: none;
     line-height: 42px;
-    width: 70%;
-    margin-left: 7%;
-    margin-top: 40px;
-    margin-bottom: 20vh;
+    width: 90%;
+    margin: 15vh auto;
   }
   @media screen and (min-width: 768px) {
     display: none;
