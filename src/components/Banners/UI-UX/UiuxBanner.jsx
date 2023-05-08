@@ -27,7 +27,10 @@ const UiuxBanner = () => {
       <Desktop>
         <HeroText>
           <h1>User Interface brought to life with motion</h1>
-          <p>We'll bring cool and trendy animations to your website</p>
+          <p>
+            From Delightful Micro-Interactions to Engaging Storytelling: We'll
+            delight your customers with an enhanced User Experience
+          </p>
         </HeroText>
         <DAnim>
           <Lottie options={defaultOptions} isStopped={false} />
