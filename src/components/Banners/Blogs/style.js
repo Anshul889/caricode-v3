@@ -68,7 +68,7 @@ export const Dashboard = styled.div`
 `
 
 export const MHero = styled.div`
-  height: calc(100vh - 56px - 56px);
+  height: 100svh;
   width: 100%;
   overflow: hidden;
   background: rgb(194, 114, 110);
