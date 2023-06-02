@@ -266,7 +266,7 @@ img.pwaappicon {
 }
 
 .mhero {
-  height: 100svh;
+  height: calc(100vh - 150px);
   width: 100%;
   overflow: hidden;
 }

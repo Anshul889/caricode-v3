@@ -67,7 +67,7 @@ export const DAnim = styled.div`
 `
 
 export const Mobile = styled.div`
-  height: 100svh;
+  height: calc(100vh - 56px - 56px);
   width: 100%;
   overflow: hidden;
   h1 {
