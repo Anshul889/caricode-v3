@@ -9,11 +9,13 @@ const Blogs = () => {
   return (
     <Layout>
       <Seo
-        title={'Blog Development and Best SEO practices'}
-        description="At CariCode, we build blazing fast blogs to delight and retain users."
-        pathname="/blogs/"
+        title={
+          'SEO Agency: Get Found on Google and Other Search Engines with Our Proven SEO Services'
+        }
+        description="Improve your website's search engine ranking and visibility with our on page and off page SEO services. We have a team of experienced SEO experts who will work with you to develop a customized SEO strategy that meets your specific needs. Our services include keyword research, content optimization, link building, and more. Contact us today to learn more about how we can help you improve your website's SEO."
+        pathname="/seo/"
         image="/images/image4.jpg"
-        date={'2020-01-30'}
+        date={'2023-06-01'}
       />
       <div className={main}>
         <BlogHero />
