@@ -69,7 +69,6 @@ export const Dashboard = styled.div`
 `
 
 export const MHero = styled.div`
-  height: 100svh;
   width: 100%;
   overflow: hidden;
   background: rgb(194, 114, 110);
@@ -84,7 +83,7 @@ export const MHero = styled.div`
     text-transform: none;
     line-height: 42px;
     width: 90%;
-    margin: 15vh auto;
+    margin: 100px auto;
   }
   @media screen and (min-width: 768px) {
     display: none;

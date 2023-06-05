@@ -210,7 +210,7 @@ const BlogFeatures = () => {
 
   return (
     <Container>
-      <h2>Blog Features</h2>
+      <h2>Critical Features</h2>
       <Description>
         Make it easy for you followers to filter and sort through blog posts
       </Description>
