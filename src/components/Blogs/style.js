@@ -25,7 +25,7 @@ export const Description = styled.div`
   margin: 30px auto 0px auto;
   @media screen and (min-width: 768px) {
     width: 90%;
-     margin: 30px auto;
+    margin: 30px auto;
   }
 `
 
@@ -185,17 +185,25 @@ export const Numbers = styled.div`
 
 export const ServicesContainer = styled.div`
   margin: 0 auto 75px auto;
-  p{
+  p {
     color: #444;
   }
   @media screen and (min-width: 1024px) {
     width: 90%;
-    ul{
-      li{
+    ul {
+      li {
         padding-left: 10px;
         line-height: 1.5;
         font-size: 17px;
       }
     }
+  }
+`
+
+export const MobileImageContainer = styled.div`
+border-radius: 10px;
+overflow: hidden;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 `
