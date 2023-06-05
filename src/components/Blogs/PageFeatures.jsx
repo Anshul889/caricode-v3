@@ -5,11 +5,11 @@ import { Container, Description, Features } from './style'
 const PageFeatures = () => {
   return (
     <Container>
-      <h2>Interactive and dynamic blog pages</h2>
+      <h2>Interactive and dynamic web pages</h2>
       <Features>
         <InfographicLottie />
         <Description>
-          Delight users with interactive blog pages which people are more likely
+          Delight users with interactive web pages which people are more likely
           to share.
           <ul>
             <li>

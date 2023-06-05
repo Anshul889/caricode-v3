@@ -20,7 +20,8 @@ const BlogHero = () => {
               <br /> to your website ?
             </h1>
             <p>
-              Blogs are critical to drive traffic, promote your product and services and build trust with your potential customers.
+              Increase your website's visibility, generate leads, and boost
+              sales with search engine optimization.
             </p>
           </HeroText>
           <Dashboard>
@@ -31,7 +32,7 @@ const BlogHero = () => {
       <MHero>
         <h1>Want more traffic to your website ?</h1>
         <MAnimation>
-          <StaticImage src="./blog.jpg" style={{borderRadius: '10px'}} />
+          <StaticImage src="./blog.jpg" style={{ borderRadius: '10px' }} />
         </MAnimation>
       </MHero>
     </div>

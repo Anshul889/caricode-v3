@@ -143,7 +143,7 @@ const BlogBody = () => {
             Organic search <br /> is the golden ticket
           </h2>
           <p>
-            For every enganging blog post, thats one more indexed page on your
+            For every enganging piece of content, thats one more indexed page on your
             website which more opurtunity to drive traffic to your website to
             drive organic search.
           </p>
@@ -183,7 +183,7 @@ const BlogBody = () => {
         <div className={styles.uiux}>
           <div className={styles.uiinner}>
             <div>
-              <h2>Transform your blog with a cutting edge ui/ux</h2>
+              <h2>Transform your website with a cutting edge ui/ux</h2>
               <p>
                 UX design has a direct and powerful impact on your SEO rankings
                 through the various metrics that search engines use to track

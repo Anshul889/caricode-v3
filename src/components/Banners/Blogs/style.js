@@ -47,6 +47,7 @@ export const DHero = styled.div`
   @media screen and (min-width: 768px) {
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 30px;
   }
   @media screen and (min-width: 1024px) {
     column-gap: 30px;

@@ -30,11 +30,11 @@ const BlogServices = () => {
       </ul>
 
       <p>
-        Don't settle for a mediocre blog that fails to capture your brand's true
-        essence. Choose our Web Development Agency for high-quality blog
+        Don't settle for a mediocre website that fails to capture your brand's true
+        essence. Choose our Web Development Agency for high-quality web
         development that truly sets you apart from the competition. Contact us
         today to learn more about our services and start building your dream
-        blog.
+        website.
       </p>
       <Link to='/contact/' full><Button>Contact Us</Button></Link>
       </ServicesContainer>

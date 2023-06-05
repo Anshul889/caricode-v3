@@ -12,6 +12,7 @@ export const Container = styled.div`
     margin: 30px auto;
     padding: 15px 0;
     width: 96%;
+    border-radius: 30px;
   }
   @media screen and (min-width: 1024px) {
     margin: 90px auto;
@@ -189,5 +190,12 @@ export const ServicesContainer = styled.div`
   }
   @media screen and (min-width: 1024px) {
     width: 90%;
+    ul{
+      li{
+        padding-left: 10px;
+        line-height: 1.5;
+        font-size: 17px;
+      }
+    }
   }
 `

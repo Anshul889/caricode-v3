@@ -348,6 +348,7 @@ img.pwaappicon {
     rgba(188, 156, 186, 1) 100%
   );
   color: white;
+   
 }
 
 .richexperiences h3 {
@@ -511,6 +512,7 @@ img.pwaappicon {
     margin: 0 auto;
     padding: 0;
     background-color: white;
+    border-radius: 30px;
   }
 
   .finner {
@@ -689,7 +691,12 @@ img.pwaappicon {
     row-gap: 0px;
     column-gap: 20px;
     width: 96%;
+    font-family: 'Averta';
   }
+  .trafficexperience h3 {
+   font-weight: 400;
+  }
+
   .webtraffic {
     display: grid;
     grid-template-columns: 1fr;
@@ -700,6 +707,7 @@ img.pwaappicon {
       rgba(188, 156, 186, 1) 100%
     );
     color: white;
+    border-radius: 30px;
   }
 
   .webtraffic h3 {
@@ -717,6 +725,7 @@ img.pwaappicon {
       rgba(188, 156, 186, 1) 100%
     );
     color: white;
+    border-radius: 30px;
   }
 
   .richexperiences h3 {
@@ -729,6 +738,7 @@ img.pwaappicon {
     margin: 30px auto;
     max-width: 1200px;
     background-color: white;
+    border-radius: 30px;
   }
 
   .uiinner {

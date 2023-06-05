@@ -33,8 +33,8 @@ const Navbar = () => {
         </MobileContact>
         <Left>
           <DItem>
-            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/blogs">
-              Blogs
+            <Link activeStyle={{ color: "#000", fontFamily: 'Averta' }} to="/seo">
+              SEO
             </Link>
           </DItem>
           <DItem>
@@ -77,9 +77,9 @@ const Navbar = () => {
           <MItemImg src={shopping}></MItemImg>
           <MText>Ecommerce</MText>
         </MItem>
-				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/blogs/">
+				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/seo/">
           <MItemImg src={blog}></MItemImg>
-          <MText>Blogs</MText>
+          <MText>SEO</MText>
         </MItem>
 				<MItem activeStyle={{ filter: 'grayscale(0%)', opacity: 1 }} to="/about-us/">
           <MItemImg src={aboutusimg}></MItemImg>
