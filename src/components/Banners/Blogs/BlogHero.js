@@ -17,8 +17,8 @@ const BlogHero = () => {
         <DHero>
           <HeroText>
             <h1>
-              Want more traffic
-              <br /> to your website ?
+              Get Found Online and
+              <br /> Grow Your Business
             </h1>
             <p>
               Increase your website's visibility, generate leads, and boost
@@ -33,7 +33,11 @@ const BlogHero = () => {
         </DHero>
       </DContainer>
       <MHero>
-        <h1>Want more traffic to your website ?</h1>
+        <h1>Get Found Online and Grow Your Business</h1>
+        <p>
+          Increase your website's visibility, generate leads, and boost sales
+          with search engine optimization.
+        </p>
         <MAnimation>
           <StaticImage src="./blog.jpg" style={{ borderRadius: '10px' }} />
         </MAnimation>

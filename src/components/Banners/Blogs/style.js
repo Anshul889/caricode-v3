@@ -74,7 +74,15 @@ export const MHero = styled.div`
     text-transform: none;
     line-height: 42px;
     width: 90%;
-    margin: 100px auto;
+    margin: 80px auto 30px auto;
+    text-align: center;
+  }
+  p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -83,7 +91,7 @@ export const MHero = styled.div`
 
 export const MAnimation = styled.div`
   width: 95%;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
   margin-left: auto;
   margin-right: auto;
   .gatsby-image-wrapper {
