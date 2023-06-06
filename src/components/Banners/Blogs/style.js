@@ -61,7 +61,6 @@ export const Dashboard = styled.div`
   display: grid;
   place-content: center;
   width: 90%;
-  margin: 0 auto;
   border-radius: 10px;
   img {
     border-radius: 10px;
