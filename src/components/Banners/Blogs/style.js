@@ -16,14 +16,6 @@ export const DContainer = styled.div`
 `
 
 export const DHero = styled.div`
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    56deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(157, 145, 191, 1) 0%,
-    rgba(187, 135, 135, 0.8911939775910365) 39%,
-    rgba(232, 170, 163, 1) 100%
-  );
   display: grid;
   grid-template-columns: 1.6fr 1fr;
   width: 100%;
@@ -36,7 +28,7 @@ export const DHero = styled.div`
     line-height: 1.2;
     letter-spacing: 1px;
     margin-left: 7%;
-    margin-top: 25%;
+    margin-top: 10%;
     color: white;
   }
   p {
@@ -96,5 +88,27 @@ export const MAnimation = styled.div`
   margin-right: auto;
   .gatsby-image-wrapper {
     border-radius: 10px;
+  }
+`
+
+export const Gallery = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    .gatsby-image-wrapper {
+      border-radius: 5px;
+      &:nth-child(2) {
+        top: 75px;
+      }
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+      }
+      &:nth-child(3) {
+        top: -20px;
+      }
+    }
   }
 `

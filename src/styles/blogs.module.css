@@ -690,7 +690,7 @@ img.pwaappicon {
     margin: 30px auto;
     grid-template-columns: 1fr 1fr;
     row-gap: 0px;
-    column-gap: 20px;
+    column-gap: 40px;
     width: 96%;
   }
   .trafficexperience h3 {

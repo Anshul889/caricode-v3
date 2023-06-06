@@ -4,6 +4,7 @@ import {
   Dashboard,
   DContainer,
   DHero,
+  Gallery,
   HeroText,
   MAnimation,
   MHero,
@@ -24,9 +25,11 @@ const BlogHero = () => {
               sales with search engine optimization.
             </p>
           </HeroText>
-          <Dashboard>
-            <StaticImage src="./blog.jpg" />
-          </Dashboard>
+          <Gallery>
+            <StaticImage src="./riddleui.jpg" />
+            <StaticImage src="./analytics.jpg" />
+            <StaticImage src="./code.jpg" />
+          </Gallery>
         </DHero>
       </DContainer>
       <MHero>
