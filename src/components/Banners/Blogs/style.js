@@ -91,7 +91,7 @@ export const MHero = styled.div`
 
 export const MAnimation = styled.div`
   width: 95%;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
   margin-left: auto;
   margin-right: auto;
   .gatsby-image-wrapper {

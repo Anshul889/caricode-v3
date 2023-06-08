@@ -1,8 +1,14 @@
 import React from 'react'
-import { Container, ServicesContainer, MobileImageContainer } from './style'
+import {
+  Container,
+  ServicesContainer,
+  MobileImageContainer,
+  Testimonials,
+} from './style'
 import { Link } from 'gatsby'
 import { Button } from '../Button/Button'
 import { StaticImage } from 'gatsby-plugin-image'
+import { ImageContainer, People, Person } from '../../styles/about-us'
 
 const BlogServices = () => {
   return (
@@ -54,7 +60,8 @@ const BlogServices = () => {
           <ul>
             <li>
               Expertise: Our team has years of experience developing
-              high-quality websites for clients across a wide range of industries.
+              high-quality websites for clients across a wide range of
+              industries.
             </li>
             <li>
               Customization: We don't believe in one-size-fits-all solutions.
@@ -79,11 +86,76 @@ const BlogServices = () => {
             competition. Contact us today to learn more about our services and
             start building your dream website.
           </p>
-          <Link to="/contact/" full>
-            <Button>Contact Us</Button>
-          </Link>
         </ServicesContainer>
       </Container>
+      <Testimonials>
+        <h2>
+          Time Tested.<br />
+          <i>Proven Results.</i>
+        </h2>
+        <People style={{marginBottom: '0px'}}>
+          <Person>
+            <ImageContainer>
+              <StaticImage
+                src="../images/full.jpg"
+                style={{ borderRadius: '50%', overflow: 'hidden' }}
+              />
+            </ImageContainer>
+            <h4>Anshul Manaktala</h4>
+            <h4>Full Stack Engineer</h4>
+            <p>
+              Full stack developer by day, pizza enthusiast by night 🍕
+              Constantly learning, creating, and debugging. When in doubt, CTRL
+              + ALT + DEL.
+            </p>
+          </Person>
+          <Person>
+            <ImageContainer>
+              <StaticImage
+                src="../images/uiux.jpg"
+                style={{ borderRadius: '50%' }}
+              />
+            </ImageContainer>
+            <h4>Isha Sahota</h4>
+            <h4>UI/UX Expert</h4>
+            <p>
+              UI/UX wizard, creating magic and sprinkling pixels to make the web
+              a better place. Known to obsess over tiny details and make designs
+              that pop! Also enjoys pizza and a good book. 🍕📚
+            </p>
+          </Person>
+          <Person>
+            <ImageContainer>
+              <StaticImage
+                src="../images/backend.jpg"
+                style={{ borderRadius: '50%' }}
+              />
+            </ImageContainer>
+            <h4>Nitin Mander</h4>
+            <h4>Backend Engineer</h4>
+            <p>
+              Backend engineer, keeping the internet running smoothly behind the
+              scenes 🚀 Coffee-fueled problem solver, always optimizing and
+              scaling systems. When not coding, probably playing video games 🎮
+            </p>
+          </Person>
+          <Person>
+            <ImageContainer>
+              <StaticImage
+                src="../images/database.jpg"
+                style={{ borderRadius: '50%' }}
+              />
+            </ImageContainer>
+            <h4>Atul Bahri</h4>
+            <h4>Database Engineer</h4>
+            <p>
+              Data enthusiast with a love for databases 🤓 Optimizing queries
+              and tweaking schemas to make the impossible possible. Also known
+              to enjoy hiking and a good craft beer 🍺
+            </p>
+          </Person>
+        </People>
+      </Testimonials>
     </>
   )
 }

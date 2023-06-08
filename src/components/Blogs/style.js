@@ -201,9 +201,38 @@ export const ServicesContainer = styled.div`
 `
 
 export const MobileImageContainer = styled.div`
-border-radius: 10px;
-overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     display: none;
+  }
+`
+
+export const Testimonials = styled.div`
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(158, 133, 207);
+  background: linear-gradient(
+    119deg,
+    rgba(158, 133, 207, 1) 0%,
+    rgba(200, 142, 157, 0.7665266790309874) 35%,
+    rgba(200, 142, 157, 1) 100%
+  );
+  padding: 30px 0;
+  h2{
+    color: white;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 30px;
+    h2{
+      color: #444;
+    }
+    margin-bottom: 70px;
   }
 `
