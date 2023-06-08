@@ -24,6 +24,7 @@ export const Container = styled.div`
 export const Description = styled.div`
   width: 100%;
   margin: 30px auto 0px auto;
+  color: rgb(135,149,161);
   @media screen and (min-width: 768px) {
     width: 90%;
     margin: 30px auto;
@@ -195,6 +196,11 @@ export const ServicesContainer = styled.div`
   p {
     color: rgb(135, 149, 161);
   }
+  ul{
+    li{
+      color: rgb(135, 149, 161);
+    }
+  }
   @media screen and (min-width: 1024px) {
     width: 90%;
     ul {
@@ -203,7 +209,6 @@ export const ServicesContainer = styled.div`
         line-height: 1.5;
         font-size: 17px;
         list-style-type: none;
-        color: rgb(135, 149, 161);
       }
     }
   }

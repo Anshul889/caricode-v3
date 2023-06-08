@@ -11,6 +11,7 @@ import { Link } from 'gatsby'
 import { Button } from '../Button/Button'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ImageContainer, People, Person } from '../../styles/about-us'
+import Contact from '../Contact/Contact'
 
 const BlogServices = () => {
   return (
@@ -28,23 +29,25 @@ const BlogServices = () => {
 
           <ul>
             <li>
-              <b style={{ fontWeight: 700, color: 'black' }}>Link building:</b> Building links
-              to your website from other high-quality websites is one of the
-              most important off-page SEO factors. Links from other websites
-              tell search engines that your website is authoritative and
-              trustworthy.
+              <b style={{ fontWeight: 700, color: 'black' }}>Link building:</b>{' '}
+              Building links to your website from other high-quality websites is
+              one of the most important off-page SEO factors. Links from other
+              websites tell search engines that your website is authoritative
+              and trustworthy.
             </li>
             <li>
-              <b style={{ fontWeight: 700, color: 'black' }}>Guest blogging</b>: Guest blogging
-              is a great way to build links to your website and establish
-              yourself as an expert in your industry. When you guest blog, you
-              can include a link back to your website in your author bio.
+              <b style={{ fontWeight: 700, color: 'black' }}>Guest blogging</b>:
+              Guest blogging is a great way to build links to your website and
+              establish yourself as an expert in your industry. When you guest
+              blog, you can include a link back to your website in your author
+              bio.
             </li>
             <li>
-              <b style={{ fontWeight: 700, color: 'black' }}>Online PR</b>: Online PR can help
-              to improve your website's reputation and authority. When you get
-              your website mentioned in online publications, it tells search
-              engines that your website is popular and well-respected.
+              <b style={{ fontWeight: 700, color: 'black' }}>Online PR</b>:
+              Online PR can help to improve your website's reputation and
+              authority. When you get your website mentioned in online
+              publications, it tells search engines that your website is popular
+              and well-respected.
             </li>
           </ul>
 
@@ -92,7 +95,8 @@ const BlogServices = () => {
       </Container> */}
       <Testimonials>
         <h2>
-          Time Tested.<br />
+          Time Tested.
+          <br />
           <i>Proven Results.</i>
         </h2>
         <TestPeople>
@@ -103,12 +107,13 @@ const BlogServices = () => {
                 style={{ borderRadius: '50%', overflow: 'hidden' }}
               />
             </ImageContainer>
-            <h4>Anshul Manaktala</h4>
-            <h4>Full Stack Engineer</h4>
+            <h4>Anand Garde</h4>
             <p>
-              Full stack developer by day, pizza enthusiast by night 🍕
-              Constantly learning, creating, and debugging. When in doubt, CTRL
-              + ALT + DEL.
+              "I was looking for a web development agency that could help me
+              create a new website for my business. They listened to my ideas and took the time to
+              understand what I was looking for. They also offered me some great
+              suggestions that I hadn't even thought of. The end result is a
+              website that I'm absolutely thrilled with."
             </p>
           </Person>
           <Person>
@@ -118,12 +123,13 @@ const BlogServices = () => {
                 style={{ borderRadius: '50%' }}
               />
             </ImageContainer>
-            <h4>Isha Sahota</h4>
-            <h4>UI/UX Expert</h4>
+            <h4>Usha Mathew</h4>
             <p>
-              UI/UX wizard, creating magic and sprinkling pixels to make the web
-              a better place. Known to obsess over tiny details and make designs
-              that pop! Also enjoys pizza and a good book. 🍕📚
+              "I had a great experience working with Caricode. They were
+              very professional and easy to work with. They listened to my ideas
+              and created a website that exceeded my expectations. I would
+              definitely recommend them to anyone looking for a web development
+              agency."
             </p>
           </Person>
           <Person>
@@ -133,12 +139,13 @@ const BlogServices = () => {
                 style={{ borderRadius: '50%' }}
               />
             </ImageContainer>
-            <h4>Nitin Mander</h4>
-            <h4>Backend Engineer</h4>
+            <h4>Raghavan Chandra</h4>
             <p>
-              Backend engineer, keeping the internet running smoothly behind the
-              scenes 🚀 Coffee-fueled problem solver, always optimizing and
-              scaling systems. When not coding, probably playing video games 🎮
+              "I was very happy with the work that Caricode did on my
+              website. They were very professional and efficient, and they
+              always kept me updated on the progress of the project. I would
+              definitely recommend them to anyone looking for a web development
+              agency."
             </p>
           </Person>
           <Person>
@@ -148,16 +155,18 @@ const BlogServices = () => {
                 style={{ borderRadius: '50%' }}
               />
             </ImageContainer>
-            <h4>Atul Bahri</h4>
-            <h4>Database Engineer</h4>
+            <h4>Megha Chowdhury</h4>
             <p>
-              Data enthusiast with a love for databases 🤓 Optimizing queries
-              and tweaking schemas to make the impossible possible. Also known
-              to enjoy hiking and a good craft beer 🍺
+              "I was very impressed with the work that Caricode did on my
+              website. They were able to take my ideas and turn them into a
+              beautiful and functional website that I'm very proud of. I would
+              definitely recommend them to anyone looking for a web development
+              agency."🍺
             </p>
           </Person>
         </TestPeople>
       </Testimonials>
+      <Contact />
     </>
   )
 }
