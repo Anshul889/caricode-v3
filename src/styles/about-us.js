@@ -46,7 +46,7 @@ export const People = styled.div`
 export const Person = styled.div`
   background-color: white;
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px;
   h4 {
     color: #444;
     margin-bottom: 7px;
@@ -58,14 +58,20 @@ export const Person = styled.div`
     margin: 0;
     width: 100%;
   }
+  @media screen and (min-width: 768px) {
+    padding: 30px 20px;
+  }
 `
 
 export const ImageContainer = styled.div`
   width: 50%;
-  margin: 15px auto;
+  margin: 0px auto 15px auto;
   border-radius: 50%;
   overflow: hidden;
   img {
     border-radius: 50%;
   }
+  @media screen and (min-width: 768px) {
+    margin: 15px auto
+  };
 `

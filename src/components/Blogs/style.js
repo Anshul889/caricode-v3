@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Cards, Card } from '../../styles/ecommerce-style'
+import { People } from '../../styles/about-us'
 
 export const Container = styled.div`
   max-width: 1200px;
@@ -172,6 +173,12 @@ export const Features = styled.div`
   }
   @media screen and (min-width: 1024px) {
     width: 90%;
+    ul {
+      padding-left: 0px;
+      li {
+        list-style-type: none;
+      }
+    }
   }
 `
 
@@ -186,15 +193,17 @@ export const Numbers = styled.div`
 export const ServicesContainer = styled.div`
   margin: 0 auto 75px auto;
   p {
-    color: #444;
+    color: rgb(135, 149, 161);
   }
   @media screen and (min-width: 1024px) {
     width: 90%;
     ul {
+      padding-left: 0px;
       li {
-        padding-left: 10px;
         line-height: 1.5;
         font-size: 17px;
+        list-style-type: none;
+        color: rgb(135, 149, 161);
       }
     }
   }
@@ -219,20 +228,28 @@ export const Testimonials = styled.div`
     rgba(200, 142, 157, 1) 100%
   );
   padding: 30px 0;
-  h2{
+  h2 {
     color: white;
     margin: 0 auto;
     width: 90%;
     text-align: center;
   }
   @media screen and (min-width: 768px) {
-    width: 90%;
     max-width: 1200px;
-    background: white;
+    background: transparent;
     border-radius: 30px;
-    h2{
-      color: #444;
-    }
     margin-bottom: 70px;
+    h2 { 
+      color: #515151;
+      font-size: 48px;
+    }
   }
 `
+
+export const TestPeople = styled(People)`
+  width: 90%;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+` 

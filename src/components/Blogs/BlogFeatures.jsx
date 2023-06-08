@@ -212,7 +212,7 @@ const BlogFeatures = () => {
     <Container>
       <h2>Critical Features</h2>
       <Description>
-        Make it easy for you followers to filter and sort through blog posts
+        Make it easy for you followers to filter and sort through web pages
       </Description>
       <Sort>
         <h3>Sort</h3>

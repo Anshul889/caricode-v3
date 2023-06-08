@@ -4,6 +4,8 @@ import {
   ServicesContainer,
   MobileImageContainer,
   Testimonials,
+  TestPerson,
+  TestPeople,
 } from './style'
 import { Link } from 'gatsby'
 import { Button } from '../Button/Button'
@@ -26,20 +28,20 @@ const BlogServices = () => {
 
           <ul>
             <li>
-              <b style={{ fontWeight: 700 }}>Link building:</b> Building links
+              <b style={{ fontWeight: 700, color: 'black' }}>Link building:</b> Building links
               to your website from other high-quality websites is one of the
               most important off-page SEO factors. Links from other websites
               tell search engines that your website is authoritative and
               trustworthy.
             </li>
             <li>
-              <b style={{ fontWeight: 700 }}>Guest blogging</b>: Guest blogging
+              <b style={{ fontWeight: 700, color: 'black' }}>Guest blogging</b>: Guest blogging
               is a great way to build links to your website and establish
               yourself as an expert in your industry. When you guest blog, you
               can include a link back to your website in your author bio.
             </li>
             <li>
-              <b style={{ fontWeight: 700 }}>Online PR</b>: Online PR can help
+              <b style={{ fontWeight: 700, color: 'black' }}>Online PR</b>: Online PR can help
               to improve your website's reputation and authority. When you get
               your website mentioned in online publications, it tells search
               engines that your website is popular and well-respected.
@@ -54,7 +56,7 @@ const BlogServices = () => {
           </p>
         </ServicesContainer>
       </Container>
-      <Container>
+      {/* <Container>
         <h2>Why choose our agency for your web development needs?</h2>
         <ServicesContainer>
           <ul>
@@ -87,13 +89,13 @@ const BlogServices = () => {
             start building your dream website.
           </p>
         </ServicesContainer>
-      </Container>
+      </Container> */}
       <Testimonials>
         <h2>
           Time Tested.<br />
           <i>Proven Results.</i>
         </h2>
-        <People style={{marginBottom: '0px'}}>
+        <TestPeople>
           <Person>
             <ImageContainer>
               <StaticImage
@@ -154,7 +156,7 @@ const BlogServices = () => {
               to enjoy hiking and a good craft beer 🍺
             </p>
           </Person>
-        </People>
+        </TestPeople>
       </Testimonials>
     </>
   )
