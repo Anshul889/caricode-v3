@@ -101,12 +101,6 @@ const BlogServices = () => {
         </h2>
         <TestPeople>
           <Person>
-            <ImageContainer>
-              <StaticImage
-                src="../images/full.jpg"
-                style={{ borderRadius: '50%', overflow: 'hidden' }}
-              />
-            </ImageContainer>
             <h4>Anand Garde</h4>
             <p>
               "I was looking for a web development agency that could help me
@@ -117,12 +111,7 @@ const BlogServices = () => {
             </p>
           </Person>
           <Person>
-            <ImageContainer>
-              <StaticImage
-                src="../images/uiux.jpg"
-                style={{ borderRadius: '50%' }}
-              />
-            </ImageContainer>
+            
             <h4>Usha Mathew</h4>
             <p>
               "I had a great experience working with Caricode. They were
@@ -133,12 +122,7 @@ const BlogServices = () => {
             </p>
           </Person>
           <Person>
-            <ImageContainer>
-              <StaticImage
-                src="../images/backend.jpg"
-                style={{ borderRadius: '50%' }}
-              />
-            </ImageContainer>
+            
             <h4>Raghavan Chandra</h4>
             <p>
               "I was very happy with the work that Caricode did on my
@@ -149,12 +133,7 @@ const BlogServices = () => {
             </p>
           </Person>
           <Person>
-            <ImageContainer>
-              <StaticImage
-                src="../images/database.jpg"
-                style={{ borderRadius: '50%' }}
-              />
-            </ImageContainer>
+            
             <h4>Megha Chowdhury</h4>
             <p>
               "I was very impressed with the work that Caricode did on my

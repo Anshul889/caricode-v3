@@ -332,6 +332,7 @@ img.pwaappicon {
     rgba(188, 156, 186, 1) 100%
   );
   color: white;
+  border-radius: 30px;
 }
 
 .webtraffic h3 {
@@ -349,7 +350,7 @@ img.pwaappicon {
     rgba(188, 156, 186, 1) 100%
   );
   color: white;
-   
+  border-radius: 30px;
 }
 
 .richexperiences h3 {

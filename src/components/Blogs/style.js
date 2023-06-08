@@ -24,7 +24,6 @@ export const Container = styled.div`
 export const Description = styled.div`
   width: 100%;
   margin: 30px auto 0px auto;
-  color: rgb(135,149,161);
   @media screen and (min-width: 768px) {
     width: 90%;
     margin: 30px auto;
@@ -192,14 +191,14 @@ export const Numbers = styled.div`
 `
 
 export const ServicesContainer = styled.div`
-  margin: 0 auto 75px auto;
-  p {
-    color: rgb(135, 149, 161);
-  }
+  margin: 0 auto 75px auto; 
   ul{
     li{
-      color: rgb(135, 149, 161);
+      margin-bottom: 4px;
     }
+  } 
+  p{
+    color: black;
   }
   @media screen and (min-width: 1024px) {
     width: 90%;
