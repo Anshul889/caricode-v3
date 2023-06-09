@@ -191,13 +191,13 @@ export const Numbers = styled.div`
 `
 
 export const ServicesContainer = styled.div`
-  margin: 0 auto 75px auto; 
-  ul{
-    li{
+  margin: 0 auto 25px auto;
+  ul {
+    li {
       margin-bottom: 4px;
     }
-  } 
-  p{
+  }
+  p {
     color: black;
   }
   @media screen and (min-width: 1024px) {
@@ -243,7 +243,7 @@ export const Testimonials = styled.div`
     background: transparent;
     border-radius: 30px;
     margin-bottom: 70px;
-    h2 { 
+    h2 {
       color: #515151;
       font-size: 48px;
     }
@@ -256,4 +256,34 @@ export const TestPeople = styled(People)`
     width: 100%;
     margin-bottom: 0px;
   }
-` 
+`
+
+export const Provided = styled.div`
+  h2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+`
+
+export const FeatureList = styled.div`
+  width: 90%;
+  margin: 20px auto 40px auto;
+  display: grid;
+  row-gap: 10px;
+  grid-auto-rows: 35px;
+`
+
+export const Feature = styled.div`
+  display: grid;
+  grid-template-columns: 29px 1fr;
+  align-content: center;
+  column-gap: 5px;
+`
+
+export const FeatureImage = styled.div`
+  
+`
+
+export const FeatureText = styled.div`
+align-self: center;
+`

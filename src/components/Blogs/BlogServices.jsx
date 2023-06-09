@@ -6,12 +6,22 @@ import {
   Testimonials,
   TestPerson,
   TestPeople,
+  Provided,
+  Feature,
+  FeatureImage,
+  FeatureList,
+  FeatureText,
 } from './style'
 import { Link } from 'gatsby'
 import { Button } from '../Button/Button'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ImageContainer, People, Person } from '../../styles/about-us'
 import Contact from '../Contact/Contact'
+import browser from '../../images/browser.svg'
+import user from '../../images/user-tie.svg'
+import pencil from '../../images/pencil.svg'
+import compass from '../../images/compass-drafting.svg'
+import link from '../../images/link.svg'
 
 const BlogServices = () => {
   return (
@@ -93,6 +103,41 @@ const BlogServices = () => {
           </p>
         </ServicesContainer>
       </Container> */}
+      <Provided>
+        <h2>Services we provide</h2>
+        <FeatureList>
+          <Feature>
+            <FeatureImage>
+              <img src={browser} style={{ position: 'relative', top: '2px' }} />
+            </FeatureImage>
+            <FeatureText>Comprehensive Web development</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={compass} style={{ position: 'relative', top: '2px' }} />
+            </FeatureImage>
+            <FeatureText>Web design and User Expereince</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={link} style={{ position: 'relative', top: '2px' }} />
+            </FeatureImage>
+            <FeatureText>Link Building</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={pencil} style={{ position: 'relative', top: '2px' }} />
+            </FeatureImage>
+            <FeatureText>Blog content creation</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={user} style={{ position: 'relative', top: '2px' }} />
+            </FeatureImage>
+            <FeatureText>Guest Posting</FeatureText>
+          </Feature>
+        </FeatureList>
+      </Provided>
       <Testimonials>
         <h2>
           Time Tested.
@@ -103,44 +148,44 @@ const BlogServices = () => {
           <Person>
             <h4>Anand Garde</h4>
             <p>
-              "I was looking for a web development agency that could help me
-              create a new website for my business. They listened to my ideas and took the time to
-              understand what I was looking for. They also offered me some great
-              suggestions that I hadn't even thought of. The end result is a
-              website that I'm absolutely thrilled with."
+              "As a small business owner, I was struggling to compete in the
+              crowded online marketplace. However, since partnering with
+              Caricode, my website's performance has seen a remarkable
+              transformation. Their dedicated team took the time to understand
+              my business objectives and devised a tailored SEO strategy that
+              perfectly aligned with my goals. Through their comprehensive
+              keyword research, on-page optimization, and link-building efforts,
+              they significantly improved my website's search engine rankings"
             </p>
           </Person>
           <Person>
-            
             <h4>Usha Mathew</h4>
             <p>
-              "I had a great experience working with Caricode. They were
-              very professional and easy to work with. They listened to my ideas
-              and created a website that exceeded my expectations. I would
+              "I had a great experience working with Caricode. They were very
+              professional and easy to work with. They listened to my ideas and
+              created a website that exceeded my expectations. I would
               definitely recommend them to anyone looking for a web development
               agency."
             </p>
           </Person>
           <Person>
-            
             <h4>Raghavan Chandra</h4>
             <p>
-              "I was very happy with the work that Caricode did on my
-              website. They were very professional and efficient, and they
-              always kept me updated on the progress of the project. I would
-              definitely recommend them to anyone looking for a web development
-              agency."
+              "I was looking for a web development agency that could help me
+              create a new website for my business. They listened to my ideas
+              and took the time to understand what I was looking for. They also
+              offered me some great suggestions that I hadn't even thought of.
+              The end result is a website that I'm absolutely thrilled with."
             </p>
           </Person>
           <Person>
-            
             <h4>Megha Chowdhury</h4>
             <p>
               "I was very impressed with the work that Caricode did on my
               website. They were able to take my ideas and turn them into a
               beautiful and functional website that I'm very proud of. I would
               definitely recommend them to anyone looking for a web development
-              agency."🍺
+              agency."
             </p>
           </Person>
         </TestPeople>
