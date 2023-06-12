@@ -24,6 +24,7 @@ export const Container = styled.div`
 export const Description = styled.div`
   width: 100%;
   margin: 30px auto 0px auto;
+  font-weight: 800;
   @media screen and (min-width: 768px) {
     width: 90%;
     margin: 30px auto;
@@ -128,6 +129,21 @@ export const BlogCard = styled(Card)`
     padding-bottom: 10px;
   }
 `
+
+export const ChatBotFeatures = styled.div` 
+  display: grid;
+  `
+
+export const CBFeature = styled.div`
+  display: grid;
+`
+
+export const CBImage = styled.div`
+`
+
+export const CBText = styled.div`
+`
+
 
 export const Stats = styled.div`
   display: none;

@@ -3,9 +3,17 @@ import {
   BlogCard,
   BlogCards,
   Buttons,
+  CBFeature,
+  CBImage,
+  CBText,
+  ChatBotFeatures,
   Container,
   Description,
   Excerpt,
+  Feature,
+  FeatureImage,
+  FeatureList,
+  FeatureText,
   Filter,
   Numbers,
   Sort,
@@ -19,6 +27,12 @@ import thumbs from '../../images/thumbs-up-white.svg'
 import comments from '../../images/comment-light.svg'
 import share from '../../images/share-light.svg'
 import bookmark from '../../images/bookmark-light.svg'
+import penruler from '../../images/pen-ruler.svg'
+import database from '../../images/database.svg'
+import bolt from '../../images/bolt.svg'
+import clock from '../../images/clock.svg'
+import braincircuit from '../../images/brain-circuit.svg'
+import userheadset from '../../images/user-headset.svg'
 
 const getImages = graphql`
   {
@@ -315,6 +329,46 @@ const BlogFeatures = () => {
           )
         })}
       </BlogCards>
+
+      <Description>Custom Chat Bots</Description>
+      <FeatureList>
+        <Feature>
+          <FeatureImage>
+            <img src={braincircuit} />
+          </FeatureImage>
+          <FeatureText>Intelligent and Conversational</FeatureText>
+        </Feature>
+        <Feature>
+          <FeatureImage>
+          <img src={database} />
+          </FeatureImage>
+          <FeatureText>Data Driven Insights</FeatureText>
+        </Feature>
+        <Feature>
+          <FeatureImage>
+          <img src={bolt} />
+          </FeatureImage>
+          <FeatureText>Seamless Integration</FeatureText>
+        </Feature>
+        <Feature>
+          <FeatureImage>
+          <img src={clock} />
+          </FeatureImage>
+          <FeatureText>24/7 Availability</FeatureText>
+        </Feature>
+        <Feature>
+          <FeatureImage>
+          <img src={penruler} />
+          </FeatureImage>
+          <FeatureText>Fully Customised</FeatureText>
+        </Feature>
+        <Feature>
+          <FeatureImage>
+          <img src={userheadset} />
+          </FeatureImage>
+          <FeatureText>Ongoing support and maintenance</FeatureText>
+        </Feature>
+      </FeatureList>
     </Container>
   )
 }
