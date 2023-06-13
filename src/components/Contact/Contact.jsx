@@ -21,7 +21,7 @@ const Contact = () => {
 			<form
         id="contact"
         name="contact"
-        method="post"
+        method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         autocomplete="on"
@@ -30,11 +30,11 @@ const Contact = () => {
         <div className="former">
           <label id="name" onSelect={() => setInputfield(true)}>
             <div className="formitem">Name</div>
-            <input type="text" name="name" autocomplete="on"/>
+            <input type="text" name="name" autocomplete="name" />
           </label>
           <label onSelect={() => setInputfield(true)}>
             <div className="formitem">Email</div>
-            <input type="email" name="email" autocomplete="on"/>
+            <input type="email" name="email" autocomplete="email" />
           </label>
           <label className="textdiv" onSelect={() => setMessage(true)}>
             <div className="formitem">Message</div>
