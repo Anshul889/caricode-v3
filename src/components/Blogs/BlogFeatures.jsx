@@ -341,7 +341,7 @@ const BlogFeatures = () => {
             capabilities, it engages visitors in meaningful and personalized
             interactions, keeping them hooked and eager to explore more.
           </p>
-          <Chat />
+          {/* <Chat /> */}
         </div>
         <FeatureList full>
           <Feature>
