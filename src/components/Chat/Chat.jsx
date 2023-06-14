@@ -3,7 +3,7 @@ import { AiChatBox1, AiChatBox2, ChatContainer, Typing1, Typing2, UserChatBox2, 
 
 const Chat = () => {
   return (
-    <ChatContainer>
+    <>
       <UserChatBox1>Explain quantum computing in simple terms</UserChatBox1>
       <Typing1>
         <span></span>
@@ -29,7 +29,7 @@ const Chat = () => {
         being an AI is the ability to gather and process vast amounts of
         information quickly.
       </AiChatBox2> */}
-    </ChatContainer>
+    </>
   )
 }
 

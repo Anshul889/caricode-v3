@@ -1,8 +1,5 @@
 import styled from 'styled-components'
 
-export const ChatContainer = styled.div`
-  display: grid;
-`
 
 export const UserChatBox1 = styled.div`
   width: 65%;
@@ -105,7 +102,6 @@ export const AiChatBox1 = styled.div`
 
 export const AiChatBox2 = styled.div`
   width: 70%;
-  margin-right: 30%;
   padding: 5%;
   background-color: #d9d8dd;
   border-radius: 10px;
