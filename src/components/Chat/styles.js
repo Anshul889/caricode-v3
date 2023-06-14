@@ -37,7 +37,7 @@ export const UserChatBox1 = styled.div`
 
 export const UserChatBox2 = styled.div`
   width: 70%;
-  padding: 5%;
+  padding: 4.5%;
   background-color: #0b7df1;
   color: white;
   border-radius: 10px;
