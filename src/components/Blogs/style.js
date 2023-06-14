@@ -14,11 +14,15 @@ export const Container = styled.div`
     padding: 15px 0;
     width: 96%;
     border-radius: 30px;
+    h2{
+      width: 90%;
+      margin: 0 auto;
+    }
   }
   @media screen and (min-width: 1024px) {
     margin: 90px auto;
     width: 90%;
-    padding: 30px 0;
+    padding: 40px 0;
   }
 `
 export const Description = styled.div`

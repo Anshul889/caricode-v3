@@ -508,6 +508,11 @@ img.pwaappicon {
     display: none;
   }
 
+  .organicheader{
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .firstheader {
     max-width: 1200px;
     width: 96%;

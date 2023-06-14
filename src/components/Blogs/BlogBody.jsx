@@ -139,7 +139,7 @@ const BlogBody = () => {
           <div className={styles.searchanimation}>
             <Lottie options={defaultOptions} isStopped={false} />
           </div>
-          <h2>
+          <h2 style={{width: '90%', margin: '0 auto'}}>
             Organic search <br /> is the golden ticket
           </h2>
           <p>
