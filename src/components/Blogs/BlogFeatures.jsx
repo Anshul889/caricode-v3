@@ -7,6 +7,7 @@ import {
   CBImage,
   CBText,
   ChatBotFeatures,
+  ChatBotSection,
   Container,
   Description,
   Excerpt,
@@ -33,6 +34,7 @@ import bolt from '../../images/bolt.svg'
 import clock from '../../images/clock.svg'
 import braincircuit from '../../images/brain-circuit.svg'
 import userheadset from '../../images/user-headset.svg'
+import Chat from '../Chat/Chat'
 
 const getImages = graphql`
   {
@@ -331,44 +333,55 @@ const BlogFeatures = () => {
       </BlogCards>
 
       <Description>Custom Chat Bots</Description>
-      <FeatureList>
-        <Feature>
-          <FeatureImage>
-            <img src={braincircuit} />
-          </FeatureImage>
-          <FeatureText>Intelligent and Conversational</FeatureText>
-        </Feature>
-        <Feature>
-          <FeatureImage>
-          <img src={database} />
-          </FeatureImage>
-          <FeatureText>Data Driven Insights</FeatureText>
-        </Feature>
-        <Feature>
-          <FeatureImage>
-          <img src={bolt} />
-          </FeatureImage>
-          <FeatureText>Seamless Integration</FeatureText>
-        </Feature>
-        <Feature>
-          <FeatureImage>
-          <img src={clock} />
-          </FeatureImage>
-          <FeatureText>24/7 Availability</FeatureText>
-        </Feature>
-        <Feature>
-          <FeatureImage>
-          <img src={penruler} />
-          </FeatureImage>
-          <FeatureText>Fully Customised</FeatureText>
-        </Feature>
-        <Feature>
-          <FeatureImage>
-          <img src={userheadset} />
-          </FeatureImage>
-          <FeatureText>Ongoing support and maintenance</FeatureText>
-        </Feature>
-      </FeatureList>
+      <ChatBotSection>
+        <div>
+          <p style={{ color: '#444' }}>
+            Utilize the power of interactive conversation to captivate your
+            audience. With its intelligent and natural language processing
+            capabilities, it engages visitors in meaningful and personalized
+            interactions, keeping them hooked and eager to explore more.
+          </p>
+          <Chat />
+        </div>
+        <FeatureList full>
+          <Feature>
+            <FeatureImage>
+              <img src={braincircuit} />
+            </FeatureImage>
+            <FeatureText>Intelligent and Conversational</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={database} />
+            </FeatureImage>
+            <FeatureText>Data Driven Insights</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={bolt} />
+            </FeatureImage>
+            <FeatureText>Seamless Integration</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={clock} />
+            </FeatureImage>
+            <FeatureText>24/7 Availability</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={penruler} />
+            </FeatureImage>
+            <FeatureText>Fully Customised</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={userheadset} />
+            </FeatureImage>
+            <FeatureText>Ongoing support and maintenance</FeatureText>
+          </Feature>
+        </FeatureList>
+      </ChatBotSection>
     </Container>
   )
 }

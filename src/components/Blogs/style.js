@@ -130,20 +130,17 @@ export const BlogCard = styled(Card)`
   }
 `
 
-export const ChatBotFeatures = styled.div` 
+export const ChatBotFeatures = styled.div`
   display: grid;
-  `
+`
 
 export const CBFeature = styled.div`
   display: grid;
 `
 
-export const CBImage = styled.div`
-`
+export const CBImage = styled.div``
 
-export const CBText = styled.div`
-`
-
+export const CBText = styled.div``
 
 export const Stats = styled.div`
   display: none;
@@ -282,11 +279,15 @@ export const Provided = styled.div`
 `
 
 export const FeatureList = styled.div`
-  width: 90%;
+  width: ${(props) => (props.full ? '100%' : '90%')};
   margin: 20px auto 40px auto;
   display: grid;
   row-gap: 10px;
   grid-auto-rows: 35px;
+  @media screen and (min-width: 768px) {
+    justify-self: center;
+    row-gap: 25px;
+  }
 `
 
 export const Feature = styled.div`
@@ -296,10 +297,18 @@ export const Feature = styled.div`
   column-gap: 5px;
 `
 
-export const FeatureImage = styled.div`
-  
-`
+export const FeatureImage = styled.div``
 
 export const FeatureText = styled.div`
-align-self: center;
+  align-self: center;
+`
+
+export const ChatBotSection = styled.div`
+  display: grid;
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 20px;
+  }
 `
