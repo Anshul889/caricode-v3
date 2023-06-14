@@ -17,7 +17,7 @@ const Chat = () => {
         either a 0 or a 1), quantum computers use something called quantum bits
         or qubits.
       </AiChatBox1>
-      <UserChatBox2>What is your favorite thing about being an AI?</UserChatBox2>
+      {/* <UserChatBox2>What is your favorite thing about being an AI?</UserChatBox2>
       <Typing2>
         <span></span>
         <span></span>
@@ -27,8 +27,8 @@ const Chat = () => {
         As an AI, I don't have personal feelings or preferences, so I don't have
         a favorite thing about being an AI. However, one of the advantages of
         being an AI is the ability to gather and process vast amounts of
-        information quickly.{' '}
-      </AiChatBox2>
+        information quickly.
+      </AiChatBox2> */}
     </ChatContainer>
   )
 }
