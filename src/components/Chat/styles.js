@@ -5,12 +5,12 @@ export const ChatContainer = styled.div`
 `
 
 export const UserChatBox1 = styled.div`
-  width: 70%;
-  padding: 5%;
+  width: 65%;
+  padding: 4.5%;
   background-color: #0b7df1;
   color: white;
   border-radius: 10px;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: 20px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
@@ -75,7 +75,7 @@ export const UserChatBox2 = styled.div`
 export const AiChatBox1 = styled.div`
   width: 70%;
   margin-right: 30%;
-  padding: 5%;
+  padding: 4.5%;
   background-color: #d9d8dd;
   border-radius: 10px;
   @media screen and (min-width: 768px) {
