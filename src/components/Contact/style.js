@@ -20,6 +20,7 @@ export const Heading2 = styled.h2`
     letter-spacing: 0.7px;
     line-height: 1.5;
     margin: 0 0 0.96em 0;
+    width: 100%;
     text-transform: uppercase;
   }
 `

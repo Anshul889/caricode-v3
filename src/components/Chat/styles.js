@@ -102,9 +102,14 @@ export const AiChatBox1 = styled.div`
 
 export const AiChatBox2 = styled.div`
   width: 70%;
-  padding: 5%;
+  padding: 4.5%;
   background-color: #d9d8dd;
   border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    margin-right: 30%;
+    padding: 15px;
+  }
   animation: op 20s ease-in-out infinite forwards;
   @keyframes op {
     0% {

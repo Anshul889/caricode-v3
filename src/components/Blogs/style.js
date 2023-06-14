@@ -272,6 +272,14 @@ export const TestPeople = styled(People)`
 `
 
 export const Provided = styled.div`
+  @media screen and (min-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
+    padding: 30px 0;
+    border-radius: 30px;
+  }
   h2 {
     width: 90%;
     margin: 0 auto;
