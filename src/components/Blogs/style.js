@@ -281,12 +281,13 @@ export const Provided = styled.div`
     margin: 0 auto;
     max-width: 1200px;
     background-color: white;
-    padding: 30px 0;
+    padding: 40px 0;
     border-radius: 30px;
   }
   h2 {
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
+    text-align: center;
   }
 `
 
@@ -300,7 +301,7 @@ export const FeatureList = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     row-gap: 35px;
-    margin: 40px auto 60px auto;
+    margin: 40px auto 20px auto;
   }
 `
 

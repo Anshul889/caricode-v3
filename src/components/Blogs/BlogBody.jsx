@@ -182,7 +182,7 @@ const BlogBody = () => {
         </div>
         <div className={styles.uiux}>
           <div className={styles.uiinner}>
-            <div>
+            <div style={{marginBottom: '15px'}}>
               <h2>Transform your website with a cutting edge ui/ux</h2>
               <p>
                 UX design has a direct and powerful impact on your SEO rankings
@@ -192,6 +192,7 @@ const BlogBody = () => {
                 speed, mobile responsiveness, menu/header layout, and URL
                 structure.
               </p>
+              <Link to="/ui-ux/" target="_blank" rel="noopener noreferrer" style={{color: 'white'}} ><span style={{ textDecoration: 'underline', textUnderlineOffset: '5px', marginRight: '5px'}}>Learn More</span><span>&gt;</span></Link>
             </div>
             <div className={styles.uiuxanimation}>
               <Bloguiux />
