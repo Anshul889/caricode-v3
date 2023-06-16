@@ -22,6 +22,7 @@ import user from '../../images/user-tie.svg'
 import pencil from '../../images/pencil.svg'
 import compass from '../../images/compass-drafting.svg'
 import link from '../../images/link.svg'
+import keyword from '../../images/print-magnifying-glass.svg'
 
 const BlogServices = () => {
   return (
@@ -135,6 +136,12 @@ const BlogServices = () => {
               <img src={user} style={{ position: 'relative', top: '2px' }} />
             </FeatureImage>
             <FeatureText>Guest Posting</FeatureText>
+          </Feature>
+          <Feature>
+            <FeatureImage>
+              <img src={keyword} style={{ position: 'relative', top: '2px' }} />
+            </FeatureImage>
+            <FeatureText>Keyword Research</FeatureText>
           </Feature>
         </FeatureList>
       </Provided>

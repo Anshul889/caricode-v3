@@ -297,8 +297,10 @@ export const FeatureList = styled.div`
   row-gap: 10px;
   grid-auto-rows: 35px;
   @media screen and (min-width: 768px) {
-    justify-self: center;
-    row-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 35px;
+    margin: 40px auto 60px auto;
   }
 `
 
@@ -307,12 +309,26 @@ export const Feature = styled.div`
   grid-template-columns: 29px 1fr;
   align-content: center;
   column-gap: 5px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 `
 
-export const FeatureImage = styled.div``
+export const FeatureImage = styled.div`
+@media screen and (min-width: 768px) {
+    height: 75px;
+    width: 75px;
+    place-self: center;
+    margin-bottom: 10px;
+  }
+`
 
 export const FeatureText = styled.div`
   align-self: center;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 `
 
 export const ChatBotSection = styled.div`

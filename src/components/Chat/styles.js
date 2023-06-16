@@ -7,7 +7,7 @@ export const UserChatBox1 = styled.div`
   color: white;
   border-radius: 10px;
   margin-left: 25%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
     width: 281px;
@@ -41,7 +41,7 @@ export const UserChatBox2 = styled.div`
   color: white;
   border-radius: 10px;
   margin-left: 20%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
     width: 295px;
