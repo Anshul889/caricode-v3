@@ -533,8 +533,9 @@ img.pwaappicon {
     margin: 0px auto;
   }
 
-  .finner h2 {
-    margin-top: 0;
+  .finner > h2 {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .firstheader p {

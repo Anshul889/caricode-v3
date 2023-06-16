@@ -10,12 +10,15 @@ import {
   ChatBotSection,
   Container,
   Description,
+  DesktopContainer,
+  Ditem,
   Excerpt,
   Feature,
   FeatureImage,
   FeatureList,
   FeatureText,
   Filter,
+  MobileContainer,
   Numbers,
   Sort,
   Stats,
@@ -225,164 +228,223 @@ const BlogFeatures = () => {
   }
 
   return (
-    <Container>
-      <h2>Critical Features</h2>
-      <Description>
-        Make it easy for you followers to filter and sort through web pages
-      </Description>
-      <Sort>
-        <h3>Sort</h3>
-        <Buttons>
-          {/* sort by date */}
-          {sortBy !== 'sortNew' && sortBy !== 'sortOld' && (
-            <Button onClick={() => sortNew()} filters>
-              Date
-            </Button>
-          )}
-          {sortBy === 'sortNew' && (
-            <Button onClick={() => sortOld()}>Date &#8593;</Button>
-          )}
-          {sortBy === 'sortOld' && (
-            <Button onClick={() => sortNew()}>Date &#8595;</Button>
-          )}
+    <>
+      <Container>
+        <h2>Critical Features</h2>
+        <Description>
+          Make it easy for you followers to filter and sort through web pages
+        </Description>
+        <Sort>
+          <h3>Sort</h3>
+          <Buttons>
+            {/* sort by date */}
+            {sortBy !== 'sortNew' && sortBy !== 'sortOld' && (
+              <Button onClick={() => sortNew()} filters>
+                Date
+              </Button>
+            )}
+            {sortBy === 'sortNew' && (
+              <Button onClick={() => sortOld()}>Date &#8593;</Button>
+            )}
+            {sortBy === 'sortOld' && (
+              <Button onClick={() => sortNew()}>Date &#8595;</Button>
+            )}
 
-          {/* sort by likes */}
+            {/* sort by likes */}
 
-          {sortBy !== 'sortAscLikes' && sortBy !== 'sortDscLikes' && (
-            <Button onClick={() => sortDscLikes()} filters>
-              Likes
-            </Button>
-          )}
-          {sortBy === 'sortDscLikes' && (
-            <Button onClick={() => sortAscLikes()}>Likes &#8593;</Button>
-          )}
-          {sortBy === 'sortAscLikes' && (
-            <Button onClick={() => sortDscLikes()}>Likes &#8595;</Button>
-          )}
+            {sortBy !== 'sortAscLikes' && sortBy !== 'sortDscLikes' && (
+              <Button onClick={() => sortDscLikes()} filters>
+                Likes
+              </Button>
+            )}
+            {sortBy === 'sortDscLikes' && (
+              <Button onClick={() => sortAscLikes()}>Likes &#8593;</Button>
+            )}
+            {sortBy === 'sortAscLikes' && (
+              <Button onClick={() => sortDscLikes()}>Likes &#8595;</Button>
+            )}
 
-          {sortBy !== 'sortAscComments' && sortBy !== 'sortDscComments' && (
-            <Button onClick={() => sortDscComments()} filters>
-              Comments
-            </Button>
-          )}
-          {sortBy === 'sortDscComments' && (
-            <Button onClick={() => sortAscComments()}>Comments &#8593;</Button>
-          )}
-          {sortBy === 'sortAscComments' && (
-            <Button onClick={() => sortDscComments()}>Comments &#8595;</Button>
-          )}
-        </Buttons>
-      </Sort>
-      <Filter>
-        <h3>Filter</h3>
-        <Buttons>
-          {filter !== 'Tech' && (
-            <Button onClick={() => filterCategory('Tech')} filters>
-              Tech
-            </Button>
-          )}
-          {filter === 'Tech' && (
-            <Button onClick={() => removeFilter()}>Tech</Button>
-          )}
-          {filter !== 'Design' && (
-            <Button onClick={() => filterCategory('Design')} filters>
-              Design
-            </Button>
-          )}
-          {filter === 'Design' && (
-            <Button onClick={() => removeFilter()}>Design</Button>
-          )}
-          {filter !== 'Marketing' && (
-            <Button onClick={() => filterCategory('Marketing')} filters>
-              Marketing
-            </Button>
-          )}
-          {filter === 'Marketing' && (
-            <Button onClick={() => removeFilter()}>Marketing</Button>
-          )}
-        </Buttons>
-      </Filter>
+            {sortBy !== 'sortAscComments' && sortBy !== 'sortDscComments' && (
+              <Button onClick={() => sortDscComments()} filters>
+                Comments
+              </Button>
+            )}
+            {sortBy === 'sortDscComments' && (
+              <Button onClick={() => sortAscComments()}>
+                Comments &#8593;
+              </Button>
+            )}
+            {sortBy === 'sortAscComments' && (
+              <Button onClick={() => sortDscComments()}>
+                Comments &#8595;
+              </Button>
+            )}
+          </Buttons>
+        </Sort>
+        <Filter>
+          <h3>Filter</h3>
+          <Buttons>
+            {filter !== 'Tech' && (
+              <Button onClick={() => filterCategory('Tech')} filters>
+                Tech
+              </Button>
+            )}
+            {filter === 'Tech' && (
+              <Button onClick={() => removeFilter()}>Tech</Button>
+            )}
+            {filter !== 'Design' && (
+              <Button onClick={() => filterCategory('Design')} filters>
+                Design
+              </Button>
+            )}
+            {filter === 'Design' && (
+              <Button onClick={() => removeFilter()}>Design</Button>
+            )}
+            {filter !== 'Marketing' && (
+              <Button onClick={() => filterCategory('Marketing')} filters>
+                Marketing
+              </Button>
+            )}
+            {filter === 'Marketing' && (
+              <Button onClick={() => removeFilter()}>Marketing</Button>
+            )}
+          </Buttons>
+        </Filter>
 
-      <BlogCards>
-        {posts.map((post) => {
-          return (
-            <BlogCard>
-              <Image fluid={post.src} />
-              <div>
-                <Stats>
-                  <img src={thumbs} />
-                  <img src={comments} />
-                  <img src={share} />
-                  <img src={bookmark} />
-                </Stats>
-                <h3>{post.title}</h3>
-                <Title>
-                  <span>{post.author}</span>
-                  <span>{post.date}d ago</span>
-                  <span>{post.category}</span>
-                </Title>
-                <Excerpt>{post.excerpt}</Excerpt>
-                <Numbers>
-                  <div>{post.likes} likes</div>
-                  <div>{post.comments} comments</div>
-                </Numbers>
-              </div>
-            </BlogCard>
-          )
-        })}
-      </BlogCards>
-
-      <Description>Custom Chat Bots</Description>
-      <ChatBotSection>
-        <div>
-          <p style={{ color: '#444' }}>
+        <BlogCards>
+          {posts.map((post) => {
+            return (
+              <BlogCard>
+                <Image fluid={post.src} />
+                <div>
+                  <Stats>
+                    <img src={thumbs} />
+                    <img src={comments} />
+                    <img src={share} />
+                    <img src={bookmark} />
+                  </Stats>
+                  <h3>{post.title}</h3>
+                  <Title>
+                    <span>{post.author}</span>
+                    <span>{post.date}d ago</span>
+                    <span>{post.category}</span>
+                  </Title>
+                  <Excerpt>{post.excerpt}</Excerpt>
+                  <Numbers>
+                    <div>{post.likes} likes</div>
+                    <div>{post.comments} comments</div>
+                  </Numbers>
+                </div>
+              </BlogCard>
+            )
+          })}
+        </BlogCards>
+        <MobileContainer>
+          <Description>Custom Chat Bots</Description>
+          <ChatBotSection>
+            <div>
+              <p style={{ color: '#444' }}>
+                Utilize the power of interactive conversation to captivate your
+                audience. With its intelligent and natural language processing
+                capabilities, it engages visitors in meaningful and personalized
+                interactions, keeping them hooked and eager to explore more.
+              </p>
+              <Chat />
+            </div>
+            <FeatureList full>
+              <Feature>
+                <FeatureImage>
+                  <img src={braincircuit} />
+                </FeatureImage>
+                <FeatureText>Intelligent and Conversational</FeatureText>
+              </Feature>
+              <Feature>
+                <FeatureImage>
+                  <img src={database} />
+                </FeatureImage>
+                <FeatureText>Data Driven Insights</FeatureText>
+              </Feature>
+              <Feature>
+                <FeatureImage>
+                  <img src={bolt} />
+                </FeatureImage>
+                <FeatureText>Seamless Integration</FeatureText>
+              </Feature>
+              <Feature>
+                <FeatureImage>
+                  <img src={clock} />
+                </FeatureImage>
+                <FeatureText>24/7 Availability</FeatureText>
+              </Feature>
+              <Feature>
+                <FeatureImage>
+                  <img src={penruler} />
+                </FeatureImage>
+                <FeatureText>Fully Customised</FeatureText>
+              </Feature>
+              <Feature>
+                <FeatureImage>
+                  <img src={userheadset} />
+                </FeatureImage>
+                <FeatureText>Ongoing support and maintenance</FeatureText>
+              </Feature>
+            </FeatureList>
+          </ChatBotSection>
+        </MobileContainer>
+      </Container>
+      <DesktopContainer>
+        <Ditem>
+          <h2>Custom Chat Bots</h2>
+          <Chat />
+        </Ditem>
+        <Ditem>
+          <p style={{ color: '#444', width: '90%', margin: '0 auto' }}>
             Utilize the power of interactive conversation to captivate your
             audience. With its intelligent and natural language processing
             capabilities, it engages visitors in meaningful and personalized
             interactions, keeping them hooked and eager to explore more.
           </p>
-          <Chat />
-        </div>
-        <FeatureList full>
-          <Feature>
-            <FeatureImage>
-              <img src={braincircuit} />
-            </FeatureImage>
-            <FeatureText>Intelligent and Conversational</FeatureText>
-          </Feature>
-          <Feature>
-            <FeatureImage>
-              <img src={database} />
-            </FeatureImage>
-            <FeatureText>Data Driven Insights</FeatureText>
-          </Feature>
-          <Feature>
-            <FeatureImage>
-              <img src={bolt} />
-            </FeatureImage>
-            <FeatureText>Seamless Integration</FeatureText>
-          </Feature>
-          <Feature>
-            <FeatureImage>
-              <img src={clock} />
-            </FeatureImage>
-            <FeatureText>24/7 Availability</FeatureText>
-          </Feature>
-          <Feature>
-            <FeatureImage>
-              <img src={penruler} />
-            </FeatureImage>
-            <FeatureText>Fully Customised</FeatureText>
-          </Feature>
-          <Feature>
-            <FeatureImage>
-              <img src={userheadset} />
-            </FeatureImage>
-            <FeatureText>Ongoing support and maintenance</FeatureText>
-          </Feature>
-        </FeatureList>
-      </ChatBotSection>
-    </Container>
+          <FeatureList>
+            <Feature>
+              <FeatureImage>
+                <img src={braincircuit} />
+              </FeatureImage>
+              <FeatureText>Intelligent and Conversational</FeatureText>
+            </Feature>
+            <Feature>
+              <FeatureImage>
+                <img src={database} />
+              </FeatureImage>
+              <FeatureText>Data Driven Insights</FeatureText>
+            </Feature>
+            <Feature>
+              <FeatureImage>
+                <img src={bolt} />
+              </FeatureImage>
+              <FeatureText>Seamless Integration</FeatureText>
+            </Feature>
+            <Feature>
+              <FeatureImage>
+                <img src={clock} />
+              </FeatureImage>
+              <FeatureText>24/7 Availability</FeatureText>
+            </Feature>
+            <Feature>
+              <FeatureImage>
+                <img src={penruler} />
+              </FeatureImage>
+              <FeatureText>Fully Customised</FeatureText>
+            </Feature>
+            <Feature>
+              <FeatureImage>
+                <img src={userheadset} />
+              </FeatureImage>
+              <FeatureText>Ongoing support and maintenance</FeatureText>
+            </Feature>
+          </FeatureList>
+        </Ditem>
+      </DesktopContainer>
+    </>
   )
 }
 

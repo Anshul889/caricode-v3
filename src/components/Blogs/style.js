@@ -14,7 +14,7 @@ export const Container = styled.div`
     padding: 15px 0;
     width: 96%;
     border-radius: 30px;
-    h2{
+    h2 {
       width: 90%;
       margin: 0 auto;
     }
@@ -323,4 +323,35 @@ export const ChatBotSection = styled.div`
     grid-template-columns: 1.5fr 1fr;
     column-gap: 20px;
   }
+`
+
+export const MobileContainer = styled.div`
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`
+
+export const DesktopContainer = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    h2{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+`
+
+export const Ditem = styled.div`
+ @media screen and (min-width: 768px) {
+  background-color: white;
+  padding: 30px 0;
+  border-radius: 30px;
+ }
 `

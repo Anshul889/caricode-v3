@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const UserChatBox1 = styled.div`
   width: 65%;
   padding: 4.5%;
@@ -11,8 +10,8 @@ export const UserChatBox1 = styled.div`
   margin-top: 20px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
-    width: 40%;
-    margin-left: 50%;
+    width: 281px;
+    margin-left: calc(90% - 281px);
     padding: 15px;
   }
   animation: opac 20s ease-in-out infinite forwards;
@@ -45,8 +44,8 @@ export const UserChatBox2 = styled.div`
   margin-top: 20px;
   margin-bottom: 10px;
   @media screen and (min-width: 768px) {
-    width: 30%;
-    margin-left: 60%;
+    width: 295px;
+    margin-left: calc(90% - 295px);
     padding: 15px;
   }
   animation: opaci 20s ease-in-out infinite forwards;
@@ -77,7 +76,8 @@ export const AiChatBox1 = styled.div`
   border-radius: 10px;
   @media screen and (min-width: 768px) {
     width: 60%;
-    margin-right: 30%;
+    margin-right: 25%;
+    margin-left: 5%;
     padding: 15px;
   }
   animation: opa 20s ease-in-out infinite forwards;
@@ -107,7 +107,8 @@ export const AiChatBox2 = styled.div`
   border-radius: 10px;
   @media screen and (min-width: 768px) {
     width: 60%;
-    margin-right: 30%;
+    margin-right: 25%;
+    margin-left: 5%;
     padding: 15px;
   }
   animation: op 20s ease-in-out infinite forwards;
@@ -134,6 +135,9 @@ export const Typing1 = styled.div`
   position: relative;
   height: 10px;
   margin: 0px;
+  @media screen and (min-width: 768px) {
+    left: 20px;
+  }
   animation: disappear 20s ease-in-out infinite forwards;
   @keyframes disappear {
     0% {
@@ -142,7 +146,7 @@ export const Typing1 = styled.div`
     }
     10% {
       opacity: 0;
-      margin: 0px;
+      margin: 10px;
     }
     15% {
       opacity: 1;
@@ -154,11 +158,11 @@ export const Typing1 = styled.div`
     }
     28% {
       opacity: 0;
-      margin: 0px;
+      margin: 10px;
     }
     100% {
       opacity: 0;
-      margin: 0px;
+      margin: 10px;
     }
   }
 
@@ -201,6 +205,9 @@ export const Typing2 = styled.div`
   position: relative;
   height: 10px;
   margin: 0px;
+  @media screen and (min-width: 768px) {
+    left: 20px;
+  }
   animation: disappear2 20s ease-in-out infinite forwards;
   @keyframes disappear2 {
     0% {
@@ -209,7 +216,7 @@ export const Typing2 = styled.div`
     }
     60% {
       opacity: 0;
-      margin: 0px;
+      margin: 10px;
     }
     63% {
       opacity: 1;
@@ -221,11 +228,11 @@ export const Typing2 = styled.div`
     }
     77% {
       opacity: 0;
-      margin: 0px;
+      margin: 10px;
     }
     100% {
       opacity: 0;
-      margin: 0px;
+      margin: 10px;
     }
   }
 

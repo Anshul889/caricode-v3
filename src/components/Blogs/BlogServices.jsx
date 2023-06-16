@@ -151,11 +151,7 @@ const BlogServices = () => {
               "As a small business owner, I was struggling to compete in the
               crowded online marketplace. However, since partnering with
               Caricode, my website's performance has seen a remarkable
-              transformation. Their dedicated team took the time to understand
-              my business objectives and devised a tailored SEO strategy that
-              perfectly aligned with my goals. Through their comprehensive
-              keyword research, on-page optimization, and link-building efforts,
-              they significantly improved my website's search engine rankings"
+              transformation."
             </p>
           </Person>
           <Person>
