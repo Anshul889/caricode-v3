@@ -177,7 +177,7 @@ const BlogBody = () => {
             </p> */}
           </div>
           <div className={styles.richexperiences}>
-            <h3>Consumers have very high expecations of the web</h3>
+            <h3>Consumers have very high expectations of the web</h3>
           </div>
         </div>
         <div className={styles.uiux}>
