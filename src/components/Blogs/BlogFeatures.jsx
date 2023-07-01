@@ -413,6 +413,12 @@ const BlogFeatures = () => {
             </Feature>
             <Feature>
               <FeatureImage>
+                <img src={userheadset} />
+              </FeatureImage>
+              <FeatureText>Ongoing support and maintenance</FeatureText>
+            </Feature>
+            <Feature>
+              <FeatureImage>
                 <img src={database} />
               </FeatureImage>
               <FeatureText>Data Driven Insights</FeatureText>
@@ -423,12 +429,7 @@ const BlogFeatures = () => {
               </FeatureImage>
               <FeatureText>Seamless Integration</FeatureText>
             </Feature>
-            <Feature>
-              <FeatureImage>
-                <img src={clock} />
-              </FeatureImage>
-              <FeatureText>24/7 Availability</FeatureText>
-            </Feature>
+
             <Feature>
               <FeatureImage>
                 <img src={penruler} />
@@ -437,9 +438,9 @@ const BlogFeatures = () => {
             </Feature>
             <Feature>
               <FeatureImage>
-                <img src={userheadset} />
+                <img src={clock} />
               </FeatureImage>
-              <FeatureText>Ongoing support and maintenance</FeatureText>
+              <FeatureText>24/7 Availability</FeatureText>
             </Feature>
           </FeatureList>
         </Ditem>

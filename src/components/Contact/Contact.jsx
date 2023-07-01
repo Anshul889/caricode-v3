@@ -14,6 +14,8 @@ const Contact = () => {
     enter: { opacity: 1 },
     leave: { opacity: 0 },
   })
+
+  console.log('rerender')
   return (
 		<Container>
 			<Heading2>Send us a message</Heading2>

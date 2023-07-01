@@ -298,10 +298,13 @@ export const FeatureList = styled.div`
   row-gap: 10px;
   grid-auto-rows: 35px;
   @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     row-gap: 35px;
     margin: 40px auto 20px auto;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
   }
 `
 
@@ -313,22 +316,33 @@ export const Feature = styled.div`
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr;
     row-gap: 20px;
+    grid-template-rows: 60px auto;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-rows: 75px auto;
   }
 `
 
 export const FeatureImage = styled.div`
 @media screen and (min-width: 768px) {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
     place-self: center;
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 75px;
+    width: 75px;
   }
 `
 
 export const FeatureText = styled.div`
-  align-self: center;
   @media screen and (min-width: 768px) {
     text-align: center;
+    align-self: start;
+  }
+  @media screen and (min-width: 1200px) {
+    align-self: center;
   }
 `
 
@@ -355,13 +369,16 @@ export const DesktopContainer = styled.div`
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 30px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     max-width: 1200px;
     h2{
       width: 90%;
       margin: 0 auto;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 90%;
   }
 `
 
