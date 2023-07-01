@@ -31,6 +31,9 @@ export const Description = styled.div`
   font-weight: 800;
   @media screen and (min-width: 768px) {
     width: 90%;
+    li{
+      margin-bottom: 10px;
+    }
   }
   @media screen and (min-width: 1200px) {
     width: 90%;
