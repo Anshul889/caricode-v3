@@ -357,6 +357,7 @@ export const FeatureImage = styled.div`
 `
 
 export const FeatureText = styled.div`
+  align-self: center;
   @media screen and (min-width: 768px) {
     text-align: center;
     align-self: start;
