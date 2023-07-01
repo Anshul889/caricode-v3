@@ -694,10 +694,10 @@ img.pwaappicon {
     display: block;
   }
   .trafficexperience {
-    margin: 30px auto;
+    margin: 10px auto;
     grid-template-columns: 1fr 1fr;
     row-gap: 0px;
-    column-gap: 40px;
+    column-gap: 30px;
     width: 96%;
   }
   .trafficexperience h3 {
@@ -762,7 +762,7 @@ img.pwaappicon {
 
 @media screen and (min-width: 1024px) {
   .firstheader{
-    width: 90%;
+    width: 96%;
   }
   .finner{
     padding: 60px 30px;
@@ -776,8 +776,23 @@ img.pwaappicon {
     grid-column: 2 / span 1;
   }
   .trafficexperience{
+    width: 96%;
+    margin: 30px auto;
+  }
+  .uiux{
+    width: 96%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .firstheader{
+    width: 90%;
+  }
+  .trafficexperience{
     width: 90%;
     margin: 90px auto;
+    column-gap: 40px;
   }
   .uiux{
     width: 90%;

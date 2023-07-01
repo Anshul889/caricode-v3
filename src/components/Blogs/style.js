@@ -29,6 +29,9 @@ export const Description = styled.div`
   width: 100%;
   margin: 30px auto 0px auto;
   font-weight: 800;
+  @media screen and (min-width: 768px) {
+    width: 90%;
+  }
   @media screen and (min-width: 1200px) {
     width: 90%;
     margin: 30px auto;
