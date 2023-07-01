@@ -4,14 +4,13 @@ export const DContainer = styled.div`
   display: none;
   @media screen and (min-width: 768px) {
     display: grid;
-    height: 540px;
+    height: 650px;
     place-content: center;
     width: 96%;
     margin: 0 auto;
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     width: 90%;
-    height: 700px;
   }
 `
 
@@ -40,10 +39,16 @@ export const DHero = styled.div`
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 30px;
+    h1, p{
+    margin-left: 0;
+    }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     column-gap: 30px;
     grid-template-columns: 1fr 1fr;
+    h1, p{
+    margin-left: 7%;
+    }
   }
 `
 

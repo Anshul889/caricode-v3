@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     margin: 30px auto;
-    padding: 15px 0;
+    padding: 30px 0;
     width: 96%;
     border-radius: 30px;
     h2 {
@@ -19,7 +19,7 @@ export const Container = styled.div`
       margin: 0 auto;
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     margin: 90px auto;
     width: 90%;
     padding: 40px 0;
@@ -29,7 +29,7 @@ export const Description = styled.div`
   width: 100%;
   margin: 30px auto 0px auto;
   font-weight: 800;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 90%;
     margin: 30px auto;
   }
@@ -270,14 +270,25 @@ export const Testimonials = styled.div`
 export const TestPeople = styled(People)`
   width: 90%;
   @media screen and (min-width: 768px) {
-    width: 100%;
+    width: 95%;
     margin-bottom: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    div:nth-child(4) { 
+      display: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    div:nth-child(4) {
+      display: block;
+    }
   }
 `
 
 export const Provided = styled.div`
   @media screen and (min-width: 768px) {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     max-width: 1200px;
     background-color: white;
@@ -288,6 +299,9 @@ export const Provided = styled.div`
     width: 90%;
     margin: 10px auto;
     text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 90%;
   }
 `
 
