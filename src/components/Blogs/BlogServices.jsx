@@ -11,6 +11,7 @@ import {
   FeatureImage,
   FeatureList,
   FeatureText,
+  ServiceList,
 } from './style'
 import { Link } from 'gatsby'
 import { Button } from '../Button/Button'
@@ -106,7 +107,7 @@ const BlogServices = () => {
       </Container> */}
       <Provided>
         <h2>Services we provide</h2>
-        <FeatureList>
+        <ServiceList>
           <Feature>
             <FeatureImage>
               <img src={browser} style={{ position: 'relative', top: '2px' }} />
@@ -143,7 +144,7 @@ const BlogServices = () => {
             </FeatureImage>
             <FeatureText>Keyword Research</FeatureText>
           </Feature>
-        </FeatureList>
+        </ServiceList>
       </Provided>
       <Testimonials>
         <h2>

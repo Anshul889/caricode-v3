@@ -410,3 +410,20 @@ export const Ditem = styled.div`
   border-radius: 30px;
  }
 `
+
+export const ServiceList = styled.div`
+ width: ${(props) => (props.full ? '100%' : '90%')};
+  margin: 20px auto 40px auto;
+  display: grid;
+  row-gap: 10px;
+  grid-auto-rows: 35px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 35px;
+    margin: 40px auto 20px auto;
+  }
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`
