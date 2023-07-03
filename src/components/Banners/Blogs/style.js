@@ -16,7 +16,6 @@ export const DContainer = styled.div`
 
 export const DHero = styled.div`
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -36,6 +35,7 @@ export const DHero = styled.div`
     color: white;
   }
   @media screen and (min-width: 768px) {
+    grid-template-columns: 1.2fr 1fr;
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 30px;

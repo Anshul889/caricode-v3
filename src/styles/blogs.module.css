@@ -692,6 +692,7 @@ img.pwaappicon {
 
   .dbody {
     display: block;
+    padding-bottom: 75px;
   }
   .trafficexperience {
     margin: 10px auto;
