@@ -23,7 +23,6 @@ const Seocta = () => {
           </CTAText>
         </div>
         <form
-          id="contact"
           name="seocta"
           method="POST"
           data-netlify="true"
@@ -42,7 +41,7 @@ const Seocta = () => {
             </label>
             <label>
               <div className="formitem">Company Name*</div>
-              <input type="text" name="company" required minLength={4} />
+              <input type="text" name="company" autocomplete="company" required minLength={4} />
             </label>
             <label>
               <div className="formitem">Message</div>
