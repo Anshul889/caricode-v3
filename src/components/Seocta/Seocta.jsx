@@ -29,7 +29,7 @@ const Seocta = () => {
           data-netlify-honeypot="bot-field"
           autocomplete="on"
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="seocta" />
           <div className="seocta">
             <label id="name">
               <div className="formitem">Name*</div>
