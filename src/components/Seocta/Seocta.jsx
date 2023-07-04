@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CTAHeader, CTAText, Container, Inner } from './style'
+import { CTABtn, CTAHeader, CTAText, Container, Inner } from './style'
 import { useTransition, animated } from 'react-spring'
 import { Button } from '../Button/Button'
 
@@ -48,7 +48,7 @@ const Seocta = () => {
               <textarea className="contactformarea" name="message"></textarea>
             </label>
           </div>
-          <Button type="submit">Get in touch</Button>
+          <CTABtn type="submit">Get in touch</CTABtn>
         </form>
       </Inner>
     </Container>

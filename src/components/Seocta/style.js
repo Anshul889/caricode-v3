@@ -28,3 +28,25 @@ export const CTAText = styled.div`
     padding-top: 15px;
   }
 `
+
+export const CTABtn = styled.button`
+  color: white;
+  background-color: #444;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 16px;
+  `
