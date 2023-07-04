@@ -342,7 +342,7 @@ const BlogFeatures = () => {
         <MobileContainer>
           <Description>Custom Chat Bots</Description>
           <ChatBotSection>
-            <div>
+            <div style={{height: '880px'}}>
               <p style={{ color: '#444' }}>
                 Utilize the power of interactive conversation to captivate your
                 audience. With its intelligent and natural language processing

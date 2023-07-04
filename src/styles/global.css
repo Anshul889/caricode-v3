@@ -75,6 +75,14 @@ a:hover {
   font-size: 16px;
 }
 
+.seocta{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 20px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
 input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -356,6 +364,12 @@ button {
   .former {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
+  }
+
+  .seocta{
+    grid-template-columns: 1fr;
+    grid-gap: 0px; 
+    padding-top: 0px;
   }
   .textdiv {
     grid-column: span 2;

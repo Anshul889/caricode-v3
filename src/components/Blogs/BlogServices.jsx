@@ -24,6 +24,7 @@ import pencil from '../../images/pencil.svg'
 import compass from '../../images/compass-drafting.svg'
 import link from '../../images/link.svg'
 import keyword from '../../images/print-magnifying-glass.svg'
+import Seocta from '../Seocta/Seocta'
 
 const BlogServices = () => {
   return (
@@ -194,7 +195,7 @@ const BlogServices = () => {
           </Person>
         </TestPeople>
       </Testimonials>
-      <Contact />
+      <Seocta />
     </>
   )
 }
