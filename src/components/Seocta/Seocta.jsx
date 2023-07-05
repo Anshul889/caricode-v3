@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { CTABtn, CTAHeader, CTAText, Container, Inner } from './style'
+import { CTABtn, CTAForm, CTAHeader, CTAImage, CTAText, Container, Inner } from './style'
 import { useTransition, animated } from 'react-spring'
 import { Button } from '../Button/Button'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Seocta = () => {
   return (
@@ -22,6 +23,7 @@ const Seocta = () => {
             your goals.
           </CTAText>
         </div>
+        <CTAForm>
         <form
           name="seocta"
           method="POST"
@@ -47,9 +49,13 @@ const Seocta = () => {
               <div className="formitem">Message</div>
               <textarea name="message"></textarea>
             </label>
+            <CTABtn type="submit">Get in touch</CTABtn>
           </div>
-          <CTABtn type="submit">Get in touch</CTABtn>
         </form>
+        <CTAImage>
+          <StaticImage src="../../images/form.jpg" alt="SEO CTA" style={{height: '100%'}} />
+        </CTAImage>
+        </CTAForm>
       </Inner>
     </Container>
   )

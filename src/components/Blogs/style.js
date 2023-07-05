@@ -265,10 +265,10 @@ export const Testimonials = styled.div`
     max-width: 1200px;
     background: transparent;
     border-radius: 30px;
-    margin-bottom: 70px;
     h2 {
       color: #515151;
       font-size: 48px;
+      margin: 70px auto;
     }
   }
 `

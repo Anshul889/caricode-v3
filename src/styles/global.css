@@ -369,7 +369,7 @@ button {
   .seocta{
     grid-template-columns: 1fr;
     grid-gap: 0px; 
-    padding-top: 0px;
+    margin: 30px;
   }
   .textdiv {
     grid-column: span 2;

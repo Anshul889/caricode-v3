@@ -1,22 +1,19 @@
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.div`
+margin-top: 50px;
+`
 
 export const Inner = styled.div`
   width: 90%;
   margin: 30px auto 75px auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 1000px;
-  @media screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-  }
+  max-width: 1200px;
 `
 
 export const CTAHeader = styled.h2`
   @media screen and (min-width: 768px) {
     grid-column: 1 / 3;
+    text-align: center;
   }
 `
 
@@ -24,9 +21,15 @@ export const CTAText = styled.div`
   line-height: 29.12px;
   letter-spacing: 0.02em;
   @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
+    margin: 0px auto 30px auto;
     padding-top: 15px;
-  }
+    text-align: center;
+    max-width: 800px;
+    font-size: 18px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  } 
 `
 
 export const CTABtn = styled.button`
@@ -50,4 +53,24 @@ export const CTABtn = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   font-size: 16px;
+`
+
+export const CTAForm = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+`
+
+export const CTAImage = styled.div`
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 `
