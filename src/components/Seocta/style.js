@@ -41,12 +41,13 @@ export const CTABtn = styled.button`
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  padding: 0.75rem 1.5rem;
-  line-height: 1.5;
+  height: 2.75em;
+  line-height: 2.75em;
+  padding: 0 1.5em;
   border-radius: 4px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 16px;
-  `
+`
