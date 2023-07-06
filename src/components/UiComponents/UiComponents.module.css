@@ -13,7 +13,7 @@
 .container {
   width: 100%;
   background-color: #f5f5f5;
-  height: 500px;
+  height: 300px;
 }
 
 .inner{
@@ -68,4 +68,47 @@
 .documentationtext{
   margin-left: 20px;
   margin-bottom: 15px;
+}
+
+.radiocontainer {
+  background-color: #f5f5f5;
+  width: 100%;
+  display: block;
+  padding-bottom: 20px;
+}
+
+.radioheading{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.active{
+  background-color: #dedede;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+}
+
+.inactive{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.radiooption{
+  grid-row: 1/ span 1;
+}
+
+.radiodescription{
+  grid-row: 2/ span 1;
+}
+
+.tick{
+  grid-row: 1/ span 2;
+  place-self: center;
 }
