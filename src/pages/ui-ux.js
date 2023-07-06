@@ -66,6 +66,7 @@ import DuoLingoLottie from '../components/Lotties/Duolingo/Duolingo'
 import PinterestLottie from '../components/Lotties/Pinterest/Pinterest'
 import LoaderLottie from '../components/Lotties/Loader/Loader'
 import DragLottie from '../components/Lotties/Drag/Drag'
+import UiComponents from '../components/UiComponents/UiComponents'
 
 const UiUx = () => {
   return (
@@ -303,6 +304,7 @@ const UiUx = () => {
           </SmallItemText>
         </EvwhInner>
       </Everywhere>
+      <UiComponents />
       <UiKit />
     </Layout>
   )
