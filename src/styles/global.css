@@ -370,6 +370,7 @@ button {
     grid-template-columns: 1fr;
     grid-gap: 0px; 
     margin: 30px;
+    padding-bottom: 30px;
   }
   .textdiv {
     grid-column: span 2;

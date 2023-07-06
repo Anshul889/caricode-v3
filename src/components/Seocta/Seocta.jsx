@@ -47,7 +47,7 @@ const Seocta = () => {
             </label>
             <label>
               <div className="formitem">Message</div>
-              <textarea name="message"></textarea>
+              <textarea name="message" style={{width: '95%'}}></textarea>
             </label>
             <CTABtn type="submit">Get in touch</CTABtn>
           </div>
