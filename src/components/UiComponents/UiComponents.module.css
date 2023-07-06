@@ -3,11 +3,20 @@
   line-height: 40px;
   text-align: center;
   font-size: 36px;
-  max-width: 1200px;
   width: 100%;
   background-color: #f5f5f5;
   padding: 24px 0;
   margin-bottom: 0;
+}
+
+.uicontainer{
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.uicontainerinner{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .container {
@@ -112,3 +121,21 @@
   grid-row: 1/ span 2;
   place-self: center;
 }
+
+@media screen and (min-width: 768px){
+  .uicontainer{
+    padding-bottom: 30px;
+  }
+  .uicontainerinner{
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .container {
+    height: auto;
+  }
+  .heading{
+    padding: 34px 0 64px 0;
+  }
+}
+  
