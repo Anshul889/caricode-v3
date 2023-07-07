@@ -32,9 +32,6 @@ export const Speed = styled.div`
   span:first-child {
     cursor: initial;
   }
-  span:nth-child(2) {
-    width: 25px;
-  }
   span:nth-child(3){
     width: 25px;
   }

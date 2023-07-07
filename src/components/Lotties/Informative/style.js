@@ -18,10 +18,6 @@ export const Box = styled.div`
   @media screen and (min-width: 768px) {
     width: 75px;
   }
-  @media only screen and (width: 834px) and (height: 1194px) and (orientation: portrait) {
-    width: 60px;
-    height: 60px;
-  }
 `
 
 export const SecondItem = styled(Item)`
