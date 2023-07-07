@@ -134,6 +134,14 @@ export const Performance = styled.div`
       font-size: 17px;
     }
   }
+  @media only screen and (width: 834px) and (height: 1194px) and (orientation: portrait) {
+    h2 {
+      max-width: 700px;
+    }
+    p {
+      max-width: 550px;
+    }
+  }
 `
 
 export const Olydiv = styled.div`
@@ -248,6 +256,10 @@ export const ShowcaseOne = styled.div`
   @media screen and (min-width: 1024px) {
     column-gap: 30px;
   }
+  @media only screen and (width: 834px) and (height: 1194px) and (orientation:portrait) {
+    grid-template-row: auto;
+}
+  
 `
 
 export const ItemOne = styled.div`
@@ -257,6 +269,14 @@ export const ItemOne = styled.div`
   padding: 5%;
   padding-right: 13px;
   border-radius: 30px;
+  @media only screen and (width: 834px) and (height: 1194px) and (orientation:portrait) {
+  p{
+   margin: 0;
+   width: 100%;
+   height: 160px;
+  }
+}
+  
 `
 
 export const OneAnimation = styled.div`
@@ -287,6 +307,13 @@ export const ItemTwo = styled.div`
   @media screen and (min-width: 1024px) {
     grid-template-rows: 287px 179px;
   }
+  @media only screen and (width: 834px) and (height: 1194px) and (orientation:portrait) {
+  p{
+    margin: 0;
+    width: 100%;
+  }
+}
+  
 `
 
 export const TwoAnimation = styled.div`
@@ -375,6 +402,10 @@ export const EvwhInner = styled.div`
     grid-gap: 30px;
     grid-template-rows: 1fr 1fr;
   }
+  @media only screen and (width: 834px) and (height: 1194px) and (orientation:portrait) {
+  grid-template-rows: 190px 180px;
+}
+  
 `
 
 export const BigItem = styled.div`

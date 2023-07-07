@@ -100,6 +100,7 @@
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 0.2fr;
+  cursor: pointer;
 }
 
 .inactive{
@@ -107,6 +108,7 @@
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .radiooption{
@@ -122,6 +124,16 @@
   place-self: center;
 }
 
+.textcontainer{
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.text{
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px){
   .uicontainer{
     padding-bottom: 30px;
@@ -135,7 +147,17 @@
     height: auto;
   }
   .heading{
-    padding: 34px 0 64px 0;
+    padding: 34px 0 14px 0;
+  }
+  .text{
+    max-width: 840px;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (width: 834px) and (height: 1194px) and (orientation:portrait) {
+  .text{
+    max-width: 550px;
   }
 }
   

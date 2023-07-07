@@ -7,6 +7,13 @@ const UiComponents = () => {
   return (
     <div>
       <h2 className={styles.heading}>Custom UI Elements</h2>
+      <div className={styles.textcontainer}>
+        <p className={styles.text}>
+          Align with brand identity, improve usability, enhance visual appeal,
+          and promote consistency across an application or website, resulting in
+          better engagement, user satisfaction, and overall product quality.
+        </p>
+      </div>
       <div className={styles.uicontainer}>
         <div className={styles.uicontainerinner}>
           <div className={styles.container}>

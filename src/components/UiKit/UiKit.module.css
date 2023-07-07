@@ -599,3 +599,10 @@ input:checked + .blackslider:before {
     display: block;
   }
 }
+
+@media only screen and (width: 834px) and (height: 1194px) and (orientation:portrait) {
+  .titlep{
+    width: 550px;
+  }
+}
+  
