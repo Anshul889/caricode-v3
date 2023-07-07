@@ -45,20 +45,18 @@ const Olympics = () => {
           </Reverse>
         )}
         <Speed>
-          <span> Speed :</span>
-          <span
-            style={{ marginLeft: '15px' }}
+          <span> Speed </span>
+          <div style={{  width: '27px', display: 'inline-block', textAlign: 'center'}}
             onClick={() => setSpeed(animationSpeed - 0.5)}
           >
             -
-          </span>
-          <span style={{ marginLeft: '10px' }}>{animationSpeed}</span>
-          <span
-            style={{ marginLeft: '10px' }}
+          </div>
+          <div style={{  width: '40px', display: 'inline-block', textAlign: 'center'}}>{animationSpeed}</div>
+          <div style={{  width: '27px', display: 'inline-block', textAlign: 'center'}}
             onClick={() => setSpeed(animationSpeed + 0.5)}
           >
             +
-          </span>
+          </div>
         </Speed>
       </Controls>
     </Animation>
