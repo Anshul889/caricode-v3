@@ -5,7 +5,7 @@ import { Container, Description, Features } from './style'
 const PageFeatures = () => {
   return (
     <Container>
-      <h2>Interactive and dynamic web pages</h2>
+      <h2 id="interactiveweb">Interactive and dynamic web pages</h2>
       <Features>
         <InfographicLottie />
         <Description>
