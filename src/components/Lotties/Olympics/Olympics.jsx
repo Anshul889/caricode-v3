@@ -51,7 +51,7 @@ const Olympics = () => {
           >
             -
           </div>
-          <div style={{  width: '40px', display: 'inline-block', textAlign: 'center'}}>{animationSpeed}</div>
+          <div style={{  width: '20px', display: 'inline-block', textAlign: 'center'}}>{animationSpeed}</div>
           <div style={{  width: '27px', display: 'inline-block', textAlign: 'center'}}
             onClick={() => setSpeed(animationSpeed + 0.5)}
           >
